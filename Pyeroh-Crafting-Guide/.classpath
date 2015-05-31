@@ -7,5 +7,6 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/Pyeroh-Crafting-Guide/swingx-all-1.6.4-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="JSON-java.jar" sourcepath="/JSON-java"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

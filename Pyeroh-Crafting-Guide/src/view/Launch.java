@@ -1,10 +1,11 @@
 package view;
 
-import java.io.IOException;
+import model.minecraft.MCItem;
+
 
 public class Launch {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		// File mcItems = new
 		// File("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc");
 		// File[] files = mcItems.listFiles();
@@ -22,6 +23,8 @@ public class Launch {
 		// Paths.get("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc",
 		// file.getName() + ".png"), StandardCopyOption.ATOMIC_MOVE);
 		// }
+		
+		MCItem.initialize();
 
 	}
 
