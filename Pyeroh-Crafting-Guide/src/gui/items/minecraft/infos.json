@@ -3,2191 +3,2167 @@
     "mod": "MINECRAFT",
     "iconName": "acacia_leaves.png",
     "meta": 0,
-    "id": ""
+    "id": "leaves2"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "acacia_sapling.png",
-    "meta": 0,
-    "id": ""
+    "meta": 4,
+    "id": "sapling"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "acacia_wood.png",
     "meta": 0,
-    "id": ""
+    "id": "log2"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "acacia_wood_planks.png",
     "meta": 0,
-    "id": ""
+    "id": "wood"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "acacia_wood_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 4,
+    "id": "wooden_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "acacia_wood_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "acacia_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "activator_rail.png",
     "meta": 0,
-    "id": ""
+    "id": "activator_rail"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "allium.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "anvil.png",
     "meta": 0,
-    "id": ""
+    "id": "anvil"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "apple.png",
     "meta": 0,
-    "id": ""
+    "id": "apple"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "arrow.png",
     "meta": 0,
-    "id": ""
+    "id": "arrow"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "awkward_potion.png",
-    "meta": 0,
-    "id": ""
+    "meta": 16,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "azure_bluet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "baked_potato.png",
     "meta": 0,
-    "id": ""
+    "id": "baked_potato"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "beacon.png",
     "meta": 0,
-    "id": ""
+    "id": "beacon"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bed.png",
     "meta": 0,
-    "id": ""
+    "id": "bed"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bedrock.png",
     "meta": 0,
-    "id": ""
+    "id": "bedrock"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "birch_leaves.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "leaves"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "birch_sapling.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "sapling"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "birch_wood.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "log"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "birch_wood_planks.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "wood"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "birch_wood_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "wooden_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "birch_wood_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "birch_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "black_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 15,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "black_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 15,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "black_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 15,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "black_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 15,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "black_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 15,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blaze_powder.png",
     "meta": 0,
-    "id": ""
+    "id": "blaze_powder"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blaze_rod.png",
     "meta": 0,
-    "id": ""
+    "id": "blaze_rod"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_coal.png",
     "meta": 0,
-    "id": ""
+    "id": "coal_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_diamond.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_emerald.png",
     "meta": 0,
-    "id": ""
+    "id": "emerald_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_gold.png",
     "meta": 0,
-    "id": ""
+    "id": "gold_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_iron.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_quartz.png",
     "meta": 0,
-    "id": ""
+    "id": "quartz_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "block_of_redstone.png",
     "meta": 0,
-    "id": ""
+    "id": "redstone_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blue_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 11,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blue_orchid.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blue_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 11,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blue_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 11,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blue_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 11,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "blue_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 11,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "boat.png",
     "meta": 0,
-    "id": ""
+    "id": "boat"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bone.png",
     "meta": 0,
-    "id": ""
+    "id": "bone"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bone_meal.png",
-    "meta": 0,
-    "id": ""
+    "meta": 15,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "book.png",
     "meta": 0,
-    "id": ""
+    "id": "book"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bookshelf.png",
     "meta": 0,
-    "id": ""
+    "id": "bookshelf"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "book_and_quill.png",
     "meta": 0,
-    "id": ""
+    "id": "book_and_quill"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bottle_o_enchanting.png",
     "meta": 0,
-    "id": ""
+    "id": "exp_bottle"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bow.png",
     "meta": 0,
-    "id": ""
+    "id": "bow"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bowl.png",
     "meta": 0,
-    "id": ""
+    "id": "bowl"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bread.png",
     "meta": 0,
-    "id": ""
+    "id": "bread"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brewing_stand.png",
     "meta": 0,
-    "id": ""
+    "id": "brewing_stand"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brick.png",
     "meta": 0,
-    "id": ""
+    "id": "clay_brick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bricks.png",
     "meta": 0,
-    "id": ""
+    "id": "brick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bricks_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 4,
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brick_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "brick_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brown_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 12,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brown_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 12,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brown_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 12,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brown_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 12,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "brown_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 12,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "bucket.png",
     "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "button.png",
-    "meta": 0,
-    "id": ""
+    "id": "bucket"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "button_stone.png",
     "meta": 0,
-    "id": ""
+    "id": "stone_button"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "button_wood.png",
     "meta": 0,
-    "id": ""
+    "id": "wood_button"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cactus.png",
     "meta": 0,
-    "id": ""
+    "id": "cactus"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cactus_green.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cake.png",
     "meta": 0,
-    "id": ""
+    "id": "cake"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "carpet.png",
     "meta": 0,
-    "id": ""
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "carrot.png",
     "meta": 0,
-    "id": ""
+    "id": "carrot"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "carrot_on_a_stick.png",
     "meta": 0,
-    "id": ""
+    "id": "carrot_stick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cauldron.png",
     "meta": 0,
-    "id": ""
+    "id": "cauldron"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chain_boots.png",
     "meta": 0,
-    "id": ""
+    "id": "chainmail_boots"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chain_chestplate.png",
     "meta": 0,
-    "id": ""
+    "id": "chainmail_chestplate"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chain_helmet.png",
     "meta": 0,
-    "id": ""
+    "id": "chainmail_helmet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chain_leggings.png",
     "meta": 0,
-    "id": ""
+    "id": "chainmail_leggings"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "charcoal.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "coal"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chest.png",
     "meta": 0,
-    "id": ""
+    "id": "chest"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chiseled_quartz_block.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "quartz_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chiseled_sandstone.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "sandstone"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "chiseled_stone_bricks.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "stonebrick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "clay.png",
     "meta": 0,
-    "id": ""
+    "id": "clay_ball"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "clay_block.png",
     "meta": 0,
-    "id": ""
+    "id": "clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "clock.png",
     "meta": 0,
-    "id": ""
+    "id": "clock"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "clownfish.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "raw_fish"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "coal.png",
     "meta": 0,
-    "id": ""
+    "id": "coal"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "coal_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "coal_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cobblestone.png",
     "meta": 0,
-    "id": ""
+    "id": "cobblestone"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cobblestone_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cobblestone_wall.png",
     "meta": 0,
-    "id": ""
+    "id": "cobblestone_wall"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cobweb.png",
     "meta": 0,
-    "id": ""
+    "id": "web"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cocoa_beans.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "command_block.png",
     "meta": 0,
-    "id": ""
+    "id": "command_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "compass.png",
     "meta": 0,
-    "id": ""
+    "id": "compass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cooked_chicken.png",
     "meta": 0,
-    "id": ""
+    "id": "cooked_chicken"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cooked_fish.png",
     "meta": 0,
-    "id": ""
+    "id": "cooked_fish"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cooked_porkchop.png",
     "meta": 0,
-    "id": ""
+    "id": "cooked_porkchop"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cooked_salmon.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "cooked_fish"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cookie.png",
     "meta": 0,
-    "id": ""
+    "id": "cookie"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cracked_stone_bricks.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "stonebrick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "crafting_table.png",
     "meta": 0,
-    "id": ""
+    "id": "crafting_table"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "creeper_head.png",
-    "meta": 0,
-    "id": ""
+    "meta": 4,
+    "id": "skull"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cyan_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 9,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cyan_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cyan_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 9,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cyan_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 9,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cyan_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 9,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "cyan_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 9,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dandelion.png",
     "meta": 0,
-    "id": ""
+    "id": "yellow_flower"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dandelion_yellow.png",
-    "meta": 0,
-    "id": ""
+    "meta": 11,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dark_oak_leaves.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "leaves2"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dark_oak_sapling.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "sapling"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dark_oak_wood.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "log2"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dark_oak_wood_planks.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "wood"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dark_oak_wood_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "wooden_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dark_oak_wood_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "dark_oak_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "daylight_sensor.png",
     "meta": 0,
-    "id": ""
+    "id": "daylight_detector"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dead_bush.png",
     "meta": 0,
-    "id": ""
+    "id": "dead_bush"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "detector_rail.png",
     "meta": 0,
-    "id": ""
+    "id": "detector_rail"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_axe.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_axe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_boots.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_boots"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_chestplate.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_chestplate"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_helmet.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_helmet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_hoe.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_hoe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_horse_armor.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_horse_armor"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_leggings.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_leggings"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_pickaxe.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_pickaxe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_shovel.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_shovel"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "diamond_sword.png",
     "meta": 0,
-    "id": ""
+    "id": "diamond_sword"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dirt.png",
     "meta": 0,
-    "id": ""
+    "id": "dirt"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dispenser.png",
     "meta": 0,
-    "id": ""
+    "id": "dispenser"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "double_tallgrass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "double_plant"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dragon_egg.png",
     "meta": 0,
-    "id": ""
+    "id": "dragon_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "dropper.png",
     "meta": 0,
-    "id": ""
+    "id": "dropper"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "egg.png",
     "meta": 0,
-    "id": ""
+    "id": "egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "emerald.png",
     "meta": 0,
-    "id": ""
+    "id": "emerald"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "emerald_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "emerald_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "empty_map.png",
     "meta": 0,
-    "id": ""
+    "id": "map"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "enchanted_book.png",
     "meta": 0,
-    "id": ""
+    "id": "enchanted_book"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "enchantment_table.png",
     "meta": 0,
-    "id": ""
+    "id": "enchantment_table"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "ender_chest.png",
     "meta": 0,
-    "id": ""
+    "id": "ender_chest"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "ender_pearl.png",
     "meta": 0,
-    "id": ""
+    "id": "ender_pearl"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "end_portal.png",
     "meta": 0,
-    "id": ""
+    "id": "end_portal_frame"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "end_stone.png",
     "meta": 0,
-    "id": ""
+    "id": "end_stone"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "eye_of_ender.png",
     "meta": 0,
-    "id": ""
+    "id": "eye_of_ender"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "farmland.png",
     "meta": 0,
-    "id": ""
+    "id": "farmland"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "feather.png",
     "meta": 0,
-    "id": ""
+    "id": "feather"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fence.png",
     "meta": 0,
-    "id": ""
+    "id": "fence"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fence_gate.png",
     "meta": 0,
-    "id": ""
+    "id": "fence_gate"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fermented_spider_eye.png",
     "meta": 0,
-    "id": ""
+    "id": "fermented_spider_eye"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fern.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "tallgrass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fire.png",
     "meta": 0,
-    "id": ""
+    "id": "fire"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fire_charge.png",
     "meta": 0,
-    "id": ""
+    "id": "fire_charge"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "fishing_rod.png",
     "meta": 0,
-    "id": ""
+    "id": "fishing_rod"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "flint.png",
     "meta": 0,
-    "id": ""
+    "id": "flint"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "flint_and_steel.png",
     "meta": 0,
-    "id": ""
+    "id": "flint_and_steel"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "flower_pot.png",
     "meta": 0,
-    "id": ""
+    "id": "flower_pot"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "furnace.png",
     "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "furnace_fuel.png",
-    "meta": 0,
-    "id": ""
+    "id": "furnace"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "ghast_tear.png",
     "meta": 0,
-    "id": ""
+    "id": "ghast_tear"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "glass.png",
     "meta": 0,
-    "id": ""
+    "id": "glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "glass_bottle.png",
     "meta": 0,
-    "id": ""
+    "id": "glass_bottle"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "glass_pane.png",
     "meta": 0,
-    "id": ""
+    "id": "glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "glistering_melon.png",
     "meta": 0,
-    "id": ""
+    "id": "speckled_melon"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "glowstone.png",
     "meta": 0,
-    "id": ""
+    "id": "glowstone"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "glowstone_dust.png",
     "meta": 0,
-    "id": ""
+    "id": "glowstone_dust"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_apple.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_apple"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_apple_magic.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "golden_apple"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_axe.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_axe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_boots.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_boots"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_carrot.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_carrot"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_chestplate.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_chestplate"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_helmet.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_helmet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_hoe.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_hoe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_leggings.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_leggings"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_pickaxe.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_pickaxe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_shovel.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_shovel"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "golden_sword.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_sword"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gold_horse_armor.png",
     "meta": 0,
-    "id": ""
+    "id": "golden_horse_armor"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gold_ingot.png",
     "meta": 0,
-    "id": ""
+    "id": "gold_ingot"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gold_nugget.png",
     "meta": 0,
-    "id": ""
+    "id": "gold_nugget"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gold_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "gold_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "grass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "tallgrass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "grass_block.png",
     "meta": 0,
-    "id": ""
+    "id": "grass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gravel.png",
     "meta": 0,
-    "id": ""
+    "id": "gravel"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gray_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gray_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gray_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gray_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gray_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gray_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "green_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 13,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "green_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 13,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "green_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 13,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "green_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 13,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "green_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 13,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "gunpowder.png",
     "meta": 0,
-    "id": ""
+    "id": "gunpowder"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "hardened_clay.png",
     "meta": 0,
-    "id": ""
+    "id": "hardened_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "hay_bale.png",
     "meta": 0,
-    "id": ""
+    "id": "hay_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "head.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "skull"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "hopper.png",
     "meta": 0,
-    "id": ""
+    "id": "hopper"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "ice.png",
     "meta": 0,
-    "id": ""
+    "id": "ice"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "ink_sac.png",
     "meta": 0,
-    "id": ""
+    "id": "ink_sac"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_axe.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_axe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_bars.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_bars"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_boots.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_boots"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_chestplate.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_chestplate"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_door.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_door"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_helmet.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_helmet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_hoe.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_hoe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_horse_armor.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_horse_armor"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_ingot.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_ingot"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_leggings.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_leggings"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_pickaxe.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_pickaxe"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_shovel.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_shovel"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "iron_sword.png",
     "meta": 0,
-    "id": ""
+    "id": "iron_sword"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "item_frame.png",
     "meta": 0,
-    "id": ""
+    "id": "item_frame"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jack_o_lantern.png",
     "meta": 0,
-    "id": ""
+    "id": "lit_pumpkin"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jukebox.png",
     "meta": 0,
-    "id": ""
+    "id": "jukebox"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jungle_leaves.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "leaves"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jungle_sapling.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "sapling"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jungle_wood.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "log"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jungle_wood_planks.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "wood"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jungle_wood_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "wooden_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "jungle_wood_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "jungle_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "ladder.png",
     "meta": 0,
-    "id": ""
+    "id": "ladder"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lapis_lazuli.png",
-    "meta": 0,
-    "id": ""
+    "meta": 4,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lapis_lazuli_block.png",
     "meta": 0,
-    "id": ""
+    "id": "lapis_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lapis_lazuli_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "lapis_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "large_fern.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "double_plant"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lava.png",
     "meta": 0,
-    "id": ""
+    "id": "lava"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lava_bucket.png",
     "meta": 0,
-    "id": ""
+    "id": "lava_bucket"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lead.png",
     "meta": 0,
-    "id": ""
+    "id": "lead"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "leather.png",
     "meta": 0,
-    "id": ""
+    "id": "leather"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "leather_boots.png",
     "meta": 0,
-    "id": ""
+    "id": "leather_boots"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "leather_cap.png",
     "meta": 0,
-    "id": ""
+    "id": "leather_helmet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "leather_pants.png",
     "meta": 0,
-    "id": ""
+    "id": "leather_leggings"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "leather_tunic.png",
     "meta": 0,
-    "id": ""
+    "id": "leather_chestplate"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lever.png",
     "meta": 0,
-    "id": ""
+    "id": "lever"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_blue_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_blue_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 12,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_blue_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_blue_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_blue_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_blue_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 3,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_gray_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_gray_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 7,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_gray_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_gray_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_gray_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "light_gray_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lilac.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "double_plant"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lily_pad.png",
     "meta": 0,
-    "id": ""
+    "id": "waterlily"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lime_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lime_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 10,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lime_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lime_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lime_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "lime_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magenta_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magenta_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 13,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magenta_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magenta_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magenta_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magenta_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "magma_cream.png",
     "meta": 0,
-    "id": ""
+    "id": "magma_cream"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "map.png",
     "meta": 0,
-    "id": ""
+    "id": "filled_map"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "melon.png",
     "meta": 0,
-    "id": ""
+    "id": "melon"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "melon_block.png",
     "meta": 0,
-    "id": ""
+    "id": "melon_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "melon_seeds.png",
     "meta": 0,
-    "id": ""
+    "id": "melon_seeds"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "milk.png",
     "meta": 0,
-    "id": ""
+    "id": "milk_bucket"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "minecart.png",
     "meta": 0,
-    "id": ""
+    "id": "minecart"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "minecart_with_chest.png",
     "meta": 0,
-    "id": ""
+    "id": "chest_minecart"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "minecart_with_furnace.png",
     "meta": 0,
-    "id": ""
+    "id": "furnace_minecart"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "minecart_with_hopper.png",
     "meta": 0,
-    "id": ""
+    "id": "hopper_minecart"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "minecart_with_tnt.png",
     "meta": 0,
-    "id": ""
+    "id": "tnt_minecart"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "monster_spawner.png",
     "meta": 0,
-    "id": ""
+    "id": "mob_spawner"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mossy_cobblestone_wall.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "cobblestone_wall"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mossy_stone_bricks.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "stonebrick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "moss_stone.png",
     "meta": 0,
-    "id": ""
+    "id": "mossy_cobblestone"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mundane_potion.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8192,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mundane_splash_potion.png",
-    "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "mushroom.png",
-    "meta": 0,
-    "id": ""
+    "meta": 16384,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mushroom_brown.png",
     "meta": 0,
-    "id": ""
+    "id": "brown_mushroom"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mushroom_red.png",
     "meta": 0,
-    "id": ""
+    "id": "red_mushroom"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mushroom_stew.png",
     "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "music_disc.png",
-    "meta": 0,
-    "id": ""
+    "id": "mushroom_stew"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "mycelium.png",
     "meta": 0,
-    "id": ""
+    "id": "mycelium"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "name_tag.png",
     "meta": 0,
-    "id": ""
+    "id": "name_tag"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "netherrack.png",
     "meta": 0,
-    "id": ""
+    "id": "netherrack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_brick.png",
     "meta": 0,
-    "id": ""
+    "id": "netherbrick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_brick_block.png",
     "meta": 0,
-    "id": ""
+    "id": "nether_brick"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_brick_fence.png",
     "meta": 0,
-    "id": ""
+    "id": "nether_brick_fence"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_brick_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_brick_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "nether_brick_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_quartz.png",
     "meta": 0,
-    "id": ""
+    "id": "quartz"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_quartz_ore.png",
     "meta": 0,
-    "id": ""
+    "id": "quartz_ore"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_star.png",
     "meta": 0,
-    "id": ""
+    "id": "nether_star"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "nether_wart.png",
     "meta": 0,
-    "id": ""
+    "id": "nether_wart"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "note_block.png",
     "meta": 0,
-    "id": ""
+    "id": "note_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oak_leaves.png",
     "meta": 0,
-    "id": ""
+    "id": "leaves"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oak_sapling.png",
     "meta": 0,
-    "id": ""
+    "id": "sapling"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oak_wood.png",
     "meta": 0,
-    "id": ""
+    "id": "log"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oak_wood_planks.png",
     "meta": 0,
-    "id": ""
+    "id": "wood"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oak_wood_slab.png",
     "meta": 0,
-    "id": ""
+    "id": "wooden_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oak_wood_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "oak_stairs"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "obsidian.png",
     "meta": 0,
-    "id": ""
+    "id": "obsidian"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 14,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_tulip.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "orange_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "oxeye_daisy.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8,
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "packed_ice.png",
     "meta": 0,
-    "id": ""
+    "id": "packed_ice"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "painting.png",
     "meta": 0,
-    "id": ""
+    "id": "painting"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "paper.png",
     "meta": 0,
-    "id": ""
+    "id": "paper"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "peony.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "double_plant"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pillar_quartz_block.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "quartz_block"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_carpet.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_dye.png",
-    "meta": 0,
-    "id": ""
+    "meta": 9,
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_stained_clay.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_stained_glass.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_stained_glass_pane.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_tulip.png",
-    "meta": 0,
-    "id": ""
+    "meta": 7,
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "pink_wool.png",
-    "meta": 0,
-    "id": ""
+    "meta": 6,
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "piston.png",
     "meta": 0,
-    "id": ""
+    "id": "piston"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "podzol.png",
-    "meta": 0,
-    "id": ""
+    "meta": 2,
+    "id": "dirt"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "poisonous_potato.png",
     "meta": 0,
-    "id": ""
+    "id": "poisonous_potato"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "poppy.png",
     "meta": 0,
-    "id": ""
+    "id": "red_rose"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potato.png",
     "meta": 0,
-    "id": ""
+    "id": "potato"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_fire_resistance.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8195,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_fire_resistance_long.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8259,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_harming.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8204,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_harming_ii.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8236,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_healing.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8197,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_healing_ii.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8229,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_invisibility.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8206,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_invisibility_long.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8270,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_night_vision.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8198,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_night_vision_long.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8262,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_poison.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8196,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_poison_ii.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8228,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_poison_long.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8260,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_regeneration.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8193,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_regeneration_ii.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8225,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_regeneration_long.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8257,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_slowness.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8202,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_slowness_long.png",
-    "meta": 0,
-    "id": ""
+    "meta": 8266,
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_strength.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_strength_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_strength_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_swiftness.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_swiftness_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_swiftness_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_water_breathing.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_water_breathing_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_weakness.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "potion_of_weakness_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
@@ -2241,49 +2217,49 @@
     "mod": "MINECRAFT",
     "iconName": "purple_carpet.png",
     "meta": 0,
-    "id": ""
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "purple_dye.png",
     "meta": 0,
-    "id": ""
+    "id": "ink_sack"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "purple_stained_clay.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "purple_stained_glass.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "purple_stained_glass_pane.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "purple_wool.png",
     "meta": 0,
-    "id": ""
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "quartz_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 7,
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "quartz_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "quartz_stairs"
   },
   {
     "mod": "MINECRAFT",
@@ -2320,6 +2296,78 @@
     "iconName": "raw_salmon.png",
     "meta": 0,
     "id": ""
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_11.png",
+    "meta": 0,
+    "id": "record_11"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_13.png",
+    "meta": 0,
+    "id": "record_13"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_blocks.png",
+    "meta": 0,
+    "id": "record_blocks"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_cat.png",
+    "meta": 0,
+    "id": "record_cat"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_chirp.png",
+    "meta": 0,
+    "id": "record_chirp"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_far.png",
+    "meta": 0,
+    "id": "record_far"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_mall.png",
+    "meta": 0,
+    "id": "record_mall"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_mellohi.png",
+    "meta": 0,
+    "id": "record_mellohi"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_stal.png",
+    "meta": 0,
+    "id": "record_stal"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_strad.png",
+    "meta": 0,
+    "id": "record_strad"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_wait.png",
+    "meta": 0,
+    "id": "record_wait"
+  },
+  {
+    "mod": "MINECRAFT",
+    "iconName": "record_ward.png",
+    "meta": 0,
+    "id": "record_ward"
   },
   {
     "mod": "MINECRAFT",
@@ -2361,7 +2409,7 @@
     "mod": "MINECRAFT",
     "iconName": "red_carpet.png",
     "meta": 0,
-    "id": ""
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
@@ -2373,19 +2421,19 @@
     "mod": "MINECRAFT",
     "iconName": "red_stained_clay.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "red_stained_glass.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "red_stained_glass_pane.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
@@ -2397,7 +2445,7 @@
     "mod": "MINECRAFT",
     "iconName": "red_wool.png",
     "meta": 0,
-    "id": ""
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
@@ -2438,14 +2486,14 @@
   {
     "mod": "MINECRAFT",
     "iconName": "sandstone_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "sandstone_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "sandstone_stairs"
   },
   {
     "mod": "MINECRAFT",
@@ -2493,7 +2541,7 @@
     "mod": "MINECRAFT",
     "iconName": "snow.png",
     "meta": 0,
-    "id": ""
+    "id": "snow_layer"
   },
   {
     "mod": "MINECRAFT",
@@ -2509,12 +2557,6 @@
   },
   {
     "mod": "MINECRAFT",
-    "iconName": "snow_carpet.png",
-    "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
     "iconName": "soul_sand.png",
     "meta": 0,
     "id": ""
@@ -2523,163 +2565,145 @@
     "mod": "MINECRAFT",
     "iconName": "spawn_bat.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_blaze.png",
     "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "spawn_blizz.png",
-    "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_cave_spider.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_chicken.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_cow.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_creeper.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_enderman.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_ghast.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_horse.png",
     "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "spawn_iron_golem.png",
-    "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_magma_cube.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_mooshroom.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_ocelot.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_pig.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_sheep.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_silverfish.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_skeleton.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_slime.png",
     "meta": 0,
-    "id": ""
-  },
-  {
-    "mod": "MINECRAFT",
-    "iconName": "spawn_snow_golem.png",
-    "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_spider.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_squid.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_villager.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_witch.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_wolf.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_zombie.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spawn_zombie_pigman.png",
     "meta": 0,
-    "id": ""
+    "id": "spawn_egg"
   },
   {
     "mod": "MINECRAFT",
@@ -2691,169 +2715,169 @@
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_fire_resistance.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_fire_resistance_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_harming.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_harming_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_healing.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_healing_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_invisibility.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_invisibility_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_night_vision.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_night_vision_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_poison.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_poison_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_poison_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_regeneration.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_regeneration_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_regeneration_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_slowness.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_slowness_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_strength.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_strength_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_strength_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_swiftness.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_swiftness_ii.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_swiftness_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_water_breathing.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_water_breathing_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_weakness.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "splash_potion_of_weakness_long.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
@@ -2888,14 +2912,14 @@
   {
     "mod": "MINECRAFT",
     "iconName": "spruce_wood_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 1,
+    "id": "wooden_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "spruce_wood_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "spruce_stairs"
   },
   {
     "mod": "MINECRAFT",
@@ -2936,14 +2960,14 @@
   {
     "mod": "MINECRAFT",
     "iconName": "stone_bricks_slab.png",
-    "meta": 0,
-    "id": ""
+    "meta": 5,
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "stone_brick_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "stone_brick_stairs"
   },
   {
     "mod": "MINECRAFT",
@@ -2967,13 +2991,13 @@
     "mod": "MINECRAFT",
     "iconName": "stone_slab.png",
     "meta": 0,
-    "id": ""
+    "id": "stone_slab"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "stone_stairs.png",
     "meta": 0,
-    "id": ""
+    "id": "stone_stairs"
   },
   {
     "mod": "MINECRAFT",
@@ -3009,7 +3033,7 @@
     "mod": "MINECRAFT",
     "iconName": "thick_potion.png",
     "meta": 0,
-    "id": ""
+    "id": "potion"
   },
   {
     "mod": "MINECRAFT",
@@ -3093,19 +3117,19 @@
     "mod": "MINECRAFT",
     "iconName": "white_stained_clay.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "white_stained_glass.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "white_stained_glass_pane.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
@@ -3159,7 +3183,7 @@
     "mod": "MINECRAFT",
     "iconName": "wool.png",
     "meta": 0,
-    "id": ""
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",
@@ -3171,31 +3195,31 @@
     "mod": "MINECRAFT",
     "iconName": "yellow_carpet.png",
     "meta": 0,
-    "id": ""
+    "id": "carpet"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "yellow_stained_clay.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_clay"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "yellow_stained_glass.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "yellow_stained_glass_pane.png",
     "meta": 0,
-    "id": ""
+    "id": "stained_glass_pane"
   },
   {
     "mod": "MINECRAFT",
     "iconName": "yellow_wool.png",
     "meta": 0,
-    "id": ""
+    "id": "wool"
   },
   {
     "mod": "MINECRAFT",

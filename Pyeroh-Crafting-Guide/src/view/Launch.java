@@ -23,8 +23,9 @@ public class Launch {
 		// Paths.get("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc",
 		// file.getName() + ".png"), StandardCopyOption.ATOMIC_MOVE);
 		// }
-		
+
 		MCItem.initialize();
+		// TODO 351 dans www.jsoneditoronline.org
 
 	}
 
