@@ -25,7 +25,6 @@ public class Launch {
 		// }
 
 		MCItem.initialize();
-		// TODO 351 dans www.jsoneditoronline.org
 
 	}
 
