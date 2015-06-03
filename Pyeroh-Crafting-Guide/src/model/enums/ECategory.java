@@ -19,8 +19,6 @@ public enum ECategory {
 	DYES(EMod.MINECRAFT),
 	EARTH_MATERIALS(EMod.MINECRAFT),
 	ENCHANTING(EMod.MINECRAFT),
-
-	// TODO here (en remontant)
 	FUNCTIONAL_BLOCKS(EMod.MINECRAFT),
 	GLASS(EMod.MINECRAFT),
 	HUSBANDRY(EMod.MINECRAFT),
@@ -46,8 +44,13 @@ public enum ECategory {
 	private List<EMod> mods;
 
 	private ECategory(EMod mod, EMod... mods) {
-		List<EMod> modList = Arrays.asList(mods);
-		modList.add(0, mod);
+		List<EMod> modList = new ArrayList<>(Arrays.asList(mods));
+		if (modList.size() == 0) {
+			modList.add(mod);
+		}
+		else {
+			modList.add(0, mod);
+		}
 		this.mods = modList;
 	}
 

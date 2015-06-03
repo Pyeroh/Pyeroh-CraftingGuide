@@ -57,14 +57,14 @@
   },
   {
     "id": "anvil",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "anvil.png",
     "meta": 0
   },
   {
     "id": "apple",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "apple.png",
     "meta": 0
@@ -92,28 +92,28 @@
   },
   {
     "id": "baked_potato",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "baked_potato.png",
     "meta": 0
   },
   {
     "id": "beacon",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "beacon.png",
     "meta": 0
   },
   {
     "id": "bed",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "bed.png",
     "meta": 0
   },
   {
     "id": "bedrock",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "bedrock.png",
     "meta": 0
@@ -162,14 +162,14 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "black_carpet.png",
     "meta": 15
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "black_stained_clay.png",
     "meta": 15
@@ -204,7 +204,7 @@
   },
   {
     "id": "blaze_rod",
-    "cat": "",
+    "cat": "MOB_DROPS",
     "mod": "MINECRAFT",
     "iconName": "blaze_rod.png",
     "meta": 0
@@ -260,7 +260,7 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "blue_carpet.png",
     "meta": 11
@@ -274,7 +274,7 @@
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "blue_stained_clay.png",
     "meta": 11
@@ -316,35 +316,35 @@
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "bone_meal.png",
     "meta": 15
   },
   {
     "id": "book",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "book.png",
     "meta": 0
   },
   {
     "id": "bookshelf",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "bookshelf.png",
     "meta": 0
   },
   {
     "id": "book_and_quill",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "book_and_quill.png",
     "meta": 0
   },
   {
     "id": "exp_bottle",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "bottle_o_enchanting.png",
     "meta": 0
@@ -358,14 +358,14 @@
   },
   {
     "id": "bowl",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "bowl.png",
     "meta": 0
   },
   {
     "id": "bread",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "bread.png",
     "meta": 0
@@ -379,42 +379,42 @@
   },
   {
     "id": "clay_brick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "brick.png",
     "meta": 0
   },
   {
     "id": "brick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "bricks.png",
     "meta": 0
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "bricks_slab.png",
     "meta": 4
   },
   {
     "id": "brick_stairs",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "brick_stairs.png",
     "meta": 0
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "brown_carpet.png",
     "meta": 12
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "brown_stained_clay.png",
     "meta": 12
@@ -463,35 +463,35 @@
   },
   {
     "id": "cactus",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "cactus.png",
     "meta": 0
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "cactus_green.png",
     "meta": 2
   },
   {
     "id": "cake",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "cake.png",
     "meta": 0
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "carpet.png",
     "meta": 0
   },
   {
     "id": "carrot",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "carrot.png",
     "meta": 0
@@ -547,42 +547,42 @@
   },
   {
     "id": "chest",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "chest.png",
     "meta": 0
   },
   {
     "id": "quartz_block",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "chiseled_quartz_block.png",
     "meta": 1
   },
   {
     "id": "sandstone",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "chiseled_sandstone.png",
     "meta": 1
   },
   {
     "id": "stonebrick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "chiseled_stone_bricks.png",
     "meta": 3
   },
   {
     "id": "clay_ball",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "clay.png",
     "meta": 0
   },
   {
     "id": "clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "clay_block.png",
     "meta": 0
@@ -610,28 +610,28 @@
   },
   {
     "id": "coal_ore",
-    "cat": "",
+    "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "coal_ore.png",
     "meta": 0
   },
   {
     "id": "cobblestone",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "cobblestone.png",
     "meta": 0
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "cobblestone_slab.png",
     "meta": 3
   },
   {
     "id": "cobblestone_wall",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "cobblestone_wall.png",
     "meta": 0
@@ -645,14 +645,14 @@
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "cocoa_beans.png",
     "meta": 3
   },
   {
     "id": "command_block",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "command_block.png",
     "meta": 0
@@ -694,21 +694,21 @@
   },
   {
     "id": "cookie",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "cookie.png",
     "meta": 0
   },
   {
     "id": "stonebrick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "cracked_stone_bricks.png",
     "meta": 2
   },
   {
     "id": "crafting_table",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "crafting_table.png",
     "meta": 0
@@ -722,21 +722,21 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "cyan_carpet.png",
     "meta": 9
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "cyan_dye.png",
     "meta": 6
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "cyan_stained_clay.png",
     "meta": 9
@@ -764,14 +764,14 @@
   },
   {
     "id": "yellow_flower",
-    "cat": "",
+    "cat": "PLANTS",
     "mod": "MINECRAFT",
     "iconName": "dandelion.png",
     "meta": 0
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "dandelion_yellow.png",
     "meta": 11
@@ -897,7 +897,7 @@
   },
   {
     "id": "diamond_ore",
-    "cat": "",
+    "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "diamond_ore.png",
     "meta": 0
@@ -925,7 +925,7 @@
   },
   {
     "id": "dirt",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "dirt.png",
     "meta": 0
@@ -988,21 +988,21 @@
   },
   {
     "id": "enchanted_book",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "enchanted_book.png",
     "meta": 0
   },
   {
     "id": "enchantment_table",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "enchantment_table.png",
     "meta": 0
   },
   {
     "id": "ender_chest",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "ender_chest.png",
     "meta": 0
@@ -1015,15 +1015,8 @@
     "meta": 0
   },
   {
-    "id": "end_portal_frame",
-    "cat": "",
-    "mod": "MINECRAFT",
-    "iconName": "end_portal.png",
-    "meta": 0
-  },
-  {
     "id": "end_stone",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "end_stone.png",
     "meta": 0
@@ -1036,13 +1029,6 @@
     "meta": 0
   },
   {
-    "id": "farmland",
-    "cat": "",
-    "mod": "MINECRAFT",
-    "iconName": "farmland.png",
-    "meta": 0
-  },
-  {
     "id": "feather",
     "cat": "HUSBANDRY",
     "mod": "MINECRAFT",
@@ -1051,14 +1037,14 @@
   },
   {
     "id": "fence",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "fence.png",
     "meta": 0
   },
   {
     "id": "fence_gate",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "fence_gate.png",
     "meta": 0
@@ -1100,7 +1086,7 @@
   },
   {
     "id": "flint",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "flint.png",
     "meta": 0
@@ -1114,14 +1100,14 @@
   },
   {
     "id": "flower_pot",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "flower_pot.png",
     "meta": 0
   },
   {
     "id": "furnace",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "furnace.png",
     "meta": 0
@@ -1177,14 +1163,14 @@
   },
   {
     "id": "golden_apple",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "golden_apple.png",
     "meta": 0
   },
   {
     "id": "golden_apple",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "golden_apple_magic.png",
     "meta": 1
@@ -1296,35 +1282,35 @@
   },
   {
     "id": "grass",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "grass_block.png",
     "meta": 0
   },
   {
     "id": "gravel",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "gravel.png",
     "meta": 0
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "gray_carpet.png",
     "meta": 8
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "gray_dye.png",
     "meta": 8
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "gray_stained_clay.png",
     "meta": 8
@@ -1352,14 +1338,14 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "green_carpet.png",
     "meta": 13
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "green_stained_clay.png",
     "meta": 13
@@ -1394,7 +1380,7 @@
   },
   {
     "id": "hardened_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "hardened_clay.png",
     "meta": 0
@@ -1443,7 +1429,7 @@
   },
   {
     "id": "iron_bars",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "iron_bars.png",
     "meta": 0
@@ -1464,7 +1450,7 @@
   },
   {
     "id": "iron_door",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "iron_door.png",
     "meta": 0
@@ -1534,21 +1520,21 @@
   },
   {
     "id": "item_frame",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "item_frame.png",
     "meta": 0
   },
   {
     "id": "lit_pumpkin",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "jack_o_lantern.png",
     "meta": 0
   },
   {
     "id": "jukebox",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "jukebox.png",
     "meta": 0
@@ -1597,7 +1583,7 @@
   },
   {
     "id": "ladder",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "ladder.png",
     "meta": 0
@@ -1695,21 +1681,21 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "light_blue_carpet.png",
     "meta": 3
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "light_blue_dye.png",
     "meta": 12
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "light_blue_stained_clay.png",
     "meta": 3
@@ -1737,21 +1723,21 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "light_gray_carpet.png",
     "meta": 8
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "light_gray_dye.png",
     "meta": 7
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "light_gray_stained_clay.png",
     "meta": 8
@@ -1793,21 +1779,21 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "lime_carpet.png",
     "meta": 5
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "lime_dye.png",
     "meta": 10
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "lime_stained_clay.png",
     "meta": 5
@@ -1835,21 +1821,21 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "magenta_carpet.png",
     "meta": 2
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "magenta_dye.png",
     "meta": 13
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "magenta_stained_clay.png",
     "meta": 2
@@ -1884,21 +1870,21 @@
   },
   {
     "id": "melon",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "melon.png",
     "meta": 0
   },
   {
     "id": "melon_block",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "melon_block.png",
     "meta": 0
   },
   {
     "id": "melon_seeds",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "melon_seeds.png",
     "meta": 0
@@ -1947,28 +1933,28 @@
   },
   {
     "id": "mob_spawner",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "monster_spawner.png",
     "meta": 0
   },
   {
     "id": "cobblestone_wall",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "mossy_cobblestone_wall.png",
     "meta": 1
   },
   {
     "id": "stonebrick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "mossy_stone_bricks.png",
     "meta": 1
   },
   {
     "id": "mossy_cobblestone",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "moss_stone.png",
     "meta": 0
@@ -1989,28 +1975,28 @@
   },
   {
     "id": "brown_mushroom",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "mushroom_brown.png",
     "meta": 0
   },
   {
     "id": "red_mushroom",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "mushroom_red.png",
     "meta": 0
   },
   {
     "id": "mushroom_stew",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "mushroom_stew.png",
     "meta": 0
   },
   {
     "id": "mycelium",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "mycelium.png",
     "meta": 0
@@ -2024,42 +2010,42 @@
   },
   {
     "id": "netherrack",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "netherrack.png",
     "meta": 0
   },
   {
     "id": "netherbrick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "nether_brick.png",
     "meta": 0
   },
   {
     "id": "nether_brick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "nether_brick_block.png",
     "meta": 0
   },
   {
     "id": "nether_brick_fence",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "nether_brick_fence.png",
     "meta": 0
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "nether_brick_slab.png",
     "meta": 6
   },
   {
     "id": "nether_brick_stairs",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "nether_brick_stairs.png",
     "meta": 0
@@ -2087,14 +2073,14 @@
   },
   {
     "id": "nether_wart",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "nether_wart.png",
     "meta": 0
   },
   {
     "id": "note_block",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "note_block.png",
     "meta": 0
@@ -2143,28 +2129,28 @@
   },
   {
     "id": "obsidian",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "obsidian.png",
     "meta": 0
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "orange_carpet.png",
     "meta": 1
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "orange_dye.png",
     "meta": 14
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "orange_stained_clay.png",
     "meta": 1
@@ -2213,14 +2199,14 @@
   },
   {
     "id": "painting",
-    "cat": "",
+    "cat": "DECORATION",
     "mod": "MINECRAFT",
     "iconName": "painting.png",
     "meta": 0
   },
   {
     "id": "paper",
-    "cat": "",
+    "cat": "ENCHANTING",
     "mod": "MINECRAFT",
     "iconName": "paper.png",
     "meta": 0
@@ -2234,28 +2220,28 @@
   },
   {
     "id": "quartz_block",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "pillar_quartz_block.png",
     "meta": 2
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "pink_carpet.png",
     "meta": 6
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "pink_dye.png",
     "meta": 9
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "pink_stained_clay.png",
     "meta": 6
@@ -2297,14 +2283,14 @@
   },
   {
     "id": "dirt",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "podzol.png",
     "meta": 2
   },
   {
     "id": "poisonous_potato",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "poisonous_potato.png",
     "meta": 0
@@ -2318,7 +2304,7 @@
   },
   {
     "id": "potato",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "potato.png",
     "meta": 0
@@ -2549,42 +2535,42 @@
   },
   {
     "id": "pumpkin",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "pumpkin.png",
     "meta": 0
   },
   {
     "id": "pumpkin_pie",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "pumpkin_pie.png",
     "meta": 0
   },
   {
     "id": "pumpkin_seeds",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "pumpkin_seeds.png",
     "meta": 0
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "purple_carpet.png",
     "meta": 10
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "purple_dye.png",
     "meta": 5
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "purple_stained_clay.png",
     "meta": 10
@@ -2612,14 +2598,14 @@
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "quartz_slab.png",
     "meta": 7
   },
   {
     "id": "quartz_stairs",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "quartz_stairs.png",
     "meta": 0
@@ -2633,14 +2619,14 @@
   },
   {
     "id": "raw_beef",
-    "cat": "",
+    "cat": "HUSBANDRY",
     "mod": "MINECRAFT",
     "iconName": "raw_beef.png",
     "meta": 0
   },
   {
     "id": "raw_chicken",
-    "cat": "",
+    "cat": "HUSBANDRY",
     "mod": "MINECRAFT",
     "iconName": "raw_chicken.png",
     "meta": 0
@@ -2654,7 +2640,7 @@
   },
   {
     "id": "raw_porkchop",
-    "cat": "",
+    "cat": "HUSBANDRY",
     "mod": "MINECRAFT",
     "iconName": "raw_porkchop.png",
     "meta": 0
@@ -2794,21 +2780,21 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "red_carpet.png",
     "meta": 14
   },
   {
     "id": "sand",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "red_sand.png",
     "meta": 1
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "red_stained_clay.png",
     "meta": 14
@@ -2850,7 +2836,7 @@
   },
   {
     "id": "ink_sack",
-    "cat": "",
+    "cat": "DYES",
     "mod": "MINECRAFT",
     "iconName": "rose_red.png",
     "meta": 1
@@ -2871,7 +2857,7 @@
   },
   {
     "id": "sand",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "sand.png",
     "meta": 0
@@ -2885,21 +2871,21 @@
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "sandstone_slab.png",
     "meta": 1
   },
   {
     "id": "sandstone_stairs",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "sandstone_stairs.png",
     "meta": 0
   },
   {
     "id": "wheat_seeds",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "seeds.png",
     "meta": 0
@@ -2913,7 +2899,7 @@
   },
   {
     "id": "sign",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "sign.png",
     "meta": 0
@@ -2926,13 +2912,6 @@
     "meta": 0
   },
   {
-    "id": "anvil",
-    "cat": "",
-    "mod": "MINECRAFT",
-    "iconName": "slightly_damaged_anvil.png",
-    "meta": 1
-  },
-  {
     "id": "slimeball",
     "cat": "MOB_DROPS",
     "mod": "MINECRAFT",
@@ -2941,7 +2920,7 @@
   },
   {
     "id": "sandstone",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "smooth_sandstone.png",
     "meta": 2
@@ -2969,7 +2948,7 @@
   },
   {
     "id": "soul_sand",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "soul_sand.png",
     "meta": 0
@@ -3417,7 +3396,7 @@
   },
   {
     "id": "stone",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone.png",
     "meta": 0
@@ -3431,21 +3410,21 @@
   },
   {
     "id": "stonebrick",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone_bricks.png",
     "meta": 0
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone_bricks_slab.png",
     "meta": 5
   },
   {
     "id": "stone_brick_stairs",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone_brick_stairs.png",
     "meta": 0
@@ -3473,14 +3452,14 @@
   },
   {
     "id": "stone_slab",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone_slab.png",
     "meta": 0
   },
   {
     "id": "stone_stairs",
-    "cat": "",
+    "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone_stairs.png",
     "meta": 0
@@ -3501,14 +3480,14 @@
   },
   {
     "id": "sugar",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "sugar.png",
     "meta": 0
   },
   {
     "id": "reeds",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "sugar_canes.png",
     "meta": 0
@@ -3529,28 +3508,28 @@
   },
   {
     "id": "tnt",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "tnt.png",
     "meta": 0
   },
   {
     "id": "torch",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "torch.png",
     "meta": 0
   },
   {
     "id": "trapdoor",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "trapdoor.png",
     "meta": 0
   },
   {
     "id": "trapped_chest",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "trapped_chest.png",
     "meta": 0
@@ -3561,13 +3540,6 @@
     "mod": "MINECRAFT",
     "iconName": "tripwire_hook.png",
     "meta": 0
-  },
-  {
-    "id": "anvil",
-    "cat": "",
-    "mod": "MINECRAFT",
-    "iconName": "very_damaged_anvil.png",
-    "meta": 2
   },
   {
     "id": "vines",
@@ -3613,14 +3585,14 @@
   },
   {
     "id": "wheat",
-    "cat": "",
+    "cat": "AGRICULTURE",
     "mod": "MINECRAFT",
     "iconName": "wheat.png",
     "meta": 0
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "white_stained_clay.png",
     "meta": 0
@@ -3662,7 +3634,7 @@
   },
   {
     "id": "wooden_door",
-    "cat": "",
+    "cat": "FUNCTIONAL_BLOCKS",
     "mod": "MINECRAFT",
     "iconName": "wooden_door.png",
     "meta": 0
@@ -3711,14 +3683,14 @@
   },
   {
     "id": "carpet",
-    "cat": "",
+    "cat": "CARPET",
     "mod": "MINECRAFT",
     "iconName": "yellow_carpet.png",
     "meta": 4
   },
   {
     "id": "stained_clay",
-    "cat": "",
+    "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "yellow_stained_clay.png",
     "meta": 4

@@ -1,27 +1,25 @@
 /**
- * 
+ *
  */
 package model.minecraft;
 
+import java.util.List;
+
+import model.enums.ECraftingType;
 import model.enums.EMod;
-import model.interfaces.IRecipe;
+import model.interfaces.AbstractItem;
+import model.interfaces.AbstractRecipe;
 
 /**
  * Recette provenant de Minecraft
- * 
+ *
  * @author Pyeroh
  *
  */
-public class MCRecipe implements IRecipe {
+public class MCRecipe extends AbstractRecipe {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see model.IMod#getMod()
-	 */
-	@Override
-	public EMod getMod() {
-		return EMod.MINECRAFT;
+	public MCRecipe(AbstractItem item, int quantity, List<AbstractItem> extras, AbstractItem[] pattern, ECraftingType type) {
+		super(item, quantity, extras, pattern, type, EMod.MINECRAFT);
 	}
 
 }
