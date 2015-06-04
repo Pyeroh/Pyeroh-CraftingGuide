@@ -1,589 +1,277 @@
 {
-  "Plants": {
-    "Sunflower": {
-      "gatherable": true
+  "Agriculture": {
+    "Apple": {
+      "gatherable": "yes"
     },
-    "Rose Bush": {
-      "gatherable": true
-    },
-    "Double Tallgrass": {
-      "gatherable": true
-    },
-    "Vines": {
-      "gatherable": true
-    },
-    "Poppy": {
-      "gatherable": true
-    },
-    "Grass": {
-      "gatherable": true
-    },
-    "Red Tulip": {
-      "gatherable": true
-    },
-    "Azure Bluet": {
-      "gatherable": true
-    },
-    "Peony": {
-      "gatherable": true
-    },
-    "Orange Tulip": {
-      "gatherable": true
-    },
-    "Dandelion": {
-      "gatherable": true
-    },
-    "Allium": {
-      "gatherable": true
-    },
-    "Lily Pad": {
-      "gatherable": true
-    },
-    "Dead Bush": {
-      "gatherable": true
-    },
-    "Large Fern": {
-      "gatherable": true
-    },
-    "Fern": {
-      "gatherable": true
-    },
-    "Sponge": {
-      "gatherable": true
-    },
-    "Lilac": {
-      "gatherable": true
-    },
-    "White Tulip": {
-      "gatherable": true
-    },
-    "Oxeye Daisy": {
-      "gatherable": true
-    },
-    "Pink Tulip": {
-      "gatherable": true
-    },
-    "Blue Orchid": {
-      "gatherable": true
-    }
-  },
-  "Functional Blocks": {
-    "TNT": {
+    "Baked Potato": {
       "recipe": {
-        "input": "Gunpowder, Sand",
-        "tools": "Crafting Table",
-        "pattern": "010 101 010"
+        "input": "Potato, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
       }
     },
-    "Note Block": {
+    "Bone Meal": {
       "recipe": {
-        "input": "Oak Wood Planks, Redstone",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
+        "input": "Bone",
+        "pattern": "... .0. ...",
+        "quantity": 3
       }
     },
-    "Trapdoor": {
+    "Bowl": {
       "recipe": {
         "input": "Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 2
+        "pattern": "... 0.0 .0.",
+        "tools": "Crafting Table"
       }
     },
-    "Bed": {
+    "Bread": {
       "recipe": {
-        "input": "Oak Wood Planks, Wool",
-        "tools": "Crafting Table",
-        "pattern": "... 111 000"
+        "input": "Wheat",
+        "pattern": "... 000 ...",
+        "tools": "Crafting Table"
       }
     },
-    "Chest": {
+    "Cactus": {
+      "gatherable": "yes"
+    },
+    "Cake": {
       "recipe": {
-        "input": "Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 000"
+        "extras": "3 Bucket",
+        "input": "Egg, Milk, Sugar, Wheat",
+        "pattern": "111 202 333",
+        "tools": "Crafting Table"
       }
     },
-    "Trapped Chest": {
+    "Carrot": {
+      "gatherable": "yes"
+    },
+    "Cocoa Beans": {
+      "gatherable": "yes"
+    },
+    "Cookie": {
       "recipe": {
-        "input": "Chest, Tripwire Hook",
-        "pattern": "... .1. .0."
+        "input": "Cocoa Beans, Wheat",
+        "pattern": "... 101 ...",
+        "tools": "Crafting Table"
       }
     },
-    "Furnace": {
+    "Golden Apple": {
       "recipe": {
-        "input": "Cobblestone",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 000"
+        "input": "Apple, Gold Ingot",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
       }
     },
-    "Wooden Door": {
+    "Golden Apple (magic)": {
       "recipe": {
-        "input": "Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": ".00 .00 .00"
+        "input": "Apple, Block of Gold",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
       }
     },
-    "Crafting Table": {
+    "Melon": {
+      "gatherable": "yes"
+    },
+    "Melon (block)": {
       "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "00. 00. ..."
+        "input": "Melon",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
       }
     },
-    "Ladder": {
+    "Melon Seeds": {
       "recipe": {
-        "input": "Stick",
-        "tools": "Crafting Table",
-        "pattern": "0.0 000 0.0"
+        "input": "Melon",
+        "pattern": "... .0. ..."
       }
     },
-    "Torch": {
+    "Mushroom Stew": {
       "recipe": {
-        "input": "Coal, Stick",
-        "pattern": "... .0. .1.",
+        "input": "Bowl, Mushroom (brown), Mushroom (red)",
+        "pattern": ".2. .1. .0."
+      }
+    },
+    "Nether Wart": {
+      "gatherable": "yes"
+    },
+    "Poisonous Potato": {
+      "gatherable": "yes"
+    },
+    "Potato": {
+      "gatherable": "yes"
+    },
+    "Pumpkin": {
+      "gatherable": "yes"
+    },
+    "Pumpkin Pie": {
+      "recipe": {
+        "input": "Egg, Pumpkin, Sugar",
+        "pattern": ".2. .0. .1."
+      }
+    },
+    "Pumpkin Seeds": {
+      "recipe": {
+        "input": "Pumpkin",
+        "pattern": "... .0. ...",
         "quantity": 4
       }
     },
-    "Jukebox": {
+    "Seeds": {
+      "gatherable": "yes"
+    },
+    "Sugar": {
       "recipe": {
-        "input": "Diamond, Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
+        "input": "Sugar Canes",
+        "pattern": "... .0. ..."
       }
     },
-    "Ender Chest": {
-      "recipe": {
-        "input": "Eye of Ender, Obsidian",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
+    "Sugar Canes": {
+      "gatherable": "yes"
     },
-    "Sign": {
+    "Wheat": {
+      "gatherable": "yes",
       "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": "000 000 .1."
-      }
-    },
-    "Beacon": {
-      "recipe": {
-        "input": "Glass, Nether Star, Obsidian",
-        "tools": "Crafting Table",
-        "pattern": "000 010 222"
-      }
-    },
-    "Iron Door": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": ".00 .00 .00"
+        "input": "Hay Bale",
+        "pattern": "... .0. ...",
+        "quantity": 9
       }
     }
   },
-  "Tools Armor": {
-    "Chain Helmet": {
+  "Carpet": {
+    "Black Carpet": {
       "recipe": {
-        "input": "Fire",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 ..."
+        "input": "Black Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Diamond Chestplate": {
+    "Blue Carpet": {
       "recipe": {
-        "input": "Diamond",
-        "tools": "Crafting Table",
-        "pattern": "0.0 000 000"
+        "input": "Blue Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Diamond Leggings": {
+    "Brown Carpet": {
       "recipe": {
-        "input": "Diamond",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 0.0"
+        "input": "Brown Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Iron Boots": {
+    "Carpet": {
       "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 0.0"
+        "input": "Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Iron Leggings": {
+    "Cyan Carpet": {
       "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 0.0"
+        "input": "Cyan Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Chain Chestplate": {
+    "Gray Carpet": {
       "recipe": {
-        "input": "Fire",
-        "tools": "Crafting Table",
-        "pattern": "0.0 000 000"
+        "input": "Gray Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Diamond Helmet": {
+    "Green Carpet": {
       "recipe": {
-        "input": "Diamond",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 ..."
+        "input": "Green Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Iron Chestplate": {
+    "Light Blue Carpet": {
       "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "0.0 000 000"
+        "input": "Light Blue Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Chain Boots": {
+    "Light Gray Carpet": {
       "recipe": {
-        "input": "Fire",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 0.0"
+        "input": "Light Gray Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Leather Cap": {
+    "Lime Carpet": {
       "recipe": {
-        "input": "Leather",
-        "pattern": "000 0.0 ..."
+        "input": "Lime Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Iron Helmet": {
+    "Magenta Carpet": {
       "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 ..."
+        "input": "Magenta Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Golden Helmet": {
+    "Orange Carpet": {
       "recipe": {
-        "input": "Gold Ingot",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 ..."
+        "input": "Orange Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Chain Leggings": {
+    "Pink Carpet": {
       "recipe": {
-        "input": "Fire",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 0.0"
+        "input": "Pink Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Golden Chestplate": {
+    "Purple Carpet": {
       "recipe": {
-        "input": "Gold Ingot",
-        "tools": "Crafting Table",
-        "pattern": "0.0 000 000"
+        "input": "Purple Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Diamond Boots": {
+    "Red Carpet": {
       "recipe": {
-        "input": "Diamond",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 0.0"
+        "input": "Red Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
     },
-    "Leather Tunic": {
+    "Yellow Carpet": {
       "recipe": {
-        "input": "Leather",
-        "pattern": "0.0 000 000"
+        "input": "Yellow Wool",
+        "pattern": "... 00. ...",
+        "quantity": 3
       }
-    },
-    "Diamond Hoe": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. .1. .1."
-      }
-    },
-    "Leather Pants": {
-      "recipe": {
-        "input": "Leather",
-        "pattern": "000 0.0 0.0"
-      }
-    },
-    "Golden Leggings": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 0.0"
-      }
-    },
-    "Golden Boots": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 0.0"
-      }
-    },
-    "Leather Boots": {
-      "recipe": {
-        "input": "Leather",
-        "pattern": "... 0.0 0.0"
-      }
-    }
-  },
-  "Wood": {
-    "Spruce Wood Slab": {
-      "recipe": {
-        "input": "Spruce Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Spruce Wood Stairs": {
-      "recipe": {
-        "input": "Spruce Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Jungle Wood Slab": {
-      "recipe": {
-        "input": "Jungle Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Birch Sapling": {
-      "gatherable": true
-    },
-    "Birch Wood": {
-      "gatherable": true
-    },
-    "Dark Oak Leaves": {
-      "gatherable": true
-    },
-    "Acacia Wood": {
-      "gatherable": true
-    },
-    "Jungle Leaves": {
-      "gatherable": true
-    },
-    "Jungle Sapling": {
-      "gatherable": true
-    },
-    "Birch Leaves": {
-      "gatherable": true
-    },
-    "Dark Oak Sapling": {
-      "gatherable": true
-    },
-    "Acacia Wood Slab": {
-      "recipe": {
-        "input": "Acacia Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Dark Oak Wood Slab": {
-      "recipe": {
-        "input": "Dark Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Oak Wood Planks": {
-      "recipe": {
-        "input": "Oak Wood",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Oak Wood Stairs": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Dark Oak Wood Stairs": {
-      "recipe": {
-        "input": "Dark Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Jungle Wood Planks": {
-      "recipe": {
-        "input": "Jungle Wood",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Jungle Wood Stairs": {
-      "recipe": {
-        "input": "Jungle Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Acacia Wood Stairs": {
-      "recipe": {
-        "input": "Acacia Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Birch Wood Planks": {
-      "recipe": {
-        "input": "Birch Wood",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Birch Wood Stairs": {
-      "recipe": {
-        "input": "Birch Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Spruce Sapling": {
-      "gatherable": true
-    },
-    "Acacia Sapling": {
-      "gatherable": true
-    },
-    "Dark Oak Wood Planks": {
-      "recipe": {
-        "input": "Dark Oak Wood",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Oak Wood": {
-      "gatherable": true
-    },
-    "Oak Wood Slab": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Birch Wood Slab": {
-      "recipe": {
-        "input": "Birch Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Dark Oak Wood": {
-      "gatherable": true
-    },
-    "Spruce Wood": {
-      "gatherable": true
-    },
-    "Acacia Wood Planks": {
-      "recipe": {
-        "input": "Acacia Wood",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Spruce Leaves": {
-      "gatherable": true
-    },
-    "Jungle Wood": {
-      "gatherable": true
-    },
-    "Oak Sapling": {
-      "gatherable": true
-    },
-    "Oak Leaves": {
-      "gatherable": true
-    },
-    "Spruce Wood Planks": {
-      "recipe": {
-        "input": "Spruce Wood",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Acacia Leaves": {
-      "gatherable": true
-    }
-  },
-  "Mob Drops": {
-    "Slimeball": {
-      "gatherable": true
-    },
-    "Wither Skeleton Skull": {
-      "gatherable": true
-    },
-    "Zombie Head": {
-      "gatherable": true
-    },
-    "Spider Eye": {
-      "gatherable": true
-    },
-    "Creeper Head": {
-      "gatherable": true
-    },
-    "Ender Pearl": {
-      "gatherable": true
-    },
-    "Ink Sac": {
-      "gatherable": true
-    },
-    "Nether Star": {
-      "gatherable": true
-    },
-    "Dragon Egg": {
-      "gatherable": true
-    },
-    "Bone": {
-      "gatherable": true
-    },
-    "Ghast Tear": {
-      "gatherable": true
-    },
-    "Skeleton Skull": {
-      "gatherable": true
-    },
-    "Head": {
-      "gatherable": true
-    },
-    "String": {
-      "gatherable": true
-    },
-    "Rotten Flesh": {
-      "gatherable": true
-    },
-    "Blaze Rod": {
-      "gatherable": true
-    },
-    "Gunpowder": {
-      "gatherable": true
     }
   },
   "Clay": {
-    "Magenta Stained Clay": {
+    "Black Stained Clay": {
       "recipe": {
-        "input": "Hardened Clay, Magenta Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
+        "input": "Hardened Clay, Ink Sac",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
       }
     },
-    "Hardened Clay": {
+    "Blue Stained Clay": {
       "recipe": {
-        "input": "Clay (block), furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
+        "input": "Hardened Clay, Lapis Lazuli",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Brown Stained Clay": {
+      "recipe": {
+        "input": "Cocoa Beans, Hardened Clay",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
       }
     },
     "Clay (block)": {
@@ -595,122 +283,160 @@
     "Cyan Stained Clay": {
       "recipe": {
         "input": "Cyan Dye, Hardened Clay",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "White Stained Clay": {
-      "recipe": {
-        "input": "Bone Meal, Hardened Clay",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Orange Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Orange Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Brown Stained Clay": {
-      "recipe": {
-        "input": "Cocoa Beans, Hardened Clay",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Light Blue Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Light Blue Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Yellow Stained Clay": {
-      "recipe": {
-        "input": "Dandelion Yellow, Hardened Clay",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Green Stained Clay": {
-      "recipe": {
-        "input": "Cactus Green, Hardened Clay",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Black Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Ink Sac",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Purple Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Purple Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Red Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Rose Red",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Lime Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Lime Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Blue Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Lapis Lazuli",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
       }
     },
     "Gray Stained Clay": {
       "recipe": {
         "input": "Gray Dye, Hardened Clay",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
       }
     },
-    "Pink Stained Clay": {
+    "Green Stained Clay": {
       "recipe": {
-        "input": "Hardened Clay, Pink Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
+        "input": "Cactus Green, Hardened Clay",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Hardened Clay": {
+      "recipe": {
+        "input": "Clay (block), furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Light Blue Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Light Blue Dye",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
       }
     },
     "Light Gray Stained Clay": {
       "recipe": {
         "input": "Hardened Clay, Light Gray Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Lime Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Lime Dye",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Magenta Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Magenta Dye",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Orange Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Orange Dye",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Pink Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Pink Dye",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Purple Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Purple Dye",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Red Stained Clay": {
+      "recipe": {
+        "input": "Hardened Clay, Rose Red",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "White Stained Clay": {
+      "recipe": {
+        "input": "Bone Meal, Hardened Clay",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Yellow Stained Clay": {
+      "recipe": {
+        "input": "Dandelion Yellow, Hardened Clay",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    }
+  },
+  "Decoration": {
+    "Fence": {
+      "recipe": {
+        "input": "Stick",
+        "pattern": "... 000 000",
+        "quantity": 2,
+        "tools": "Crafting Table"
+      }
+    },
+    "Fence Gate": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": "... 010 010",
+        "tools": "Crafting Table"
+      }
+    },
+    "Flower Pot": {
+      "recipe": {
+        "input": "Brick",
+        "pattern": "... 0.0 .0.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Bars": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Item Frame": {
+      "recipe": {
+        "input": "Leather, Stick",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Jack o'Lantern": {
+      "recipe": {
+        "input": "Pumpkin, Torch",
+        "pattern": "... .0. .1."
+      }
+    },
+    "Painting": {
+      "recipe": {
+        "input": "Stick, Wool",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
       }
     }
   },
   "Dyes": {
-    "Magenta Dye": {
+    "Cactus Green": {
       "recipe": {
-        "input": "Allium",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Light Gray Dye": {
-      "recipe": {
-        "input": "Bone Meal, Gray Dye",
-        "pattern": "... .0. .1.",
-        "quantity": 2
+        "input": "Cactus, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
       }
     },
     "Cyan Dye": {
@@ -720,32 +446,15 @@
         "quantity": 2
       }
     },
-    "Light Blue Dye": {
+    "Dandelion Yellow": {
       "recipe": {
-        "input": "Bone Meal, Lapis Lazuli",
-        "pattern": "... .0. .1.",
+        "input": "Sunflower",
+        "pattern": "... .0. ...",
         "quantity": 2
-      }
-    },
-    "Pink Dye": {
-      "recipe": {
-        "input": "Bone Meal, Rose Red",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Cactus Green": {
-      "recipe": {
-        "input": "Cactus, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Purple Dye": {
-      "recipe": {
-        "input": "Lapis Lazuli, Rose Red",
-        "pattern": "... .0. .1.",
-        "quantity": 2
+      },
+      "recipe2": {
+        "input": "Dandelion",
+        "pattern": "... .0. ..."
       }
     },
     "Gray Dye": {
@@ -755,10 +464,39 @@
         "quantity": 2
       }
     },
-    "Dandelion Yellow": {
+    "Light Blue Dye": {
       "recipe": {
-        "input": "Dandelion",
+        "input": "Blue Orchid",
         "pattern": "... .0. ..."
+      },
+      "recipe2": {
+        "input": "Bone Meal, Lapis Lazuli",
+        "pattern": "... .0. .1.",
+        "quantity": 2
+      }
+    },
+    "Light Gray Dye": {
+      "recipe": {
+        "input": "White Tulip",
+        "pattern": "... .0. ..."
+      },
+      "recipe2": {
+        "input": "Azure Bluet",
+        "pattern": "... .0. ..."
+      },
+      "recipe3": {
+        "input": "Oxeye Daisy",
+        "pattern": "... .0. ..."
+      },
+      "recipe4": {
+        "input": "Bone Meal, Ink Sac",
+        "pattern": "... 010 ...",
+        "quantity": 3
+      },
+      "recipe5": {
+        "input": "Bone Meal, Gray Dye",
+        "pattern": "... .0. .1.",
+        "quantity": 2
       }
     },
     "Lime Dye": {
@@ -768,134 +506,322 @@
         "quantity": 2
       }
     },
+    "Magenta Dye": {
+      "recipe": {
+        "input": "Lilac",
+        "pattern": "... .0. ...",
+        "quantity": 2
+      },
+      "recipe2": {
+        "input": "Bone Meal, Lapis Lazuli, Rose Red",
+        "pattern": "22. 01. ...",
+        "quantity": 4
+      },
+      "recipe3": {
+        "input": "Lapis Lazuli, Pink Dye, Rose Red",
+        "pattern": "... 012 ...",
+        "quantity": 3
+      },
+      "recipe4": {
+        "input": "Pink Dye, Purple Dye",
+        "pattern": "... .0. .1.",
+        "quantity": 2
+      },
+      "recipe5": {
+        "input": "Allium",
+        "pattern": "... .0. ..."
+      }
+    },
     "Orange Dye": {
       "recipe": {
+        "input": "Orange Tulip",
+        "pattern": "... .0. ..."
+      },
+      "recipe2": {
         "input": "Dandelion Yellow, Rose Red",
+        "pattern": "... .0. .1.",
+        "quantity": 2
+      }
+    },
+    "Pink Dye": {
+      "recipe": {
+        "input": "Peony",
+        "pattern": "... .0. ...",
+        "quantity": 2
+      },
+      "recipe2": {
+        "input": "Pink Tulip",
+        "pattern": "... .0. ..."
+      },
+      "recipe3": {
+        "input": "Bone Meal, Rose Red",
+        "pattern": "... .0. .1.",
+        "quantity": 2
+      }
+    },
+    "Purple Dye": {
+      "recipe": {
+        "input": "Lapis Lazuli, Rose Red",
         "pattern": "... .0. .1.",
         "quantity": 2
       }
     },
     "Rose Red": {
       "recipe": {
+        "input": "Rose Bush",
+        "pattern": "... .0. ...",
+        "quantity": 2
+      },
+      "recipe2": {
+        "input": "Poppy",
+        "pattern": "... .0. ..."
+      },
+      "recipe3": {
+        "input": "Red Tulip",
+        "pattern": "... .0. ..."
+      },
+      "recipe4": {
         "input": "Rose",
         "pattern": "... .0. ...",
         "quantity": 2
       }
     }
   },
-  "Husbandry": {
-    "Hay Bale": {
+  "Earth Materials": {
+    "Brick": {
       "recipe": {
-        "input": "Wheat",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
+        "input": "Clay, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
       }
     },
-    "Lead": {
+    "Brick Stairs": {
       "recipe": {
-        "input": "Slimeball, String",
-        "tools": "Crafting Table",
-        "pattern": "11. 10. ..1",
+        "input": "Bricks",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Bricks": {
+      "recipe": {
+        "input": "Brick",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Bricks Slab": {
+      "recipe": {
+        "input": "Bricks",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Chiseled Quartz Block": {
+      "recipe": {
+        "input": "Quartz Slab",
+        "pattern": "... .0. .0."
+      }
+    },
+    "Chiseled Sandstone": {
+      "recipe": {
+        "input": "Sandstone Slab",
+        "pattern": "... .0. .0."
+      }
+    },
+    "Cobblestone": {
+      "gatherable": "yes"
+    },
+    "Cobblestone Slab": {
+      "recipe": {
+        "input": "Cobblestone",
+        "pattern": "... 000 ...",
+        "quantity": 6
+      }
+    },
+    "Cobblestone Wall": {
+      "recipe": {
+        "input": "Cobblestone",
+        "pattern": "... 000 000",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Dirt": {
+      "gatherable": "yes"
+    },
+    "End Stone": {
+      "gatherable": "yes"
+    },
+    "Flint": {
+      "gatherable": "yes"
+    },
+    "Gravel": {
+      "gatherable": "yes"
+    },
+    "Mossy Cobblestone Wall": {
+      "recipe": {
+        "input": "Moss Stone",
+        "pattern": "... 000 000",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Nether Brick": {
+      "recipe": {
+        "input": "Netherrack, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Nether Brick (block)": {
+      "recipe": {
+        "input": "Nether Brick",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Nether Brick Fence": {
+      "recipe": {
+        "input": "Nether Brick",
+        "pattern": "... 000 000",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Nether Brick Slab": {
+      "recipe": {
+        "input": "Nether Brick (block)",
+        "pattern": "... 000 ...",
+        "quantity": 6
+      }
+    },
+    "Nether Brick Stairs": {
+      "recipe": {
+        "input": "Nether Brick (block)",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Netherrack": {
+      "gatherable": "yes"
+    },
+    "Obsidian": {
+      "gatherable": "yes"
+    },
+    "Pillar Quartz Block": {
+      "recipe": {
+        "input": "Block of Quartz",
+        "pattern": "... .0. .0.",
         "quantity": 2
       }
     },
-    "Leather": {
-      "gatherable": true
-    },
-    "Cooked Porkchop": {
+    "Quartz Slab": {
       "recipe": {
-        "input": "Raw Porkchop, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
+        "input": "Block of Quartz",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
       }
     },
-    "Raw Beef": {
-      "gatherable": true
-    },
-    "Raw Fish": {
-      "gatherable": true
-    },
-    "Raw Salmon": {
-      "gatherable": true
-    },
-    "Raw Porkchop": {
-      "gatherable": true
-    },
-    "Cooked Salmon": {
+    "Quartz Stairs": {
       "recipe": {
-        "input": "Raw Salmon, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
+        "input": "Block of Quartz",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
       }
     },
-    "Steak": {
+    "Red Sand": {
+      "gatherable": "yes"
+    },
+    "Sand": {
+      "gatherable": "yes"
+    },
+    "Sandstone Slab": {
       "recipe": {
-        "input": "Raw Beef, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
+        "input": "Sandstone",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
       }
     },
-    "Egg": {
-      "gatherable": true
-    },
-    "Feather": {
-      "gatherable": true
-    },
-    "Raw Chicken": {
-      "gatherable": true
-    },
-    "Cooked Fish": {
+    "Sandstone Stairs": {
       "recipe": {
-        "input": "Raw Fish, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
+        "input": "Sandstone",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
       }
     },
-    "Cooked Chicken": {
+    "Smooth Sandstone": {
       "recipe": {
-        "input": "Raw Chicken, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
+        "input": "Sandstone",
+        "pattern": "00. 00. ...",
+        "quantity": 4
       }
     },
-    "Clownfish": {
-      "gatherable": true
+    "Soul Sand": {
+      "gatherable": "yes"
     },
-    "Milk": {
+    "Stone": {
       "recipe": {
-        "input": "Bucket",
-        "tools": "Cow",
-        "pattern": "... .0. ..."
+        "input": "Cobblestone, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Stone Brick Stairs": {
+      "recipe": {
+        "input": "Stone Bricks",
+        "pattern": "0.. 00. 000",
+        "quantity": 4
+      }
+    },
+    "Stone Bricks": {
+      "recipe": {
+        "input": "Stone",
+        "pattern": "00. 00. ...",
+        "quantity": 4
+      }
+    },
+    "Stone Bricks Slab": {
+      "recipe": {
+        "input": "Stone Bricks",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Stone Slab": {
+      "recipe": {
+        "input": "Stone",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Stone Stairs": {
+      "recipe": {
+        "input": "Cobblestone",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
       }
     }
   },
   "Enchanting": {
+    "Anvil": {
+      "recipe": {
+        "input": "Block of Iron, Iron Ingot",
+        "pattern": "000 .1. 111",
+        "tools": "Crafting Table"
+      }
+    },
     "Book": {
       "recipe": {
         "input": "Leather, Paper",
         "pattern": "01. 11. ..."
-      }
-    },
-    "Anvil": {
-      "recipe": {
-        "input": "Block of Iron, Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "000 .1. 111"
-      }
-    },
-    "Bookshelf": {
-      "recipe": {
-        "input": "Book, Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "111 000 111"
-      }
-    },
-    "Paper": {
-      "recipe": {
-        "input": "Sugar Canes",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 3
       }
     },
     "Book and Quill": {
@@ -904,15 +830,1618 @@
         "pattern": ".1. 02. ..."
       }
     },
+    "Bookshelf": {
+      "recipe": {
+        "input": "Book, Oak Wood Planks",
+        "pattern": "111 000 111",
+        "tools": "Crafting Table"
+      }
+    },
     "Enchantment Table": {
       "recipe": {
         "input": "Book, Diamond, Obsidian",
-        "tools": "Crafting Table",
-        "pattern": ".0. 121 222"
+        "pattern": ".0. 121 222",
+        "tools": "Crafting Table"
+      }
+    },
+    "Paper": {
+      "recipe": {
+        "input": "Sugar Canes",
+        "pattern": "... 000 ...",
+        "quantity": 3,
+        "tools": "Crafting Table"
+      }
+    }
+  },
+  "Functional Blocks": {
+    "Beacon": {
+      "recipe": {
+        "input": "Glass, Nether Star, Obsidian",
+        "pattern": "000 010 222",
+        "tools": "Crafting Table"
+      }
+    },
+    "Bed": {
+      "recipe": {
+        "input": "Oak Wood Planks, Wool",
+        "pattern": "... 111 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Chest": {
+      "recipe": {
+        "input": "Oak Wood Planks",
+        "pattern": "000 0.0 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Crafting Table": {
+      "recipe": {
+        "input": "Oak Wood Planks",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Ender Chest": {
+      "recipe": {
+        "input": "Eye of Ender, Obsidian",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Furnace": {
+      "recipe": {
+        "input": "Cobblestone",
+        "pattern": "000 0.0 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Door": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": ".00 .00 .00",
+        "tools": "Crafting Table"
+      }
+    },
+    "Jukebox": {
+      "recipe": {
+        "input": "Diamond, Oak Wood Planks",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Ladder": {
+      "recipe": {
+        "input": "Stick",
+        "pattern": "0.0 000 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Note Block": {
+      "recipe": {
+        "input": "Oak Wood Planks, Redstone",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Sign": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": "000 000 .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "TNT": {
+      "recipe": {
+        "input": "Gunpowder, Sand",
+        "pattern": "010 101 010",
+        "tools": "Crafting Table"
+      }
+    },
+    "Torch": {
+      "recipe": {
+        "input": "Charcoal, Stick",
+        "pattern": "... .0. .1.",
+        "quantity": 4
+      },
+      "recipe2": {
+        "input": "Coal, Stick",
+        "pattern": "... .0. .1.",
+        "quantity": 4
+      }
+    },
+    "Trapdoor": {
+      "recipe": {
+        "input": "Oak Wood Planks",
+        "pattern": "... 000 000",
+        "quantity": 2,
+        "tools": "Crafting Table"
+      }
+    },
+    "Trapped Chest": {
+      "recipe": {
+        "input": "Chest, Tripwire Hook",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Wooden Door": {
+      "recipe": {
+        "input": "Oak Wood Planks",
+        "pattern": ".00 .00 .00",
+        "tools": "Crafting Table"
+      }
+    }
+  },
+  "Glass": {
+    "Black Stained Glass": {
+      "recipe": {
+        "input": "Glass, Ink Sac",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Black Stained Glass Pane": {
+      "recipe": {
+        "input": "Black Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Blue Stained Glass": {
+      "recipe": {
+        "input": "Glass, Lapis Lazuli",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Blue Stained Glass Pane": {
+      "recipe": {
+        "input": "Blue Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Brown Stained Glass": {
+      "recipe": {
+        "input": "Cocoa Beans, Glass",
+        "pattern": "111 101 111",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Brown Stained Glass Pane": {
+      "recipe": {
+        "input": "Brown Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Cyan Stained Glass": {
+      "recipe": {
+        "input": "Cyan Dye, Glass",
+        "pattern": "111 101 111",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Cyan Stained Glass Pane": {
+      "recipe": {
+        "input": "Cyan Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Glass": {
+      "recipe": {
+        "input": "Sand, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Glass Pane": {
+      "recipe": {
+        "input": "Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Gray Stained Glass": {
+      "recipe": {
+        "input": "Glass, Gray Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Gray Stained Glass Pane": {
+      "recipe": {
+        "input": "Gray Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Green Stained Glass": {
+      "recipe": {
+        "input": "Cactus Green, Glass",
+        "pattern": "111 101 111",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Green Stained Glass Pane": {
+      "recipe": {
+        "input": "Green Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Light Blue Stained Glass": {
+      "recipe": {
+        "input": "Glass, Light Blue Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Light Blue Stained Glass Pane": {
+      "recipe": {
+        "input": "Light Blue Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Light Gray Stained Glass": {
+      "recipe": {
+        "input": "Glass, Light Gray Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Light Gray Stained Glass Pane": {
+      "recipe": {
+        "input": "Light Gray Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Lime Stained Glass": {
+      "recipe": {
+        "input": "Glass, Lime Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Lime Stained Glass Pane": {
+      "recipe": {
+        "input": "Lime Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Magenta Stained Glass": {
+      "recipe": {
+        "input": "Glass, Magenta Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Magenta Stained Glass Pane": {
+      "recipe": {
+        "input": "Magenta Stained Glass",
+        "pattern": "... 000 ...",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Orange Stained Glass": {
+      "recipe": {
+        "input": "Glass, Orange Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Orange Stained Glass Pane": {
+      "recipe": {
+        "input": "Orange Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Pink Stained Glass": {
+      "recipe": {
+        "input": "Glass, Pink Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Pink Stained Glass Pane": {
+      "recipe": {
+        "input": "Pink Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Purple Stained Glass": {
+      "recipe": {
+        "input": "Glass, Purple Dye",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Purple Stained Glass Pane": {
+      "recipe": {
+        "input": "Purple Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Red Stained Glass": {
+      "recipe": {
+        "input": "Glass, Rose Red",
+        "pattern": "000 010 000",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Red Stained Glass Pane": {
+      "recipe": {
+        "input": "Red Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "White Stained Glass": {
+      "recipe": {
+        "input": "Bone Meal, Glass",
+        "pattern": "111 101 111",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "White Stained Glass Pane": {
+      "recipe": {
+        "input": "White Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    },
+    "Yellow Stained Glass": {
+      "recipe": {
+        "input": "Dandelion Yellow, Glass",
+        "pattern": "111 101 111",
+        "quantity": 8,
+        "tools": "Crafting Table"
+      }
+    },
+    "Yellow Stained Glass Pane": {
+      "recipe": {
+        "input": "Yellow Stained Glass",
+        "pattern": "... 000 000",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    }
+  },
+  "Husbandry": {
+    "Clownfish": {
+      "gatherable": "yes"
+    },
+    "Cooked Chicken": {
+      "recipe": {
+        "input": "Raw Chicken, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Cooked Fish": {
+      "recipe": {
+        "input": "Raw Fish, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Cooked Porkchop": {
+      "recipe": {
+        "input": "Raw Porkchop, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Cooked Salmon": {
+      "recipe": {
+        "input": "Raw Salmon, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Egg": {
+      "gatherable": "yes"
+    },
+    "Feather": {
+      "gatherable": "yes"
+    },
+    "Hay Bale": {
+      "recipe": {
+        "input": "Wheat",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Lead": {
+      "recipe": {
+        "input": "Slimeball, String",
+        "pattern": "11. 10. ..1",
+        "quantity": 2,
+        "tools": "Crafting Table"
+      }
+    },
+    "Leather": {
+      "gatherable": "yes"
+    },
+    "Milk": {
+      "recipe": {
+        "input": "Bucket",
+        "pattern": "... .0. ...",
+        "tools": "Cow"
+      }
+    },
+    "Raw Beef": {
+      "gatherable": "yes"
+    },
+    "Raw Chicken": {
+      "gatherable": "yes"
+    },
+    "Raw Fish": {
+      "gatherable": "yes"
+    },
+    "Raw Porkchop": {
+      "gatherable": "yes"
+    },
+    "Raw Salmon": {
+      "gatherable": "yes"
+    },
+    "Steak": {
+      "recipe": {
+        "input": "Raw Beef, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    }
+  },
+  "Husbandry Wool": {
+    "Black Wool": {
+      "recipe": {
+        "input": "Ink Sac, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Blue Wool": {
+      "recipe": {
+        "input": "Lapis Lazuli, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Brown Wool": {
+      "recipe": {
+        "input": "Cocoa Beans, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Cyan Wool": {
+      "recipe": {
+        "input": "Cyan Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Gray Wool": {
+      "recipe": {
+        "input": "Gray Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Green Wool": {
+      "recipe": {
+        "input": "Cactus Green, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Light Blue Wool": {
+      "recipe": {
+        "input": "Light Blue Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Light Gray Wool": {
+      "recipe": {
+        "input": "Light Gray Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Lime Wool": {
+      "recipe": {
+        "input": "Lime Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Magenta Wool": {
+      "recipe": {
+        "input": "Magenta Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Orange Wool": {
+      "recipe": {
+        "input": "Orange Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Pink Wool": {
+      "recipe": {
+        "input": "Pink Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Purple Wool": {
+      "recipe": {
+        "input": "Purple Dye, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Red Wool": {
+      "recipe": {
+        "input": "Rose Red, Wool",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Wool": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "String",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Yellow Wool": {
+      "recipe": {
+        "input": "Dandelion Yellow, Wool",
+        "pattern": "... .0. .1."
+      }
+    }
+  },
+  "Liquids": {
+    "Lava": {
+      "gatherable": "yes"
+    },
+    "Water": {
+      "gatherable": "yes"
+    }
+  },
+  "Minerals": {
+    "Block of Coal": {
+      "recipe": {
+        "input": "Coal",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Block of Diamond": {
+      "recipe": {
+        "input": "Diamond",
+        "pattern": "000 000 000"
+      }
+    },
+    "Block of Emerald": {
+      "recipe": {
+        "input": "Emerald",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Block of Gold": {
+      "recipe": {
+        "input": "Gold Ingot",
+        "pattern": "000 000 000"
+      }
+    },
+    "Block of Iron": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "000 000 000"
+      }
+    },
+    "Block of Quartz": {
+      "recipe": {
+        "input": "Nether Quartz",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Block of Redstone": {
+      "recipe": {
+        "input": "Redstone",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Charcoal": {
+      "recipe": {
+        "input": "Oak Wood, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Coal": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "Block of Coal",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      }
+    },
+    "Coal Ore": {
+      "gatherable": "yes"
+    },
+    "Diamond": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "Block of Diamond",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      }
+    },
+    "Diamond Ore": {
+      "gatherable": "yes"
+    },
+    "Emerald": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "Block of Emerald",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      },
+      "recipe2": {
+        "input": "Emerald Ore, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Emerald Ore": {
+      "gatherable": "yes"
+    },
+    "Glowstone": {
+      "recipe": {
+        "input": "Glowstone Dust",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Gold Ingot": {
+      "recipe": {
+        "input": "Gold Ore, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      },
+      "recipe2": {
+        "input": "Block of Gold",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      },
+      "recipe3": {
+        "input": "Gold Nugget",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Gold Nugget": {
+      "recipe": {
+        "input": "Gold Ingot",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      }
+    },
+    "Gold Ore": {
+      "gatherable": "yes"
+    },
+    "Ice": {
+      "gatherable": "yes"
+    },
+    "Iron Ingot": {
+      "recipe": {
+        "input": "Iron Ore, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      },
+      "recipe2": {
+        "input": "Block of Iron",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      }
+    },
+    "Iron Ore": {
+      "gatherable": "yes"
+    },
+    "Lapis Lazuli": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "Lapis Lazuli Ore, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Lapis Lazuli Block": {
+      "recipe": {
+        "input": "Lapis Lazuli",
+        "pattern": "000 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Lapis Lazuli Ore": {
+      "gatherable": "yes"
+    },
+    "Nether Quartz": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "Nether Quartz Ore, furnace fuel",
+        "pattern": ".0. ... .1.",
+        "tools": "Furnace"
+      }
+    },
+    "Nether Quartz Ore": {
+      "gatherable": "yes"
+    },
+    "Packed Ice": {
+      "gatherable": "yes"
+    },
+    "Redstone": {
+      "gatherable": "yes",
+      "recipe": {
+        "input": "Block of Redstone",
+        "pattern": "... .0. ...",
+        "quantity": 9
+      }
+    },
+    "Redstone Ore": {
+      "gatherable": "yes"
+    },
+    "Sandstone": {
+      "recipe": {
+        "input": "Sand",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Snow (block)": {
+      "recipe": {
+        "input": "Snowball",
+        "pattern": "00. 00. ..."
+      }
+    },
+    "Snow (carpet)": {
+      "recipe": {
+        "input": "Snow (block)",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Snowball": {
+      "gatherable": "yes"
+    }
+  },
+  "Mob Drops": {
+    "Blaze Rod": {
+      "gatherable": "yes"
+    },
+    "Bone": {
+      "gatherable": "yes"
+    },
+    "Creeper Head": {
+      "gatherable": "yes"
+    },
+    "Dragon Egg": {
+      "gatherable": "yes"
+    },
+    "Ender Pearl": {
+      "gatherable": "yes"
+    },
+    "Ghast Tear": {
+      "gatherable": "yes"
+    },
+    "Gunpowder": {
+      "gatherable": "yes"
+    },
+    "Head": {
+      "gatherable": "yes"
+    },
+    "Ink Sac": {
+      "gatherable": "yes"
+    },
+    "Nether Star": {
+      "gatherable": "yes"
+    },
+    "Rotten Flesh": {
+      "gatherable": "yes"
+    },
+    "Skeleton Skull": {
+      "gatherable": "yes"
+    },
+    "Slimeball": {
+      "gatherable": "yes"
+    },
+    "Spider Eye": {
+      "gatherable": "yes"
+    },
+    "String": {
+      "gatherable": "yes"
+    },
+    "Wither Skeleton Skull": {
+      "gatherable": "yes"
+    },
+    "Zombie Head": {
+      "gatherable": "yes"
+    }
+  },
+  "Plants": {
+    "Allium": {
+      "gatherable": "yes"
+    },
+    "Azure Bluet": {
+      "gatherable": "yes"
+    },
+    "Blue Orchid": {
+      "gatherable": "yes"
+    },
+    "Dandelion": {
+      "gatherable": "yes"
+    },
+    "Dead Bush": {
+      "gatherable": "yes"
+    },
+    "Double Tallgrass": {
+      "gatherable": "yes"
+    },
+    "Fern": {
+      "gatherable": "yes"
+    },
+    "Grass": {
+      "gatherable": "yes"
+    },
+    "Large Fern": {
+      "gatherable": "yes"
+    },
+    "Lilac": {
+      "gatherable": "yes"
+    },
+    "Lily Pad": {
+      "gatherable": "yes"
+    },
+    "Orange Tulip": {
+      "gatherable": "yes"
+    },
+    "Oxeye Daisy": {
+      "gatherable": "yes"
+    },
+    "Peony": {
+      "gatherable": "yes"
+    },
+    "Pink Tulip": {
+      "gatherable": "yes"
+    },
+    "Poppy": {
+      "gatherable": "yes"
+    },
+    "Red Tulip": {
+      "gatherable": "yes"
+    },
+    "Rose Bush": {
+      "gatherable": "yes"
+    },
+    "Sponge": {
+      "gatherable": "yes"
+    },
+    "Sunflower": {
+      "gatherable": "yes"
+    },
+    "Vines": {
+      "gatherable": "yes"
+    },
+    "White Tulip": {
+      "gatherable": "yes"
+    }
+  },
+  "Potions Brewing": {
+    "Awkward Potion": {
+      "recipe": {
+        "input": "Nether Wart, Water Bottle",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Blaze Powder": {
+      "recipe": {
+        "input": "Blaze Rod",
+        "pattern": "... .0. ...",
+        "quantity": 2
+      }
+    },
+    "Brewing Stand": {
+      "recipe": {
+        "input": "Blaze Rod, Cobblestone",
+        "pattern": "... .0. 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Cauldron": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "0.0 0.0 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Fermented Spider Eye": {
+      "recipe": {
+        "input": "Mushroom (brown), Spider Eye, Sugar",
+        "pattern": ".2. .0. .1."
+      }
+    },
+    "Glass Bottle": {
+      "recipe": {
+        "input": "Glass",
+        "pattern": "... 0.0 .0.",
+        "quantity": 3,
+        "tools": "Crafting Table"
+      }
+    },
+    "Glistering Melon": {
+      "recipe": {
+        "input": "Gold Nugget, Melon",
+        "pattern": "000 010 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Carrot": {
+      "recipe": {
+        "input": "Carrot, Gold Nugget",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Magma Cream": {
+      "recipe": {
+        "input": "Blaze Powder, Slimeball",
+        "pattern": "... .0. .1."
+      }
+    },
+    "Mundane Potion": {
+      "recipe": {
+        "input": "Redstone, Water Bottle",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Mundane Splash Potion": {
+      "recipe": {
+        "input": "Gunpowder, Mundane Potion",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Pufferfish": {
+      "gatherable": "yes"
+    },
+    "Water Bottle": {
+      "recipe": {
+        "input": "Glass Bottle",
+        "pattern": "... .0. ...",
+        "tools": "Water"
+      }
+    }
+  },
+  "Potions Normal": {
+    "Potion of Fire Resistance (3:00)": {
+      "recipe": {
+        "input": "Awkward Potion, Magma Cream",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Fire Resistance (8:00)": {
+      "recipe": {
+        "input": "Potion of Fire Resistance (3:00), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Harming": {
+      "recipe": {
+        "input": "Fermented Spider Eye, Potion of Poison (0:45)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe2": {
+        "input": "Fermented Spider Eye, Potion of Poison (2:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe3": {
+        "input": "Fermented Spider Eye, Potion of Water Breathing (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe4": {
+        "input": "Fermented Spider Eye, Potion of Water Breathing (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe5": {
+        "input": "Fermented Spider Eye, Potion of Healing",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Harming II": {
+      "recipe": {
+        "input": "Glowstone Dust, Potion of Harming",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe2": {
+        "input": "Fermented Spider Eye, Potion of Poison II (0:22)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe3": {
+        "input": "Fermented Spider Eye, Potion of Healing II",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Healing": {
+      "recipe": {
+        "input": "Awkward Potion, Glistering Melon",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Healing II": {
+      "recipe": {
+        "input": "Glowstone Dust, Potion of Healing",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Invisibility (3:00)": {
+      "recipe": {
+        "input": "Fermented Spider Eye, Potion of Night Vision (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Invisibility (8:00)": {
+      "recipe": {
+        "input": "Potion of Invisibility (3:00), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe2": {
+        "input": "Fermented Spider Eye, Potion of Night Vision (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Night Vision (3:00)": {
+      "recipe": {
+        "input": "Awkward Potion, Golden Carrot",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Night Vision (8:00)": {
+      "recipe": {
+        "input": "Potion of Night Vision (3:00), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Poison (0:45)": {
+      "recipe": {
+        "input": "Awkward Potion, Spider Eye",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Poison II (0:22)": {
+      "recipe": {
+        "input": "Glowstone Dust, Potion of Poison (0:45)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Regeneration (0:45)": {
+      "recipe": {
+        "input": "Awkward Potion, Ghast Tear",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Regeneration (2:00)": {
+      "recipe": {
+        "input": "Potion of Regeneration (0:45), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Regeneration II (0:22)": {
+      "recipe": {
+        "input": "Glowstone Dust, Potion of Regeneration (0:45)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Slowness (1:30)": {
+      "recipe": {
+        "input": "Fermented Spider Eye, Potion of Swiftness (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Slowness (4:00)": {
+      "recipe": {
+        "input": "Potion of Slowness (1:30), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe2": {
+        "input": "Fermented Spider Eye, Potion of Fire Resistance (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe3": {
+        "input": "Fermented Spider Eye, Potion of Swiftness (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Strength (3:00)": {
+      "recipe": {
+        "input": "Awkward Potion, Blaze Powder",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Strength (8:00)": {
+      "recipe": {
+        "input": "Potion of Strength (3:00), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Strength II (1:30)": {
+      "recipe": {
+        "input": "Glowstone Dust, Potion of Strength (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Swiftness (3:00)": {
+      "recipe": {
+        "input": "Awkward Potion, Sugar",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Swiftness (8:00)": {
+      "recipe": {
+        "input": "Potion of Swiftness (3:00), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Swiftness II (1:30)": {
+      "recipe": {
+        "input": "Glowstone Dust, Potion of Swiftness (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Water Breathing (3:00)": {
+      "recipe": {
+        "input": "Awkward Potion, Pufferfish",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Water Breathing (8:00)": {
+      "recipe": {
+        "input": "Potion of Water Breathing (3:00), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Weakness (1:30)": {
+      "recipe": {
+        "input": "Fermented Spider Eye, Water Bottle",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Potion of Weakness (4:00)": {
+      "recipe": {
+        "input": "Potion of Weakness (1:30), Redstone",
+        "pattern": ".1. ... 000",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe2": {
+        "input": "Fermented Spider Eye, Mundane Potion",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe3": {
+        "input": "Fermented Spider Eye, Water Bottle",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      },
+      "recipe4": {
+        "input": "Fermented Spider Eye, Potion of Strength (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Thick Potion": {
+      "recipe": {
+        "input": "Glowstone Dust, Water Bottle",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    }
+  },
+  "Potions Splash": {
+    "Splash Potion of Fire Resistance (2:15)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Fire Resistance (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Fire Resistance (6:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Fire Resistance (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Harming": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Harming",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Harming II": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Harming II",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Healing": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Healing",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Healing II": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Healing II",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Invisibility (2:15)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Invisibility (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Invisibility (6:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Invisibility (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Night Vision (2:15)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Night Vision (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Night Vision (6:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Night Vision (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Poison (0:33)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Poison (0:45)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Poison (1:30)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Poison (2:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Poison II (0:16)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Poison II (0:22)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Regeneration (0:33)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Regeneration (0:45)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Regeneration (1:30)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Regeneration (2:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Regeneration II (0:16)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Regeneration II (0:22)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Slowness (1:07)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Slowness (1:30)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Slowness (3:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Slowness (4:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Strength (2:15)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Strength (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Strength (6:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Strength (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Strength II (1:07)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Strength II (1:30)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Swiftness (2:15)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Swiftness (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Swiftness (6:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Swiftness (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Swiftness II (1:07)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Swiftness II (1:30)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Water Breathing (2:15)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Water Breathing (3:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Water Breathing (6:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Water Breathing (8:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Weakness (1:07)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Weakness (1:30)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
+      }
+    },
+    "Splash Potion of Weakness (3:00)": {
+      "recipe": {
+        "input": "Gunpowder, Potion of Weakness (4:00)",
+        "pattern": ".0. ... 111",
+        "quantity": 3,
+        "tools": "Brewing Stand"
       }
     }
   },
   "Redstone Machines": {
+    "Button (stone)": {
+      "recipe": {
+        "input": "Stone",
+        "pattern": "... .0. ..."
+      }
+    },
+    "Button (wood)": {
+      "recipe": {
+        "input": "Oak Wood Planks",
+        "pattern": "... .0. ..."
+      }
+    },
+    "Daylight Sensor": {
+      "recipe": {
+        "input": "Glass, Nether Quartz, Oak Wood Slab",
+        "pattern": "000 111 222",
+        "tools": "Crafting Table"
+      }
+    },
+    "Dispenser": {
+      "recipe": {
+        "input": "Bow, Cobblestone, Redstone",
+        "pattern": "111 101 121",
+        "tools": "Crafting Table"
+      }
+    },
+    "Dropper": {
+      "recipe": {
+        "input": "Cobblestone, Redstone",
+        "pattern": "000 0.0 010",
+        "tools": "Crafting Table"
+      }
+    },
+    "Hopper": {
+      "recipe": {
+        "input": "Chest, Iron Ingot",
+        "pattern": "1.1 101 .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Lever": {
+      "recipe": {
+        "input": "Cobblestone, Stick",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Piston": {
+      "recipe": {
+        "input": "Cobblestone, Iron Ingot, Oak Wood Planks, Redstone",
+        "pattern": "222 010 030",
+        "tools": "Crafting Table"
+      }
+    },
+    "Pressure Plate (stone)": {
+      "recipe": {
+        "input": "Stone",
+        "pattern": "... 00. ..."
+      }
+    },
     "Pressure Plate (wood)": {
       "recipe": {
         "input": "Oak Wood Planks",
@@ -922,49 +2451,22 @@
     "Redstone Comparator": {
       "recipe": {
         "input": "Nether Quartz, Redstone Torch, Stone",
-        "tools": "Crafting Table",
-        "pattern": ".1. 101 222"
+        "pattern": ".1. 101 222",
+        "tools": "Crafting Table"
       }
     },
-    "Tripwire Hook": {
+    "Redstone Lamp": {
       "recipe": {
-        "input": "Iron Ingot, Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .2. .1.",
-        "quantity": 2
+        "input": "Glowstone, Redstone",
+        "pattern": ".1. 101 .1.",
+        "tools": "Crafting Table"
       }
     },
-    "Daylight Sensor": {
+    "Redstone Repeater": {
       "recipe": {
-        "input": "Glass, Nether Quartz, Oak Wood Slab",
-        "tools": "Crafting Table",
-        "pattern": "000 111 222"
-      }
-    },
-    "Weighted Pressure Plate (heavy)": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... 00. ..."
-      }
-    },
-    "Lever": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Dispenser": {
-      "recipe": {
-        "input": "Bow, Cobblestone, Redstone",
-        "tools": "Crafting Table",
-        "pattern": "111 101 121"
-      }
-    },
-    "Piston": {
-      "recipe": {
-        "input": "Cobblestone, Iron Ingot, Oak Wood Planks, Redstone",
-        "tools": "Crafting Table",
-        "pattern": "222 010 030"
+        "input": "Redstone, Redstone Torch, Stone",
+        "pattern": "... 101 222",
+        "tools": "Crafting Table"
       }
     },
     "Redstone Torch": {
@@ -973,30 +2475,24 @@
         "pattern": "... .0. .1."
       }
     },
-    "Button (stone)": {
-      "recipe": {
-        "input": "Stone",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Redstone Lamp": {
-      "recipe": {
-        "input": "Glowstone, Redstone",
-        "tools": "Crafting Table",
-        "pattern": ".1. 101 .1."
-      }
-    },
     "Sticky Piston": {
       "recipe": {
         "input": "Piston, Slimeball",
         "pattern": "... .1. .0."
       }
     },
-    "Dropper": {
+    "Tripwire Hook": {
       "recipe": {
-        "input": "Cobblestone, Redstone",
-        "tools": "Crafting Table",
-        "pattern": "000 0.0 010"
+        "input": "Iron Ingot, Oak Wood Planks, Stick",
+        "pattern": ".0. .2. .1.",
+        "quantity": 2,
+        "tools": "Crafting Table"
+      }
+    },
+    "Weighted Pressure Plate (heavy)": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "... 00. ..."
       }
     },
     "Weighted Pressure Plate (light)": {
@@ -1004,70 +2500,446 @@
         "input": "Gold Ingot",
         "pattern": "... 00. ..."
       }
-    },
-    "Redstone Repeater": {
+    }
+  },
+  "Tools": {
+    "Bucket": {
       "recipe": {
-        "input": "Redstone, Redstone Torch, Stone",
-        "tools": "Crafting Table",
-        "pattern": "... 101 222"
+        "input": "Iron Ingot",
+        "pattern": "... 0.0 .0.",
+        "tools": "Crafting Table"
       }
     },
-    "Hopper": {
+    "Clock": {
       "recipe": {
-        "input": "Chest, Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "1.1 101 .1."
+        "input": "Gold Ingot, Redstone",
+        "pattern": ".0. 010 .0.",
+        "tools": "Crafting Table"
       }
     },
-    "Button (wood)": {
+    "Compass": {
+      "recipe": {
+        "input": "Iron Ingot, Redstone",
+        "pattern": ".0. 010 .0.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Axe": {
+      "recipe": {
+        "input": "Diamond, Stick",
+        "pattern": "00. 01. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Pickaxe": {
+      "recipe": {
+        "input": "Diamond, Stick",
+        "pattern": "000 .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Shovel": {
+      "recipe": {
+        "input": "Diamond, Stick",
+        "pattern": ".0. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Empty Map": {
+      "recipe": {
+        "input": "Compass, Paper",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      },
+      "recipe2": {
+        "input": "Map (completed), Paper",
+        "pattern": "111 101 111",
+        "tools": "Crafting Table"
+      }
+    },
+    "Eye of Ender": {
+      "recipe": {
+        "input": "Blaze Powder, Ender Pearl",
+        "pattern": "... .0. .1."
+      }
+    },
+    "Fire Charge": {
+      "recipe": {
+        "input": "Blaze Powder, Coal, Gunpowder",
+        "pattern": ".2. .0. .1.",
+        "quantity": 3
+      },
+      "recipe2": {
+        "input": "Blaze Powder, Charcoal, Gunpowder",
+        "pattern": ".2. .0. .1.",
+        "quantity": 3
+      }
+    },
+    "Fishing Rod": {
+      "recipe": {
+        "input": "Stick, String",
+        "pattern": "..0 .01 0.1",
+        "tools": "Crafting Table"
+      }
+    },
+    "Flint and Steel": {
+      "recipe": {
+        "input": "Flint, Iron Ingot",
+        "pattern": "... .1. ..0"
+      }
+    },
+    "Golden Axe": {
+      "recipe": {
+        "input": "Gold Ingot, Stick",
+        "pattern": "00. 01. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Hoe": {
+      "recipe": {
+        "input": "Gold Ingot, Stick",
+        "pattern": "00. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Pickaxe": {
+      "recipe": {
+        "input": "Gold Ingot, Stick",
+        "pattern": "000 .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Shovel": {
+      "recipe": {
+        "input": "Gold Ingot, Stick",
+        "pattern": ".0. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Axe": {
+      "recipe": {
+        "input": "Iron Ingot, Stick",
+        "pattern": "00. 01. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Hoe": {
+      "recipe": {
+        "input": "Iron Ingot, Stick",
+        "pattern": "00. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Pickaxe": {
+      "recipe": {
+        "input": "Iron Ingot, Stick",
+        "pattern": "000 .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Shovel": {
+      "recipe": {
+        "input": "Iron Ingot, Stick",
+        "pattern": ".0. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Lava Bucket": {
+      "recipe": {
+        "input": "Bucket, Lava",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Music Disc": {
+      "gatherable": "yes"
+    },
+    "Shears": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "... .0. ..0"
+      }
+    },
+    "Stick": {
       "recipe": {
         "input": "Oak Wood Planks",
-        "pattern": "... .0. ..."
+        "pattern": "... .0. .0.",
+        "quantity": 4
       }
     },
-    "Pressure Plate (stone)": {
+    "Stone Axe": {
       "recipe": {
-        "input": "Stone",
-        "pattern": "... 00. ..."
+        "input": "Cobblestone, Stick",
+        "pattern": "00. 01. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Stone Hoe": {
+      "recipe": {
+        "input": "Cobblestone, Stick",
+        "pattern": "00. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Stone Pickaxe": {
+      "recipe": {
+        "input": "Cobblestone, Stick",
+        "pattern": "000 .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Stone Shovel": {
+      "recipe": {
+        "input": "Cobblestone, Stick",
+        "pattern": ".0. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Water Bucket": {
+      "recipe": {
+        "input": "Bucket, Water",
+        "pattern": "... .1. .0."
+      }
+    },
+    "Wooden Axe": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": "00. 01. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Wooden Hoe": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": "00. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Wooden Pickaxe": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": "000 .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Wooden Shovel": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": ".0. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    }
+  },
+  "Tools Armor": {
+    "Chain Boots": {
+      "recipe": {
+        "input": "Fire",
+        "pattern": "... 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Chain Chestplate": {
+      "recipe": {
+        "input": "Fire",
+        "pattern": "0.0 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Chain Helmet": {
+      "recipe": {
+        "input": "Fire",
+        "pattern": "000 0.0 ...",
+        "tools": "Crafting Table"
+      }
+    },
+    "Chain Leggings": {
+      "recipe": {
+        "input": "Fire",
+        "pattern": "000 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Boots": {
+      "recipe": {
+        "input": "Diamond",
+        "pattern": "... 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Chestplate": {
+      "recipe": {
+        "input": "Diamond",
+        "pattern": "0.0 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Helmet": {
+      "recipe": {
+        "input": "Diamond",
+        "pattern": "000 0.0 ...",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Hoe": {
+      "recipe": {
+        "input": "Diamond, Stick",
+        "pattern": "00. .1. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Leggings": {
+      "recipe": {
+        "input": "Diamond",
+        "pattern": "000 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Boots": {
+      "recipe": {
+        "input": "Gold Ingot",
+        "pattern": "... 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Chestplate": {
+      "recipe": {
+        "input": "Gold Ingot",
+        "pattern": "0.0 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Helmet": {
+      "recipe": {
+        "input": "Gold Ingot",
+        "pattern": "000 0.0 ...",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Leggings": {
+      "recipe": {
+        "input": "Gold Ingot",
+        "pattern": "000 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Boots": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "... 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Chestplate": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "0.0 000 000",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Helmet": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "000 0.0 ...",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Leggings": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "000 0.0 0.0",
+        "tools": "Crafting Table"
+      }
+    },
+    "Leather Boots": {
+      "recipe": {
+        "input": "Leather",
+        "pattern": "... 0.0 0.0"
+      }
+    },
+    "Leather Cap": {
+      "recipe": {
+        "input": "Leather",
+        "pattern": "000 0.0 ..."
+      }
+    },
+    "Leather Pants": {
+      "recipe": {
+        "input": "Leather",
+        "pattern": "000 0.0 0.0"
+      }
+    },
+    "Leather Tunic": {
+      "recipe": {
+        "input": "Leather",
+        "pattern": "0.0 000 000"
+      }
+    }
+  },
+  "Tools Weapons": {
+    "Arrow": {
+      "recipe": {
+        "input": "Feather, Flint, Stick",
+        "pattern": ".1. .2. .0.",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Bow": {
+      "recipe": {
+        "input": "Stick, String",
+        "pattern": ".01 0.1 .01",
+        "tools": "Crafting Table"
+      }
+    },
+    "Diamond Sword": {
+      "recipe": {
+        "input": "Diamond, Stick",
+        "pattern": ".0. .0. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Golden Sword": {
+      "recipe": {
+        "input": "Gold Ingot, Stick",
+        "pattern": ".0. .0. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Iron Sword": {
+      "recipe": {
+        "input": "Iron Ingot, Stick",
+        "pattern": ".0. .0. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Stone Sword": {
+      "recipe": {
+        "input": "Cobblestone, Stick",
+        "pattern": ".0. .0. .1.",
+        "tools": "Crafting Table"
+      }
+    },
+    "Wooden Sword": {
+      "recipe": {
+        "input": "Oak Wood Planks, Stick",
+        "pattern": ".0. .0. .1.",
+        "tools": "Crafting Table"
       }
     }
   },
   "Transportation": {
-    "Powered Rail": {
+    "Activator Rail": {
       "recipe": {
-        "input": "Gold Ingot, Redstone, Stick",
-        "tools": "Crafting Table",
-        "pattern": "0.0 020 010",
-        "quantity": 6
+        "input": "Iron Ingot, Redstone Torch, Stick",
+        "pattern": "020 010 020",
+        "quantity": 6,
+        "tools": "Crafting Table"
       }
     },
-    "Minecart": {
+    "Boat": {
       "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 000"
-      }
-    },
-    "Minecart with Furnace": {
-      "recipe": {
-        "input": "Furnace, Minecart",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Rail": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "0.0 010 0.0",
-        "quantity": 16
-      }
-    },
-    "Detector Rail": {
-      "recipe": {
-        "input": "Iron Ingot, Pressure Plate (stone), Redstone",
-        "tools": "Crafting Table",
-        "pattern": "0.0 010 020",
-        "quantity": 6
+        "input": "Oak Wood Planks",
+        "pattern": "... 0.0 000",
+        "tools": "Crafting Table"
       }
     },
     "Carrot on a Stick": {
@@ -1076,9 +2948,30 @@
         "pattern": "... 10. ..."
       }
     },
+    "Detector Rail": {
+      "recipe": {
+        "input": "Iron Ingot, Pressure Plate (stone), Redstone",
+        "pattern": "0.0 010 020",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Minecart": {
+      "recipe": {
+        "input": "Iron Ingot",
+        "pattern": "... 0.0 000",
+        "tools": "Crafting Table"
+      }
+    },
     "Minecart with Chest": {
       "recipe": {
         "input": "Chest, Minecart",
+        "pattern": "... .0. .1."
+      }
+    },
+    "Minecart with Furnace": {
+      "recipe": {
+        "input": "Furnace, Minecart",
         "pattern": "... .0. .1."
       }
     },
@@ -1094,1927 +2987,213 @@
         "pattern": "... .1. .0."
       }
     },
-    "Boat": {
+    "Powered Rail": {
+      "recipe": {
+        "input": "Gold Ingot, Redstone, Stick",
+        "pattern": "0.0 020 010",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Rail": {
+      "recipe": {
+        "input": "Iron Ingot, Stick",
+        "pattern": "0.0 010 0.0",
+        "quantity": 16,
+        "tools": "Crafting Table"
+      }
+    }
+  },
+  "Wood": {
+    "Acacia Leaves": {
+      "gatherable": "yes"
+    },
+    "Acacia Sapling": {
+      "gatherable": "yes"
+    },
+    "Acacia Wood": {
+      "gatherable": "yes"
+    },
+    "Acacia Wood Planks": {
+      "recipe": {
+        "input": "Acacia Wood",
+        "pattern": "... .0. ...",
+        "quantity": 4
+      }
+    },
+    "Acacia Wood Slab": {
+      "recipe": {
+        "input": "Acacia Wood Planks",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Acacia Wood Stairs": {
+      "recipe": {
+        "input": "Acacia Wood Planks",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Birch Leaves": {
+      "gatherable": "yes"
+    },
+    "Birch Sapling": {
+      "gatherable": "yes"
+    },
+    "Birch Wood": {
+      "gatherable": "yes"
+    },
+    "Birch Wood Planks": {
+      "recipe": {
+        "input": "Birch Wood",
+        "pattern": "... .0. ...",
+        "quantity": 4
+      }
+    },
+    "Birch Wood Slab": {
+      "recipe": {
+        "input": "Birch Wood Planks",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Birch Wood Stairs": {
+      "recipe": {
+        "input": "Birch Wood Planks",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Dark Oak Leaves": {
+      "gatherable": "yes"
+    },
+    "Dark Oak Sapling": {
+      "gatherable": "yes"
+    },
+    "Dark Oak Wood": {
+      "gatherable": "yes"
+    },
+    "Dark Oak Wood Planks": {
+      "recipe": {
+        "input": "Dark Oak Wood",
+        "pattern": "... .0. ...",
+        "quantity": 4
+      }
+    },
+    "Dark Oak Wood Slab": {
+      "recipe": {
+        "input": "Dark Oak Wood Planks",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Dark Oak Wood Stairs": {
+      "recipe": {
+        "input": "Dark Oak Wood Planks",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Jungle Leaves": {
+      "gatherable": "yes"
+    },
+    "Jungle Sapling": {
+      "gatherable": "yes"
+    },
+    "Jungle Wood": {
+      "gatherable": "yes"
+    },
+    "Jungle Wood Planks": {
+      "recipe": {
+        "input": "Jungle Wood",
+        "pattern": "... .0. ...",
+        "quantity": 4
+      }
+    },
+    "Jungle Wood Slab": {
+      "recipe": {
+        "input": "Jungle Wood Planks",
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
+      }
+    },
+    "Jungle Wood Stairs": {
+      "recipe": {
+        "input": "Jungle Wood Planks",
+        "pattern": "0.. 00. 000",
+        "quantity": 4,
+        "tools": "Crafting Table"
+      }
+    },
+    "Oak Leaves": {
+      "gatherable": "yes"
+    },
+    "Oak Sapling": {
+      "gatherable": "yes"
+    },
+    "Oak Wood": {
+      "gatherable": "yes"
+    },
+    "Oak Wood Planks": {
+      "recipe": {
+        "input": "Oak Wood",
+        "pattern": "... .0. ...",
+        "quantity": 4
+      }
+    },
+    "Oak Wood Slab": {
       "recipe": {
         "input": "Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 000"
+        "pattern": "... 000 ...",
+        "quantity": 6,
+        "tools": "Crafting Table"
       }
     },
-    "Activator Rail": {
-      "recipe": {
-        "input": "Iron Ingot, Redstone Torch, Stick",
-        "tools": "Crafting Table",
-        "pattern": "020 010 020",
-        "quantity": 6
-      }
-    }
-  },
-  "Tools": {
-    "Wooden Axe": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. 01. .1."
-      }
-    },
-    "Iron Pickaxe": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "000 .1. .1."
-      }
-    },
-    "Clock": {
-      "recipe": {
-        "input": "Gold Ingot, Redstone",
-        "tools": "Crafting Table",
-        "pattern": ".0. 010 .0."
-      }
-    },
-    "Empty Map": {
-      "recipe": {
-        "input": "Map (completed), Paper",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Stone Axe": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. 01. .1."
-      }
-    },
-    "Music Disc": {
-      "gatherable": true
-    },
-    "Flint and Steel": {
-      "recipe": {
-        "input": "Flint, Iron Ingot",
-        "pattern": "... .1. ..0"
-      }
-    },
-    "Golden Shovel": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .1. .1."
-      }
-    },
-    "Fire Charge": {
-      "recipe": {
-        "input": "Blaze Powder, Charcoal, Gunpowder",
-        "pattern": ".2. .0. .1.",
-        "quantity": 3
-      }
-    },
-    "Iron Shovel": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .1. .1."
-      }
-    },
-    "Wooden Hoe": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. .1. .1."
-      }
-    },
-    "Diamond Axe": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. 01. .1."
-      }
-    },
-    "Diamond Shovel": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .1. .1."
-      }
-    },
-    "Golden Hoe": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. .1. .1."
-      }
-    },
-    "Stick": {
+    "Oak Wood Stairs": {
       "recipe": {
         "input": "Oak Wood Planks",
-        "pattern": "... .0. .0.",
-        "quantity": 4
-      }
-    },
-    "Compass": {
-      "recipe": {
-        "input": "Iron Ingot, Redstone",
-        "tools": "Crafting Table",
-        "pattern": ".0. 010 .0."
-      }
-    },
-    "Water Bucket": {
-      "recipe": {
-        "input": "Bucket, Water",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Eye of Ender": {
-      "recipe": {
-        "input": "Blaze Powder, Ender Pearl",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Iron Hoe": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. .1. .1."
-      }
-    },
-    "Stone Shovel": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .1. .1."
-      }
-    },
-    "Golden Pickaxe": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "000 .1. .1."
-      }
-    },
-    "Bucket": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 .0."
-      }
-    },
-    "Wooden Pickaxe": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": "000 .1. .1."
-      }
-    },
-    "Diamond Pickaxe": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "tools": "Crafting Table",
-        "pattern": "000 .1. .1."
-      }
-    },
-    "Fishing Rod": {
-      "recipe": {
-        "input": "Stick, String",
-        "tools": "Crafting Table",
-        "pattern": "..0 .01 0.1"
-      }
-    },
-    "Shears": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... .0. ..0"
-      }
-    },
-    "Golden Axe": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. 01. .1."
-      }
-    },
-    "Stone Pickaxe": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "tools": "Crafting Table",
-        "pattern": "000 .1. .1."
-      }
-    },
-    "Stone Hoe": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. .1. .1."
-      }
-    },
-    "Wooden Shovel": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .1. .1."
-      }
-    },
-    "Iron Axe": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": "00. 01. .1."
-      }
-    },
-    "Lava Bucket": {
-      "recipe": {
-        "input": "Bucket, Lava",
-        "pattern": "... .1. .0."
-      }
-    }
-  },
-  "Carpet": {
-    "Blue Carpet": {
-      "recipe": {
-        "input": "Blue Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Gray Carpet": {
-      "recipe": {
-        "input": "Gray Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Purple Carpet": {
-      "recipe": {
-        "input": "Purple Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Magenta Carpet": {
-      "recipe": {
-        "input": "Magenta Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Green Carpet": {
-      "recipe": {
-        "input": "Green Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Cyan Carpet": {
-      "recipe": {
-        "input": "Cyan Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Pink Carpet": {
-      "recipe": {
-        "input": "Pink Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Light Gray Carpet": {
-      "recipe": {
-        "input": "Light Gray Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Orange Carpet": {
-      "recipe": {
-        "input": "Orange Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Red Carpet": {
-      "recipe": {
-        "input": "Red Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Lime Carpet": {
-      "recipe": {
-        "input": "Lime Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Black Carpet": {
-      "recipe": {
-        "input": "Black Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Light Blue Carpet": {
-      "recipe": {
-        "input": "Light Blue Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Brown Carpet": {
-      "recipe": {
-        "input": "Brown Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Yellow Carpet": {
-      "recipe": {
-        "input": "Yellow Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Carpet": {
-      "recipe": {
-        "input": "Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    }
-  },
-  "Potions Splash": {
-    "Splash Potion of Strength II (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Strength II (1:30)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Swiftness II (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Swiftness II (1:30)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Invisibility (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Invisibility (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Healing II": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Healing II",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Strength (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Strength (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Poison II (0:16)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Poison II (0:22)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Night Vision (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Night Vision (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Regeneration II (0:16)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Regeneration II (0:22)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Night Vision (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Night Vision (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Regeneration (0:33)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Regeneration (0:45)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Swiftness (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Swiftness (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Water Breathing (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Water Breathing (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Fire Resistance (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Fire Resistance (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Swiftness (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Swiftness (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Water Breathing (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Water Breathing (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Poison (1:30)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Poison (2:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Poison (0:33)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Poison (0:45)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Healing": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Healing",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Invisibility (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Invisibility (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Regeneration (1:30)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Regeneration (2:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Harming II": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Harming II",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Weakness (3:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Weakness (4:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Harming": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Harming",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Fire Resistance (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Fire Resistance (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Slowness (3:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Slowness (4:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Slowness (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Slowness (1:30)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Weakness (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Weakness (1:30)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Splash Potion of Strength (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Strength (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    }
-  },
-  "Decoration": {
-    "Item Frame": {
-      "recipe": {
-        "input": "Leather, Stick",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Flower Pot": {
-      "recipe": {
-        "input": "Brick",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 .0."
-      }
-    },
-    "Jack o'Lantern": {
-      "recipe": {
-        "input": "Pumpkin, Torch",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Fence": {
-      "recipe": {
-        "input": "Stick",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 2
-      }
-    },
-    "Iron Bars": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Painting": {
-      "recipe": {
-        "input": "Stick, Wool",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Fence Gate": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": "... 010 010"
-      }
-    }
-  },
-  "Glass": {
-    "Pink Stained Glass": {
-      "recipe": {
-        "input": "Glass, Pink Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Orange Stained Glass": {
-      "recipe": {
-        "input": "Glass, Orange Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Black Stained Glass": {
-      "recipe": {
-        "input": "Glass, Ink Sac",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Lime Stained Glass Pane": {
-      "recipe": {
-        "input": "Lime Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Light Blue Stained Glass Pane": {
-      "recipe": {
-        "input": "Light Blue Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Light Blue Stained Glass": {
-      "recipe": {
-        "input": "Glass, Light Blue Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Cyan Stained Glass Pane": {
-      "recipe": {
-        "input": "Cyan Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Cyan Stained Glass": {
-      "recipe": {
-        "input": "Cyan Dye, Glass",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111",
-        "quantity": 8
-      }
-    },
-    "Yellow Stained Glass": {
-      "recipe": {
-        "input": "Dandelion Yellow, Glass",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111",
-        "quantity": 8
-      }
-    },
-    "Light Gray Stained Glass": {
-      "recipe": {
-        "input": "Glass, Light Gray Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Yellow Stained Glass Pane": {
-      "recipe": {
-        "input": "Yellow Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Gray Stained Glass Pane": {
-      "recipe": {
-        "input": "Gray Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Glass": {
-      "recipe": {
-        "input": "Sand, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Blue Stained Glass": {
-      "recipe": {
-        "input": "Glass, Lapis Lazuli",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Green Stained Glass Pane": {
-      "recipe": {
-        "input": "Green Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Brown Stained Glass Pane": {
-      "recipe": {
-        "input": "Brown Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Brown Stained Glass": {
-      "recipe": {
-        "input": "Cocoa Beans, Glass",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111",
-        "quantity": 8
-      }
-    },
-    "Glass Pane": {
-      "recipe": {
-        "input": "Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Orange Stained Glass Pane": {
-      "recipe": {
-        "input": "Orange Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Lime Stained Glass": {
-      "recipe": {
-        "input": "Glass, Lime Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Green Stained Glass": {
-      "recipe": {
-        "input": "Cactus Green, Glass",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111",
-        "quantity": 8
-      }
-    },
-    "Red Stained Glass Pane": {
-      "recipe": {
-        "input": "Red Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Purple Stained Glass Pane": {
-      "recipe": {
-        "input": "Purple Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Magenta Stained Glass": {
-      "recipe": {
-        "input": "Glass, Magenta Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Purple Stained Glass": {
-      "recipe": {
-        "input": "Glass, Purple Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "White Stained Glass": {
-      "recipe": {
-        "input": "Bone Meal, Glass",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111",
-        "quantity": 8
-      }
-    },
-    "Pink Stained Glass Pane": {
-      "recipe": {
-        "input": "Pink Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "White Stained Glass Pane": {
-      "recipe": {
-        "input": "White Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Light Gray Stained Glass Pane": {
-      "recipe": {
-        "input": "Light Gray Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Gray Stained Glass": {
-      "recipe": {
-        "input": "Glass, Gray Dye",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Magenta Stained Glass Pane": {
-      "recipe": {
-        "input": "Magenta Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 16
-      }
-    },
-    "Red Stained Glass": {
-      "recipe": {
-        "input": "Glass, Rose Red",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000",
-        "quantity": 8
-      }
-    },
-    "Black Stained Glass Pane": {
-      "recipe": {
-        "input": "Black Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    },
-    "Blue Stained Glass Pane": {
-      "recipe": {
-        "input": "Blue Stained Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 16
-      }
-    }
-  },
-  "Tools Weapons": {
-    "Diamond Sword": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .0. .1."
-      }
-    },
-    "Wooden Sword": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .0. .1."
-      }
-    },
-    "Arrow": {
-      "recipe": {
-        "input": "Feather, Flint, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".1. .2. .0.",
-        "quantity": 4
-      }
-    },
-    "Golden Sword": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .0. .1."
-      }
-    },
-    "Iron Sword": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .0. .1."
-      }
-    },
-    "Stone Sword": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "tools": "Crafting Table",
-        "pattern": ".0. .0. .1."
-      }
-    },
-    "Bow": {
-      "recipe": {
-        "input": "Stick, String",
-        "tools": "Crafting Table",
-        "pattern": ".01 0.1 .01"
-      }
-    }
-  },
-  "Liquids": {
-    "Water": {
-      "gatherable": true
-    },
-    "Lava": {
-      "gatherable": true
-    }
-  },
-  "Potions Brewing": {
-    "Pufferfish": {
-      "gatherable": true
-    },
-    "Awkward Potion": {
-      "recipe": {
-        "input": "Nether Wart, Water Bottle",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Water Bottle": {
-      "recipe": {
-        "input": "Glass Bottle",
-        "tools": "Water",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Glass Bottle": {
-      "recipe": {
-        "input": "Glass",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 .0.",
-        "quantity": 3
-      }
-    },
-    "Brewing Stand": {
-      "recipe": {
-        "input": "Blaze Rod, Cobblestone",
-        "tools": "Crafting Table",
-        "pattern": "... .0. 111"
-      }
-    },
-    "Mundane Splash Potion": {
-      "recipe": {
-        "input": "Gunpowder, Mundane Potion",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Cauldron": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "tools": "Crafting Table",
-        "pattern": "0.0 0.0 000"
-      }
-    },
-    "Mundane Potion": {
-      "recipe": {
-        "input": "Redstone, Water Bottle",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Glistering Melon": {
-      "recipe": {
-        "input": "Gold Nugget, Melon",
-        "tools": "Crafting Table",
-        "pattern": "000 010 000"
-      }
-    },
-    "Golden Carrot": {
-      "recipe": {
-        "input": "Carrot, Gold Nugget",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Blaze Powder": {
-      "recipe": {
-        "input": "Blaze Rod",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      }
-    },
-    "Fermented Spider Eye": {
-      "recipe": {
-        "input": "Mushroom (brown), Spider Eye, Sugar",
-        "pattern": ".2. .0. .1."
-      }
-    },
-    "Magma Cream": {
-      "recipe": {
-        "input": "Blaze Powder, Slimeball",
-        "pattern": "... .0. .1."
-      }
-    }
-  },
-  "Earth Materials": {
-    "Quartz Slab": {
-      "recipe": {
-        "input": "Block of Quartz",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Stone Slab": {
-      "recipe": {
-        "input": "Stone",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Mossy Cobblestone Wall": {
-      "recipe": {
-        "input": "Moss Stone",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 6
-      }
-    },
-    "Nether Brick (block)": {
-      "recipe": {
-        "input": "Nether Brick",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Stone Bricks": {
-      "recipe": {
-        "input": "Stone",
-        "pattern": "00. 00. ...",
-        "quantity": 4
-      }
-    },
-    "Chiseled Quartz Block": {
-      "recipe": {
-        "input": "Quartz Slab",
-        "pattern": "... .0. .0."
-      }
-    },
-    "Red Sand": {
-      "gatherable": true
-    },
-    "Brick": {
-      "recipe": {
-        "input": "Clay, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Gravel": {
-      "gatherable": true
-    },
-    "Soul Sand": {
-      "gatherable": true
-    },
-    "Chiseled Sandstone": {
-      "recipe": {
-        "input": "Sandstone Slab",
-        "pattern": "... .0. .0."
-      }
-    },
-    "Smooth Sandstone": {
-      "recipe": {
-        "input": "Sandstone",
-        "pattern": "00. 00. ...",
-        "quantity": 4
-      }
-    },
-    "Sandstone Slab": {
-      "recipe": {
-        "input": "Sandstone",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Dirt": {
-      "gatherable": true
-    },
-    "Cobblestone Slab": {
-      "recipe": {
-        "input": "Cobblestone",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Cobblestone": {
-      "gatherable": true
-    },
-    "Flint": {
-      "gatherable": true
-    },
-    "End Stone": {
-      "gatherable": true
-    },
-    "Cobblestone Wall": {
-      "recipe": {
-        "input": "Cobblestone",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 6
-      }
-    },
-    "Bricks Slab": {
-      "recipe": {
-        "input": "Bricks",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Nether Brick Stairs": {
-      "recipe": {
-        "input": "Nether Brick (block)",
-        "tools": "Crafting Table",
         "pattern": "0.. 00. 000",
         "quantity": 4
       }
     },
-    "Quartz Stairs": {
+    "Spruce Leaves": {
+      "gatherable": "yes"
+    },
+    "Spruce Sapling": {
+      "gatherable": "yes"
+    },
+    "Spruce Wood": {
+      "gatherable": "yes"
+    },
+    "Spruce Wood Planks": {
       "recipe": {
-        "input": "Block of Quartz",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
+        "input": "Spruce Wood",
+        "pattern": "... .0. ...",
         "quantity": 4
       }
     },
-    "Pillar Quartz Block": {
+    "Spruce Wood Slab": {
       "recipe": {
-        "input": "Block of Quartz",
-        "pattern": "... .0. .0.",
-        "quantity": 2
-      }
-    },
-    "Stone": {
-      "recipe": {
-        "input": "Cobblestone, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Stone Stairs": {
-      "recipe": {
-        "input": "Cobblestone",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Sand": {
-      "gatherable": true
-    },
-    "Stone Brick Stairs": {
-      "recipe": {
-        "input": "Stone Bricks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Obsidian": {
-      "gatherable": true
-    },
-    "Stone Bricks Slab": {
-      "recipe": {
-        "input": "Stone Bricks",
-        "tools": "Crafting Table",
+        "input": "Spruce Wood Planks",
         "pattern": "... 000 ...",
-        "quantity": 6
+        "quantity": 6,
+        "tools": "Crafting Table"
       }
     },
-    "Bricks": {
+    "Spruce Wood Stairs": {
       "recipe": {
-        "input": "Brick",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Netherrack": {
-      "gatherable": true
-    },
-    "Brick Stairs": {
-      "recipe": {
-        "input": "Bricks",
-        "tools": "Crafting Table",
+        "input": "Spruce Wood Planks",
         "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Nether Brick": {
-      "recipe": {
-        "input": "Netherrack, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Nether Brick Fence": {
-      "recipe": {
-        "input": "Nether Brick",
-        "tools": "Crafting Table",
-        "pattern": "... 000 000",
-        "quantity": 6
-      }
-    },
-    "Nether Brick Slab": {
-      "recipe": {
-        "input": "Nether Brick (block)",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Sandstone Stairs": {
-      "recipe": {
-        "input": "Sandstone",
-        "tools": "Crafting Table",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    }
-  },
-  "Potions Normal": {
-    "Potion of Harming": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Healing",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Fire Resistance (8:00)": {
-      "recipe": {
-        "input": "Potion of Fire Resistance (3:00), Redstone",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Harming II": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Healing II",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Invisibility (8:00)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Night Vision (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Poison II (0:22)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Poison (0:45)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Swiftness (8:00)": {
-      "recipe": {
-        "input": "Potion of Swiftness (3:00), Redstone",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Strength (8:00)": {
-      "recipe": {
-        "input": "Potion of Strength (3:00), Redstone",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Strength II (1:30)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Strength (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Night Vision (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Golden Carrot",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Invisibility (3:00)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Night Vision (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Healing": {
-      "recipe": {
-        "input": "Awkward Potion, Glistering Melon",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Water Breathing (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Pufferfish",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Swiftness (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Sugar",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Regeneration (2:00)": {
-      "recipe": {
-        "input": "Potion of Regeneration (0:45), Redstone",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Regeneration II (0:22)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Regeneration (0:45)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Healing II": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Healing",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Water Breathing (8:00)": {
-      "recipe": {
-        "input": "Potion of Water Breathing (3:00), Redstone",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Thick Potion": {
-      "recipe": {
-        "input": "Glowstone Dust, Water Bottle",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Weakness (1:30)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Water Bottle",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Night Vision (8:00)": {
-      "recipe": {
-        "input": "Potion of Night Vision (3:00), Redstone",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Slowness (4:00)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Swiftness (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Regeneration (0:45)": {
-      "recipe": {
-        "input": "Awkward Potion, Ghast Tear",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Strength (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Blaze Powder",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Weakness (4:00)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Strength (8:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Slowness (1:30)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Swiftness (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Fire Resistance (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Magma Cream",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    },
-    "Potion of Swiftness II (1:30)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Swiftness (3:00)",
-        "tools": "Brewing Stand",
-        "pattern": ".0. ... 111",
-        "quantity": 3
-      }
-    },
-    "Potion of Poison (0:45)": {
-      "recipe": {
-        "input": "Awkward Potion, Spider Eye",
-        "tools": "Brewing Stand",
-        "pattern": ".1. ... 000",
-        "quantity": 3
-      }
-    }
-  },
-  "Agriculture": {
-    "Pumpkin Seeds": {
-      "recipe": {
-        "input": "Pumpkin",
-        "pattern": "... .0. ...",
-        "quantity": 4
-      }
-    },
-    "Baked Potato": {
-      "recipe": {
-        "input": "Potato, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Potato": {
-      "gatherable": true
-    },
-    "Melon (block)": {
-      "recipe": {
-        "input": "Melon",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
-      }
-    },
-    "Bowl": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "tools": "Crafting Table",
-        "pattern": "... 0.0 .0."
-      }
-    },
-    "Mushroom Stew": {
-      "recipe": {
-        "input": "Bowl, Mushroom (brown), Mushroom (red)",
-        "pattern": ".2. .1. .0."
-      }
-    },
-    "Sugar": {
-      "recipe": {
-        "input": "Sugar Canes",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Poisonous Potato": {
-      "gatherable": true
-    },
-    "Cake": {
-      "recipe": {
-        "input": "Egg, Milk, Sugar, Wheat",
-        "extras": "3 Bucket",
-        "tools": "Crafting Table",
-        "pattern": "111 202 333"
-      }
-    },
-    "Nether Wart": {
-      "gatherable": true
-    },
-    "Melon": {
-      "gatherable": true
-    },
-    "Melon Seeds": {
-      "recipe": {
-        "input": "Melon",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Golden Apple": {
-      "recipe": {
-        "input": "Apple, Gold Ingot",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Pumpkin Pie": {
-      "recipe": {
-        "input": "Egg, Pumpkin, Sugar",
-        "pattern": ".2. .0. .1."
-      }
-    },
-    "Pumpkin": {
-      "gatherable": true
-    },
-    "Golden Apple (magic)": {
-      "recipe": {
-        "input": "Apple, Block of Gold",
-        "tools": "Crafting Table",
-        "pattern": "111 101 111"
-      }
-    },
-    "Wheat": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Hay Bale",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Apple": {
-      "gatherable": true
-    },
-    "Sugar Canes": {
-      "gatherable": true
-    },
-    "Cocoa Beans": {
-      "gatherable": true
-    },
-    "Carrot": {
-      "gatherable": true
-    },
-    "Cookie": {
-      "recipe": {
-        "input": "Cocoa Beans, Wheat",
-        "tools": "Crafting Table",
-        "pattern": "... 101 ..."
-      }
-    },
-    "Bone Meal": {
-      "recipe": {
-        "input": "Bone",
-        "pattern": "... .0. ...",
-        "quantity": 3
-      }
-    },
-    "Seeds": {
-      "gatherable": true
-    },
-    "Cactus": {
-      "gatherable": true
-    },
-    "Bread": {
-      "recipe": {
-        "input": "Wheat",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ..."
-      }
-    }
-  },
-  "Minerals": {
-    "Sandstone": {
-      "recipe": {
-        "input": "Sand",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Ice": {
-      "gatherable": true
-    },
-    "Snow (block)": {
-      "recipe": {
-        "input": "Snowball",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Block of Emerald": {
-      "recipe": {
-        "input": "Emerald",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
-      }
-    },
-    "Redstone Ore": {
-      "gatherable": true
-    },
-    "Block of Iron": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "000 000 000"
-      }
-    },
-    "Diamond": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Block of Diamond",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Lapis Lazuli Block": {
-      "recipe": {
-        "input": "Lapis Lazuli",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
-      }
-    },
-    "Iron Ingot": {
-      "recipe": {
-        "input": "Block of Iron",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Snowball": {
-      "gatherable": true
-    },
-    "Emerald": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Emerald Ore, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Nether Quartz Ore": {
-      "gatherable": true
-    },
-    "Emerald Ore": {
-      "gatherable": true
-    },
-    "Gold Ore": {
-      "gatherable": true
-    },
-    "Charcoal": {
-      "recipe": {
-        "input": "Oak Wood, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Diamond Ore": {
-      "gatherable": true
-    },
-    "Block of Gold": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "000 000 000"
-      }
-    },
-    "Coal": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Block of Coal",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Iron Ore": {
-      "gatherable": true
-    },
-    "Glowstone": {
-      "recipe": {
-        "input": "Glowstone Dust",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Block of Coal": {
-      "recipe": {
-        "input": "Coal",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
-      }
-    },
-    "Block of Redstone": {
-      "recipe": {
-        "input": "Redstone",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
-      }
-    },
-    "Snow (carpet)": {
-      "recipe": {
-        "input": "Snow (block)",
-        "tools": "Crafting Table",
-        "pattern": "... 000 ...",
-        "quantity": 6
-      }
-    },
-    "Gold Ingot": {
-      "recipe": {
-        "input": "Gold Nugget",
-        "tools": "Crafting Table",
-        "pattern": "000 000 000"
-      }
-    },
-    "Packed Ice": {
-      "gatherable": true
-    },
-    "Coal Ore": {
-      "gatherable": true
-    },
-    "Block of Diamond": {
-      "recipe": {
-        "input": "Diamond",
-        "pattern": "000 000 000"
-      }
-    },
-    "Lapis Lazuli Ore": {
-      "gatherable": true
-    },
-    "Block of Quartz": {
-      "recipe": {
-        "input": "Nether Quartz",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Nether Quartz": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Nether Quartz Ore, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Lapis Lazuli": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Lapis Lazuli Ore, furnace fuel",
-        "tools": "Furnace",
-        "pattern": ".0. ... .1."
-      }
-    },
-    "Gold Nugget": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Redstone": {
-      "gatherable": true,
-      "recipe": {
-        "input": "Block of Redstone",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    }
-  },
-  "Husbandry Wool": {
-    "Light Blue Wool": {
-      "recipe": {
-        "input": "Light Blue Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Brown Wool": {
-      "recipe": {
-        "input": "Cocoa Beans, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Light Gray Wool": {
-      "recipe": {
-        "input": "Light Gray Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Gray Wool": {
-      "recipe": {
-        "input": "Gray Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Cyan Wool": {
-      "recipe": {
-        "input": "Cyan Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Magenta Wool": {
-      "recipe": {
-        "input": "Magenta Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Pink Wool": {
-      "recipe": {
-        "input": "Pink Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Orange Wool": {
-      "recipe": {
-        "input": "Orange Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Lime Wool": {
-      "recipe": {
-        "input": "Lime Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Wool": {
-      "gatherable": true,
-      "recipe": {
-        "input": "String",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Yellow Wool": {
-      "recipe": {
-        "input": "Dandelion Yellow, Wool",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Blue Wool": {
-      "recipe": {
-        "input": "Lapis Lazuli, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Green Wool": {
-      "recipe": {
-        "input": "Cactus Green, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Black Wool": {
-      "recipe": {
-        "input": "Ink Sac, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Red Wool": {
-      "recipe": {
-        "input": "Rose Red, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Purple Wool": {
-      "recipe": {
-        "input": "Purple Dye, Wool",
-        "pattern": "... .1. .0."
+        "quantity": 4,
+        "tools": "Crafting Table"
       }
     }
   }

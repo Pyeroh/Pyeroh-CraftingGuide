@@ -16,7 +16,7 @@ public interface IItem extends IMod {
 	/**
 	 * Liste des objets gérés par l'appli
 	 */
-	List<IItem> itemList = new ArrayList<>();
+	List<AbstractItem> itemList = new ArrayList<>();
 
 	/**
 	 * @return l'ID en jeu
@@ -27,6 +27,11 @@ public interface IItem extends IMod {
 	 * @return la métadonnée de l'objet
 	 */
 	int getMeta();
+
+	/**
+	 * @return le nom à afficher
+	 */
+	String getDisplayName();
 
 	/**
 	 * @return le chemin de l'icône de l'objet

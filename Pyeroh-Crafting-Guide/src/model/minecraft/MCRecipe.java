@@ -3,6 +3,8 @@
  */
 package model.minecraft;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 import model.enums.ECraftingType;
@@ -20,6 +22,10 @@ public class MCRecipe extends AbstractRecipe {
 
 	public MCRecipe(AbstractItem item, int quantity, List<AbstractItem> extras, AbstractItem[] pattern, ECraftingType type) {
 		super(item, quantity, extras, pattern, type, EMod.MINECRAFT);
+	}
+
+	public static void initialize() throws IOException, URISyntaxException {
+
 	}
 
 }

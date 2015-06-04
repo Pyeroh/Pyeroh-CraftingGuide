@@ -2,12 +2,16 @@ package model.enums;
 
 /**
  * Mods gérés par l'appli
- * 
+ *
  * @author Pyeroh
  *
  */
 public enum EMod {
 
+	/**
+	 * Objets inconnus
+	 */
+	UNKNOWN("custom"),
 	/**
 	 * Minecraft
 	 */
