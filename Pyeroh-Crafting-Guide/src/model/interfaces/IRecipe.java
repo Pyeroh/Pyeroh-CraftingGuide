@@ -2,6 +2,11 @@ package model.interfaces;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
+import model.enums.ECraftingType;
+import model.impl.Item;
+import model.impl.Recipe;
 
 /**
  * Interface pour les recettes
@@ -14,6 +19,32 @@ public interface IRecipe extends IMod {
 	/**
 	 * Liste des recettes gérées par l'appli
 	 */
-	List<AbstractRecipe> recipeList = new ArrayList<>();
+	List<Recipe> recipeList = new ArrayList<>();
+
+	/**
+	 * @return l'item donné par la recette
+	 */
+	Item getItem();
+
+	/**
+	 * @return la quantité d'items donnés par la recette
+	 */
+	int getQuantity();
+
+	/**
+	 * @return les extras éventuels de la recette (des seaux vides pour un cake de Minecraft par exemple)
+	 */
+	Map<Item, Integer> getExtras();
+
+	/**
+	 * @return le pattern de craft de l'item. Selon le type de la recette, il y aura plus ou moins d'items dans le
+	 *         tableau
+	 */
+	Item[] getPattern();
+
+	/**
+	 * @return le type de recette
+	 */
+	ECraftingType getType();
 
 }

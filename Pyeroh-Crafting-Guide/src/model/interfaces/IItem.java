@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.enums.ECategory;
+import model.impl.Item;
 
 /**
  * Interface pour les items
@@ -16,7 +17,7 @@ public interface IItem extends IMod {
 	/**
 	 * Liste des objets gérés par l'appli
 	 */
-	List<AbstractItem> itemList = new ArrayList<>();
+	List<Item> itemList = new ArrayList<>();
 
 	/**
 	 * @return l'ID en jeu

@@ -1,7 +1,7 @@
 package view;
 
-import helper.Helper;
-import model.minecraft.MCItem;
+import model.impl.Item;
+import model.impl.Recipe;
 
 // TODO Ajouter une description sur les items (ex: Il faut utiliser un seau sur une vache pour avoir du lait/ ex2: comment obtenir le Kikoku d'ExtraUtils...)
 public class Launch {
@@ -25,9 +25,8 @@ public class Launch {
 		// file.getName() + ".png"), StandardCopyOption.ATOMIC_MOVE);
 		// }
 
-		MCItem.initialize();
-		Helper.formatRecipes();
-//		MCRecipe.initialize();
+		Item.initialize();
+		Recipe.initialize();
 
 	}
 

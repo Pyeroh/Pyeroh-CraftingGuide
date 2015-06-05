@@ -1,21 +1,24 @@
 package helper;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 import model.enums.ECraftingType;
 import model.enums.EMod;
-import model.interfaces.AbstractItem;
+import model.impl.Item;
+import model.impl.Recipe;
 import model.interfaces.IItem;
 import model.interfaces.IRecipe;
-import model.minecraft.MCItem;
-import model.minecraft.MCRecipe;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public abstract class Helper {
@@ -43,15 +46,15 @@ public abstract class Helper {
 	 */
 	public static void formatRecipes() throws Exception {
 
-		List<String> source = Files.readAllLines(new File(MCItem.class.getResource(EMod.MINECRAFT.getPath() + "recipes.json").toURI()).toPath(),
+		List<String> source = Files.readAllLines(new File(Helper.class.getResource(EMod.MINECRAFT.getPath() + "recipes.json").toURI()).toPath(),
 				Charset.defaultCharset());
 		StringBuffer buf = new StringBuffer();
 		for (String string : source) {
 			buf.append(string);
 		}
 
-		Map<String, AbstractItem> itemList = new LinkedHashMap<>();
-		for (AbstractItem item : IItem.itemList) {
+		Map<String, Item> itemList = new LinkedHashMap<>();
+		for (Item item : IItem.itemList) {
 			itemList.put(item.getDisplayName(), item);
 		}
 
@@ -71,8 +74,7 @@ public abstract class Helper {
 						String extras = recipe.optString("extras", "");
 
 						// On récupère l'item par son nom d'affichage
-						AbstractItem finalItem = itemList.get(item);
-						System.out.println(finalItem);
+						Item finalItem = itemList.get(item);
 						ECraftingType craftingType;
 
 						switch (tools) {
@@ -93,37 +95,106 @@ public abstract class Helper {
 						if (craftingType != null) {
 
 							String[] sInputItems = input.split(", ");
-							AbstractItem[] inputItems = new AbstractItem[sInputItems.length];
+							Item[] inputItems = new Item[sInputItems.length];
 							for (int i = 0; i < sInputItems.length; i++) {
-								inputItems[i] = itemList.get(sInputItems[i]);
-							}
-
-							AbstractItem[] recipePattern = new AbstractItem[9];
-							String[] patternElements = pattern.replaceAll(" ", "").split("");
-							for (int i = 1; i < patternElements.length; i++) {
-								if (patternElements[i].equals(".")) {
-									recipePattern[i - 1] = null;
-								}
-								else {
-									recipePattern[i - 1] = inputItems[Integer.parseInt(patternElements[i])];
+								if (itemList.containsKey(sInputItems[i])) {
+									inputItems[i] = itemList.get(sInputItems[i]);
 								}
 							}
 
-							List<AbstractItem> recipeExtras = new ArrayList<>();
+							Item[] recipePattern = null;
+
+							switch (craftingType) {
+							case CRAFT:
+								recipePattern = new Item[9];
+								String[] patternElements = pattern.replaceAll(" ", "").split("");
+								for (int i = 1; i < patternElements.length; i++) {
+									if (patternElements[i].equals(".")) {
+										recipePattern[i - 1] = null;
+									}
+									else {
+										recipePattern[i - 1] = inputItems[Integer.parseInt(patternElements[i])];
+									}
+								}
+								break;
+							case FOUR:
+							case POTION:
+								List<Item> listInputItems = new ArrayList<>(Arrays.asList(inputItems));
+								listInputItems.removeAll(Collections.singletonList(null));
+								recipePattern = listInputItems.toArray(new Item[0]);
+								break;
+							default:
+								break;
+							}
+
+							Map<Item, Integer> recipeExtras = new LinkedHashMap<>();
 							if (!extras.equals("")) {
-								// TODO extras
+								String[] extrass = extras.split(", ");
+								for (String extra : extrass) {
+									String extraItem = extra.split("^\\d+ ")[1];
+									int q = Integer.parseInt(extra.replaceAll(extraItem, "").trim());
+									recipeExtras.put(itemList.get(extraItem), q);
+								}
 							}
 
-							IRecipe.recipeList.add(new MCRecipe(finalItem, quantity, recipeExtras, recipePattern, craftingType));
+							IRecipe.recipeList.add(new Recipe(finalItem, quantity, recipeExtras, recipePattern, craftingType, EMod.MINECRAFT));
 
 						}
-
-						// new MCRecipe(item, quantity, extras, pattern, type)
 
 					}
 				}
 			}
 		}
+
+		JSONArray jsonArray = new JSONArray();
+		for (Item item : IItem.itemList) {
+			jsonObject = new JSONObject();
+			List<Recipe> recipes = Recipe.getRecipesByItem(item);
+			if (!recipes.isEmpty()) {
+				jsonObject.put("item", item.toString());
+				JSONArray recipesArray = new JSONArray();
+				for (Recipe recipe : recipes) {
+					JSONObject jsonRecipe = new JSONObject();
+					jsonRecipe.put("craftType", recipe.getType().name());
+
+					buf = new StringBuffer();
+					for (Item patternItem : recipe.getPattern()) {
+						if (patternItem != null) {
+							buf.append(patternItem.toString());
+
+						}
+						else {
+							buf.append(".");
+						}
+						buf.append(",");
+					}
+
+					jsonRecipe.put("pattern", buf.toString().substring(0, buf.length() - 1));
+					if (recipe.getQuantity() > 1) {
+						jsonRecipe.put("quantity", recipe.getQuantity());
+					}
+					if (!recipe.getExtras().isEmpty()) {
+						buf = new StringBuffer();
+						for (Item extraKey : recipe.getExtras().keySet()) {
+							buf.append(recipe.getExtras().get(extraKey));
+							buf.append("::");
+							buf.append(extraKey.toString());
+							buf.append(",");
+						}
+						jsonRecipe.put("extras", buf.toString().substring(0, buf.length() - 1));
+					}
+
+					recipesArray.put(jsonRecipe);
+				}
+				jsonObject.put("recipes", recipesArray);
+				jsonArray.put(jsonObject);
+			}
+		}
+
+		FileWriter w = new FileWriter(new File(
+				"C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\git\\Pyeroh-CraftingGuide\\Pyeroh-Crafting-Guide\\src\\gui\\recipes2.json"));
+		w.write(jsonArray.toString());
+		w.close();
 
 	}
 

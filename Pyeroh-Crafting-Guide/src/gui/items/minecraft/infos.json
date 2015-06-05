@@ -385,7 +385,7 @@
     "meta": 0
   },
   {
-    "id": "brick",
+    "id": "brick_block",
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "bricks.png",

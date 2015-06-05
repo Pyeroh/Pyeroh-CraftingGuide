@@ -1,3200 +1,3659 @@
-{
-  "Agriculture": {
-    "Apple": {
-      "gatherable": "yes"
-    },
-    "Baked Potato": {
-      "recipe": {
-        "input": "Potato, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Bone Meal": {
-      "recipe": {
-        "input": "Bone",
-        "pattern": "... .0. ...",
-        "quantity": 3
-      }
-    },
-    "Bowl": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... 0.0 .0.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Bread": {
-      "recipe": {
-        "input": "Wheat",
-        "pattern": "... 000 ...",
-        "tools": "Crafting Table"
-      }
-    },
-    "Cactus": {
-      "gatherable": "yes"
-    },
-    "Cake": {
-      "recipe": {
-        "extras": "3 Bucket",
-        "input": "Egg, Milk, Sugar, Wheat",
-        "pattern": "111 202 333",
-        "tools": "Crafting Table"
-      }
-    },
-    "Carrot": {
-      "gatherable": "yes"
-    },
-    "Cocoa Beans": {
-      "gatherable": "yes"
-    },
-    "Cookie": {
-      "recipe": {
-        "input": "Cocoa Beans, Wheat",
-        "pattern": "... 101 ...",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Apple": {
-      "recipe": {
-        "input": "Apple, Gold Ingot",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Apple (magic)": {
-      "recipe": {
-        "input": "Apple, Block of Gold",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Melon": {
-      "gatherable": "yes"
-    },
-    "Melon (block)": {
-      "recipe": {
-        "input": "Melon",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Melon Seeds": {
-      "recipe": {
-        "input": "Melon",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Mushroom Stew": {
-      "recipe": {
-        "input": "Bowl, Mushroom (brown), Mushroom (red)",
-        "pattern": ".2. .1. .0."
-      }
-    },
-    "Nether Wart": {
-      "gatherable": "yes"
-    },
-    "Poisonous Potato": {
-      "gatherable": "yes"
-    },
-    "Potato": {
-      "gatherable": "yes"
-    },
-    "Pumpkin": {
-      "gatherable": "yes"
-    },
-    "Pumpkin Pie": {
-      "recipe": {
-        "input": "Egg, Pumpkin, Sugar",
-        "pattern": ".2. .0. .1."
-      }
-    },
-    "Pumpkin Seeds": {
-      "recipe": {
-        "input": "Pumpkin",
-        "pattern": "... .0. ...",
+[
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:log2,.,.,.,.",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Seeds": {
-      "gatherable": "yes"
-    },
-    "Sugar": {
-      "recipe": {
-        "input": "Sugar Canes",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Sugar Canes": {
-      "gatherable": "yes"
-    },
-    "Wheat": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Hay Bale",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    }
+    ],
+    "item": "minecraft:planks.4"
   },
-  "Carpet": {
-    "Black Carpet": {
-      "recipe": {
-        "input": "Black Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Blue Carpet": {
-      "recipe": {
-        "input": "Blue Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Brown Carpet": {
-      "recipe": {
-        "input": "Brown Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Carpet": {
-      "recipe": {
-        "input": "Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Cyan Carpet": {
-      "recipe": {
-        "input": "Cyan Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Gray Carpet": {
-      "recipe": {
-        "input": "Gray Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Green Carpet": {
-      "recipe": {
-        "input": "Green Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Light Blue Carpet": {
-      "recipe": {
-        "input": "Light Blue Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Light Gray Carpet": {
-      "recipe": {
-        "input": "Light Gray Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Lime Carpet": {
-      "recipe": {
-        "input": "Lime Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Magenta Carpet": {
-      "recipe": {
-        "input": "Magenta Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Orange Carpet": {
-      "recipe": {
-        "input": "Orange Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Pink Carpet": {
-      "recipe": {
-        "input": "Pink Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Purple Carpet": {
-      "recipe": {
-        "input": "Purple Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Red Carpet": {
-      "recipe": {
-        "input": "Red Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    },
-    "Yellow Carpet": {
-      "recipe": {
-        "input": "Yellow Wool",
-        "pattern": "... 00. ...",
-        "quantity": 3
-      }
-    }
-  },
-  "Clay": {
-    "Black Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Ink Sac",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Blue Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Lapis Lazuli",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Brown Stained Clay": {
-      "recipe": {
-        "input": "Cocoa Beans, Hardened Clay",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Clay (block)": {
-      "recipe": {
-        "input": "Clay",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Cyan Stained Clay": {
-      "recipe": {
-        "input": "Cyan Dye, Hardened Clay",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Gray Stained Clay": {
-      "recipe": {
-        "input": "Gray Dye, Hardened Clay",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Green Stained Clay": {
-      "recipe": {
-        "input": "Cactus Green, Hardened Clay",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Hardened Clay": {
-      "recipe": {
-        "input": "Clay (block), furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Light Blue Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Light Blue Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Light Gray Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Light Gray Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Lime Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Lime Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Magenta Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Magenta Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Orange Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Orange Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Pink Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Pink Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Purple Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Purple Dye",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Red Stained Clay": {
-      "recipe": {
-        "input": "Hardened Clay, Rose Red",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "White Stained Clay": {
-      "recipe": {
-        "input": "Bone Meal, Hardened Clay",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Yellow Stained Clay": {
-      "recipe": {
-        "input": "Dandelion Yellow, Hardened Clay",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    }
-  },
-  "Decoration": {
-    "Fence": {
-      "recipe": {
-        "input": "Stick",
-        "pattern": "... 000 000",
-        "quantity": 2,
-        "tools": "Crafting Table"
-      }
-    },
-    "Fence Gate": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": "... 010 010",
-        "tools": "Crafting Table"
-      }
-    },
-    "Flower Pot": {
-      "recipe": {
-        "input": "Brick",
-        "pattern": "... 0.0 .0.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Bars": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Item Frame": {
-      "recipe": {
-        "input": "Leather, Stick",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Jack o'Lantern": {
-      "recipe": {
-        "input": "Pumpkin, Torch",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Painting": {
-      "recipe": {
-        "input": "Stick, Wool",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    }
-  },
-  "Dyes": {
-    "Cactus Green": {
-      "recipe": {
-        "input": "Cactus, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Cyan Dye": {
-      "recipe": {
-        "input": "Cactus Green, Lapis Lazuli",
-        "pattern": "... 01. ...",
-        "quantity": 2
-      }
-    },
-    "Dandelion Yellow": {
-      "recipe": {
-        "input": "Sunflower",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      },
-      "recipe2": {
-        "input": "Dandelion",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Gray Dye": {
-      "recipe": {
-        "input": "Bone Meal, Ink Sac",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Light Blue Dye": {
-      "recipe": {
-        "input": "Blue Orchid",
-        "pattern": "... .0. ..."
-      },
-      "recipe2": {
-        "input": "Bone Meal, Lapis Lazuli",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Light Gray Dye": {
-      "recipe": {
-        "input": "White Tulip",
-        "pattern": "... .0. ..."
-      },
-      "recipe2": {
-        "input": "Azure Bluet",
-        "pattern": "... .0. ..."
-      },
-      "recipe3": {
-        "input": "Oxeye Daisy",
-        "pattern": "... .0. ..."
-      },
-      "recipe4": {
-        "input": "Bone Meal, Ink Sac",
-        "pattern": "... 010 ...",
-        "quantity": 3
-      },
-      "recipe5": {
-        "input": "Bone Meal, Gray Dye",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Lime Dye": {
-      "recipe": {
-        "input": "Bone Meal, Cactus Green",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Magenta Dye": {
-      "recipe": {
-        "input": "Lilac",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      },
-      "recipe2": {
-        "input": "Bone Meal, Lapis Lazuli, Rose Red",
-        "pattern": "22. 01. ...",
-        "quantity": 4
-      },
-      "recipe3": {
-        "input": "Lapis Lazuli, Pink Dye, Rose Red",
-        "pattern": "... 012 ...",
-        "quantity": 3
-      },
-      "recipe4": {
-        "input": "Pink Dye, Purple Dye",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      },
-      "recipe5": {
-        "input": "Allium",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Orange Dye": {
-      "recipe": {
-        "input": "Orange Tulip",
-        "pattern": "... .0. ..."
-      },
-      "recipe2": {
-        "input": "Dandelion Yellow, Rose Red",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Pink Dye": {
-      "recipe": {
-        "input": "Peony",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      },
-      "recipe2": {
-        "input": "Pink Tulip",
-        "pattern": "... .0. ..."
-      },
-      "recipe3": {
-        "input": "Bone Meal, Rose Red",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Purple Dye": {
-      "recipe": {
-        "input": "Lapis Lazuli, Rose Red",
-        "pattern": "... .0. .1.",
-        "quantity": 2
-      }
-    },
-    "Rose Red": {
-      "recipe": {
-        "input": "Rose Bush",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      },
-      "recipe2": {
-        "input": "Poppy",
-        "pattern": "... .0. ..."
-      },
-      "recipe3": {
-        "input": "Red Tulip",
-        "pattern": "... .0. ..."
-      },
-      "recipe4": {
-        "input": "Rose",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      }
-    }
-  },
-  "Earth Materials": {
-    "Brick": {
-      "recipe": {
-        "input": "Clay, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Brick Stairs": {
-      "recipe": {
-        "input": "Bricks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
-      }
-    },
-    "Bricks": {
-      "recipe": {
-        "input": "Brick",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Bricks Slab": {
-      "recipe": {
-        "input": "Bricks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Chiseled Quartz Block": {
-      "recipe": {
-        "input": "Quartz Slab",
-        "pattern": "... .0. .0."
-      }
-    },
-    "Chiseled Sandstone": {
-      "recipe": {
-        "input": "Sandstone Slab",
-        "pattern": "... .0. .0."
-      }
-    },
-    "Cobblestone": {
-      "gatherable": "yes"
-    },
-    "Cobblestone Slab": {
-      "recipe": {
-        "input": "Cobblestone",
-        "pattern": "... 000 ...",
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks.4,minecraft:planks.4,minecraft:planks.4,.,.,.",
+        "craftType": "CRAFT",
         "quantity": 6
       }
-    },
-    "Cobblestone Wall": {
-      "recipe": {
-        "input": "Cobblestone",
-        "pattern": "... 000 000",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:wooden_slab.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks.4,.,.,minecraft:planks.4,minecraft:planks.4,.,minecraft:planks.4,minecraft:planks.4,minecraft:planks.4",
+        "craftType": "CRAFT",
+        "quantity": 4
       }
-    },
-    "Dirt": {
-      "gatherable": "yes"
-    },
-    "End Stone": {
-      "gatherable": "yes"
-    },
-    "Flint": {
-      "gatherable": "yes"
-    },
-    "Gravel": {
-      "gatherable": "yes"
-    },
-    "Mossy Cobblestone Wall": {
-      "recipe": {
-        "input": "Moss Stone",
-        "pattern": "... 000 000",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Nether Brick": {
-      "recipe": {
-        "input": "Netherrack, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Nether Brick (block)": {
-      "recipe": {
-        "input": "Nether Brick",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Nether Brick Fence": {
-      "recipe": {
-        "input": "Nether Brick",
-        "pattern": "... 000 000",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Nether Brick Slab": {
-      "recipe": {
-        "input": "Nether Brick (block)",
-        "pattern": "... 000 ...",
+    ],
+    "item": "minecraft:acacia_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:stick,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:redstone_torch,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:stick,minecraft:iron_ingot",
+        "craftType": "CRAFT",
         "quantity": 6
       }
-    },
-    "Nether Brick Stairs": {
-      "recipe": {
-        "input": "Nether Brick (block)",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:activator_rail"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_block,minecraft:iron_block,minecraft:iron_block,.,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT"
       }
-    },
-    "Netherrack": {
-      "gatherable": "yes"
-    },
-    "Obsidian": {
-      "gatherable": "yes"
-    },
-    "Pillar Quartz Block": {
-      "recipe": {
-        "input": "Block of Quartz",
-        "pattern": "... .0. .0.",
-        "quantity": 2
-      }
-    },
-    "Quartz Slab": {
-      "recipe": {
-        "input": "Block of Quartz",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Quartz Stairs": {
-      "recipe": {
-        "input": "Block of Quartz",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
-      }
-    },
-    "Red Sand": {
-      "gatherable": "yes"
-    },
-    "Sand": {
-      "gatherable": "yes"
-    },
-    "Sandstone Slab": {
-      "recipe": {
-        "input": "Sandstone",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Sandstone Stairs": {
-      "recipe": {
-        "input": "Sandstone",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
-      }
-    },
-    "Smooth Sandstone": {
-      "recipe": {
-        "input": "Sandstone",
-        "pattern": "00. 00. ...",
+    ],
+    "item": "minecraft:anvil"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:flint,.,.,minecraft:stick,.,.,minecraft:feather,.",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Soul Sand": {
-      "gatherable": "yes"
-    },
-    "Stone": {
-      "recipe": {
-        "input": "Cobblestone, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Stone Brick Stairs": {
-      "recipe": {
-        "input": "Stone Bricks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4
-      }
-    },
-    "Stone Bricks": {
-      "recipe": {
-        "input": "Stone",
-        "pattern": "00. 00. ...",
-        "quantity": 4
-      }
-    },
-    "Stone Bricks Slab": {
-      "recipe": {
-        "input": "Stone Bricks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Stone Slab": {
-      "recipe": {
-        "input": "Stone",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Stone Stairs": {
-      "recipe": {
-        "input": "Cobblestone",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
-      }
-    }
+    ],
+    "item": "minecraft:arrow"
   },
-  "Enchanting": {
-    "Anvil": {
-      "recipe": {
-        "input": "Block of Iron, Iron Ingot",
-        "pattern": "000 .1. 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Book": {
-      "recipe": {
-        "input": "Leather, Paper",
-        "pattern": "01. 11. ..."
-      }
-    },
-    "Book and Quill": {
-      "recipe": {
-        "input": "Book, Feather, Ink Sac",
-        "pattern": ".1. 02. ..."
-      }
-    },
-    "Bookshelf": {
-      "recipe": {
-        "input": "Book, Oak Wood Planks",
-        "pattern": "111 000 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Enchantment Table": {
-      "recipe": {
-        "input": "Book, Diamond, Obsidian",
-        "pattern": ".0. 121 222",
-        "tools": "Crafting Table"
-      }
-    },
-    "Paper": {
-      "recipe": {
-        "input": "Sugar Canes",
-        "pattern": "... 000 ...",
-        "quantity": 3,
-        "tools": "Crafting Table"
-      }
-    }
-  },
-  "Functional Blocks": {
-    "Beacon": {
-      "recipe": {
-        "input": "Glass, Nether Star, Obsidian",
-        "pattern": "000 010 222",
-        "tools": "Crafting Table"
-      }
-    },
-    "Bed": {
-      "recipe": {
-        "input": "Oak Wood Planks, Wool",
-        "pattern": "... 111 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Chest": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "000 0.0 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Crafting Table": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Ender Chest": {
-      "recipe": {
-        "input": "Eye of Ender, Obsidian",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Furnace": {
-      "recipe": {
-        "input": "Cobblestone",
-        "pattern": "000 0.0 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Door": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": ".00 .00 .00",
-        "tools": "Crafting Table"
-      }
-    },
-    "Jukebox": {
-      "recipe": {
-        "input": "Diamond, Oak Wood Planks",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Ladder": {
-      "recipe": {
-        "input": "Stick",
-        "pattern": "0.0 000 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Note Block": {
-      "recipe": {
-        "input": "Oak Wood Planks, Redstone",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Sign": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": "000 000 .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "TNT": {
-      "recipe": {
-        "input": "Gunpowder, Sand",
-        "pattern": "010 101 010",
-        "tools": "Crafting Table"
-      }
-    },
-    "Torch": {
-      "recipe": {
-        "input": "Charcoal, Stick",
-        "pattern": "... .0. .1.",
-        "quantity": 4
-      },
-      "recipe2": {
-        "input": "Coal, Stick",
-        "pattern": "... .0. .1.",
-        "quantity": 4
-      }
-    },
-    "Trapdoor": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... 000 000",
-        "quantity": 2,
-        "tools": "Crafting Table"
-      }
-    },
-    "Trapped Chest": {
-      "recipe": {
-        "input": "Chest, Tripwire Hook",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Wooden Door": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": ".00 .00 .00",
-        "tools": "Crafting Table"
-      }
-    }
-  },
-  "Glass": {
-    "Black Stained Glass": {
-      "recipe": {
-        "input": "Glass, Ink Sac",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Black Stained Glass Pane": {
-      "recipe": {
-        "input": "Black Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Blue Stained Glass": {
-      "recipe": {
-        "input": "Glass, Lapis Lazuli",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Blue Stained Glass Pane": {
-      "recipe": {
-        "input": "Blue Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Brown Stained Glass": {
-      "recipe": {
-        "input": "Cocoa Beans, Glass",
-        "pattern": "111 101 111",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Brown Stained Glass Pane": {
-      "recipe": {
-        "input": "Brown Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Cyan Stained Glass": {
-      "recipe": {
-        "input": "Cyan Dye, Glass",
-        "pattern": "111 101 111",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Cyan Stained Glass Pane": {
-      "recipe": {
-        "input": "Cyan Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Glass": {
-      "recipe": {
-        "input": "Sand, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Glass Pane": {
-      "recipe": {
-        "input": "Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Gray Stained Glass": {
-      "recipe": {
-        "input": "Glass, Gray Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Gray Stained Glass Pane": {
-      "recipe": {
-        "input": "Gray Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Green Stained Glass": {
-      "recipe": {
-        "input": "Cactus Green, Glass",
-        "pattern": "111 101 111",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Green Stained Glass Pane": {
-      "recipe": {
-        "input": "Green Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Light Blue Stained Glass": {
-      "recipe": {
-        "input": "Glass, Light Blue Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Light Blue Stained Glass Pane": {
-      "recipe": {
-        "input": "Light Blue Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Light Gray Stained Glass": {
-      "recipe": {
-        "input": "Glass, Light Gray Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Light Gray Stained Glass Pane": {
-      "recipe": {
-        "input": "Light Gray Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Lime Stained Glass": {
-      "recipe": {
-        "input": "Glass, Lime Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Lime Stained Glass Pane": {
-      "recipe": {
-        "input": "Lime Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Magenta Stained Glass": {
-      "recipe": {
-        "input": "Glass, Magenta Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Magenta Stained Glass Pane": {
-      "recipe": {
-        "input": "Magenta Stained Glass",
-        "pattern": "... 000 ...",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Orange Stained Glass": {
-      "recipe": {
-        "input": "Glass, Orange Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Orange Stained Glass Pane": {
-      "recipe": {
-        "input": "Orange Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Pink Stained Glass": {
-      "recipe": {
-        "input": "Glass, Pink Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Pink Stained Glass Pane": {
-      "recipe": {
-        "input": "Pink Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Purple Stained Glass": {
-      "recipe": {
-        "input": "Glass, Purple Dye",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Purple Stained Glass Pane": {
-      "recipe": {
-        "input": "Purple Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Red Stained Glass": {
-      "recipe": {
-        "input": "Glass, Rose Red",
-        "pattern": "000 010 000",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Red Stained Glass Pane": {
-      "recipe": {
-        "input": "Red Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "White Stained Glass": {
-      "recipe": {
-        "input": "Bone Meal, Glass",
-        "pattern": "111 101 111",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "White Stained Glass Pane": {
-      "recipe": {
-        "input": "White Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    },
-    "Yellow Stained Glass": {
-      "recipe": {
-        "input": "Dandelion Yellow, Glass",
-        "pattern": "111 101 111",
-        "quantity": 8,
-        "tools": "Crafting Table"
-      }
-    },
-    "Yellow Stained Glass Pane": {
-      "recipe": {
-        "input": "Yellow Stained Glass",
-        "pattern": "... 000 000",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    }
-  },
-  "Husbandry": {
-    "Clownfish": {
-      "gatherable": "yes"
-    },
-    "Cooked Chicken": {
-      "recipe": {
-        "input": "Raw Chicken, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Cooked Fish": {
-      "recipe": {
-        "input": "Raw Fish, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Cooked Porkchop": {
-      "recipe": {
-        "input": "Raw Porkchop, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Cooked Salmon": {
-      "recipe": {
-        "input": "Raw Salmon, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Egg": {
-      "gatherable": "yes"
-    },
-    "Feather": {
-      "gatherable": "yes"
-    },
-    "Hay Bale": {
-      "recipe": {
-        "input": "Wheat",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Lead": {
-      "recipe": {
-        "input": "Slimeball, String",
-        "pattern": "11. 10. ..1",
-        "quantity": 2,
-        "tools": "Crafting Table"
-      }
-    },
-    "Leather": {
-      "gatherable": "yes"
-    },
-    "Milk": {
-      "recipe": {
-        "input": "Bucket",
-        "pattern": "... .0. ...",
-        "tools": "Cow"
-      }
-    },
-    "Raw Beef": {
-      "gatherable": "yes"
-    },
-    "Raw Chicken": {
-      "gatherable": "yes"
-    },
-    "Raw Fish": {
-      "gatherable": "yes"
-    },
-    "Raw Porkchop": {
-      "gatherable": "yes"
-    },
-    "Raw Salmon": {
-      "gatherable": "yes"
-    },
-    "Steak": {
-      "recipe": {
-        "input": "Raw Beef, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    }
-  },
-  "Husbandry Wool": {
-    "Black Wool": {
-      "recipe": {
-        "input": "Ink Sac, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Blue Wool": {
-      "recipe": {
-        "input": "Lapis Lazuli, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Brown Wool": {
-      "recipe": {
-        "input": "Cocoa Beans, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Cyan Wool": {
-      "recipe": {
-        "input": "Cyan Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Gray Wool": {
-      "recipe": {
-        "input": "Gray Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Green Wool": {
-      "recipe": {
-        "input": "Cactus Green, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Light Blue Wool": {
-      "recipe": {
-        "input": "Light Blue Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Light Gray Wool": {
-      "recipe": {
-        "input": "Light Gray Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Lime Wool": {
-      "recipe": {
-        "input": "Lime Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Magenta Wool": {
-      "recipe": {
-        "input": "Magenta Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Orange Wool": {
-      "recipe": {
-        "input": "Orange Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Pink Wool": {
-      "recipe": {
-        "input": "Pink Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Purple Wool": {
-      "recipe": {
-        "input": "Purple Dye, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Red Wool": {
-      "recipe": {
-        "input": "Rose Red, Wool",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Wool": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "String",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Yellow Wool": {
-      "recipe": {
-        "input": "Dandelion Yellow, Wool",
-        "pattern": "... .0. .1."
-      }
-    }
-  },
-  "Liquids": {
-    "Lava": {
-      "gatherable": "yes"
-    },
-    "Water": {
-      "gatherable": "yes"
-    }
-  },
-  "Minerals": {
-    "Block of Coal": {
-      "recipe": {
-        "input": "Coal",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Block of Diamond": {
-      "recipe": {
-        "input": "Diamond",
-        "pattern": "000 000 000"
-      }
-    },
-    "Block of Emerald": {
-      "recipe": {
-        "input": "Emerald",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Block of Gold": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "000 000 000"
-      }
-    },
-    "Block of Iron": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "000 000 000"
-      }
-    },
-    "Block of Quartz": {
-      "recipe": {
-        "input": "Nether Quartz",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Block of Redstone": {
-      "recipe": {
-        "input": "Redstone",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Charcoal": {
-      "recipe": {
-        "input": "Oak Wood, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Coal": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Block of Coal",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Coal Ore": {
-      "gatherable": "yes"
-    },
-    "Diamond": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Block of Diamond",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Diamond Ore": {
-      "gatherable": "yes"
-    },
-    "Emerald": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Block of Emerald",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      },
-      "recipe2": {
-        "input": "Emerald Ore, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Emerald Ore": {
-      "gatherable": "yes"
-    },
-    "Glowstone": {
-      "recipe": {
-        "input": "Glowstone Dust",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Gold Ingot": {
-      "recipe": {
-        "input": "Gold Ore, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      },
-      "recipe2": {
-        "input": "Block of Gold",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      },
-      "recipe3": {
-        "input": "Gold Nugget",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Gold Nugget": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Gold Ore": {
-      "gatherable": "yes"
-    },
-    "Ice": {
-      "gatherable": "yes"
-    },
-    "Iron Ingot": {
-      "recipe": {
-        "input": "Iron Ore, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      },
-      "recipe2": {
-        "input": "Block of Iron",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Iron Ore": {
-      "gatherable": "yes"
-    },
-    "Lapis Lazuli": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Lapis Lazuli Ore, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Lapis Lazuli Block": {
-      "recipe": {
-        "input": "Lapis Lazuli",
-        "pattern": "000 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Lapis Lazuli Ore": {
-      "gatherable": "yes"
-    },
-    "Nether Quartz": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Nether Quartz Ore, furnace fuel",
-        "pattern": ".0. ... .1.",
-        "tools": "Furnace"
-      }
-    },
-    "Nether Quartz Ore": {
-      "gatherable": "yes"
-    },
-    "Packed Ice": {
-      "gatherable": "yes"
-    },
-    "Redstone": {
-      "gatherable": "yes",
-      "recipe": {
-        "input": "Block of Redstone",
-        "pattern": "... .0. ...",
-        "quantity": 9
-      }
-    },
-    "Redstone Ore": {
-      "gatherable": "yes"
-    },
-    "Sandstone": {
-      "recipe": {
-        "input": "Sand",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Snow (block)": {
-      "recipe": {
-        "input": "Snowball",
-        "pattern": "00. 00. ..."
-      }
-    },
-    "Snow (carpet)": {
-      "recipe": {
-        "input": "Snow (block)",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Snowball": {
-      "gatherable": "yes"
-    }
-  },
-  "Mob Drops": {
-    "Blaze Rod": {
-      "gatherable": "yes"
-    },
-    "Bone": {
-      "gatherable": "yes"
-    },
-    "Creeper Head": {
-      "gatherable": "yes"
-    },
-    "Dragon Egg": {
-      "gatherable": "yes"
-    },
-    "Ender Pearl": {
-      "gatherable": "yes"
-    },
-    "Ghast Tear": {
-      "gatherable": "yes"
-    },
-    "Gunpowder": {
-      "gatherable": "yes"
-    },
-    "Head": {
-      "gatherable": "yes"
-    },
-    "Ink Sac": {
-      "gatherable": "yes"
-    },
-    "Nether Star": {
-      "gatherable": "yes"
-    },
-    "Rotten Flesh": {
-      "gatherable": "yes"
-    },
-    "Skeleton Skull": {
-      "gatherable": "yes"
-    },
-    "Slimeball": {
-      "gatherable": "yes"
-    },
-    "Spider Eye": {
-      "gatherable": "yes"
-    },
-    "String": {
-      "gatherable": "yes"
-    },
-    "Wither Skeleton Skull": {
-      "gatherable": "yes"
-    },
-    "Zombie Head": {
-      "gatherable": "yes"
-    }
-  },
-  "Plants": {
-    "Allium": {
-      "gatherable": "yes"
-    },
-    "Azure Bluet": {
-      "gatherable": "yes"
-    },
-    "Blue Orchid": {
-      "gatherable": "yes"
-    },
-    "Dandelion": {
-      "gatherable": "yes"
-    },
-    "Dead Bush": {
-      "gatherable": "yes"
-    },
-    "Double Tallgrass": {
-      "gatherable": "yes"
-    },
-    "Fern": {
-      "gatherable": "yes"
-    },
-    "Grass": {
-      "gatherable": "yes"
-    },
-    "Large Fern": {
-      "gatherable": "yes"
-    },
-    "Lilac": {
-      "gatherable": "yes"
-    },
-    "Lily Pad": {
-      "gatherable": "yes"
-    },
-    "Orange Tulip": {
-      "gatherable": "yes"
-    },
-    "Oxeye Daisy": {
-      "gatherable": "yes"
-    },
-    "Peony": {
-      "gatherable": "yes"
-    },
-    "Pink Tulip": {
-      "gatherable": "yes"
-    },
-    "Poppy": {
-      "gatherable": "yes"
-    },
-    "Red Tulip": {
-      "gatherable": "yes"
-    },
-    "Rose Bush": {
-      "gatherable": "yes"
-    },
-    "Sponge": {
-      "gatherable": "yes"
-    },
-    "Sunflower": {
-      "gatherable": "yes"
-    },
-    "Vines": {
-      "gatherable": "yes"
-    },
-    "White Tulip": {
-      "gatherable": "yes"
-    }
-  },
-  "Potions Brewing": {
-    "Awkward Potion": {
-      "recipe": {
-        "input": "Nether Wart, Water Bottle",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Blaze Powder": {
-      "recipe": {
-        "input": "Blaze Rod",
-        "pattern": "... .0. ...",
-        "quantity": 2
-      }
-    },
-    "Brewing Stand": {
-      "recipe": {
-        "input": "Blaze Rod, Cobblestone",
-        "pattern": "... .0. 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Cauldron": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "0.0 0.0 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Fermented Spider Eye": {
-      "recipe": {
-        "input": "Mushroom (brown), Spider Eye, Sugar",
-        "pattern": ".2. .0. .1."
-      }
-    },
-    "Glass Bottle": {
-      "recipe": {
-        "input": "Glass",
-        "pattern": "... 0.0 .0.",
-        "quantity": 3,
-        "tools": "Crafting Table"
-      }
-    },
-    "Glistering Melon": {
-      "recipe": {
-        "input": "Gold Nugget, Melon",
-        "pattern": "000 010 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Carrot": {
-      "recipe": {
-        "input": "Carrot, Gold Nugget",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Magma Cream": {
-      "recipe": {
-        "input": "Blaze Powder, Slimeball",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Mundane Potion": {
-      "recipe": {
-        "input": "Redstone, Water Bottle",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Mundane Splash Potion": {
-      "recipe": {
-        "input": "Gunpowder, Mundane Potion",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Pufferfish": {
-      "gatherable": "yes"
-    },
-    "Water Bottle": {
-      "recipe": {
-        "input": "Glass Bottle",
-        "pattern": "... .0. ...",
-        "tools": "Water"
-      }
-    }
-  },
-  "Potions Normal": {
-    "Potion of Fire Resistance (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Magma Cream",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Fire Resistance (8:00)": {
-      "recipe": {
-        "input": "Potion of Fire Resistance (3:00), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Harming": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Poison (0:45)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe2": {
-        "input": "Fermented Spider Eye, Potion of Poison (2:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe3": {
-        "input": "Fermented Spider Eye, Potion of Water Breathing (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe4": {
-        "input": "Fermented Spider Eye, Potion of Water Breathing (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe5": {
-        "input": "Fermented Spider Eye, Potion of Healing",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Harming II": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Harming",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe2": {
-        "input": "Fermented Spider Eye, Potion of Poison II (0:22)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe3": {
-        "input": "Fermented Spider Eye, Potion of Healing II",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Healing": {
-      "recipe": {
-        "input": "Awkward Potion, Glistering Melon",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Healing II": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Healing",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Invisibility (3:00)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Night Vision (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Invisibility (8:00)": {
-      "recipe": {
-        "input": "Potion of Invisibility (3:00), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe2": {
-        "input": "Fermented Spider Eye, Potion of Night Vision (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Night Vision (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Golden Carrot",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Night Vision (8:00)": {
-      "recipe": {
-        "input": "Potion of Night Vision (3:00), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Poison (0:45)": {
-      "recipe": {
-        "input": "Awkward Potion, Spider Eye",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Poison II (0:22)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Poison (0:45)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Regeneration (0:45)": {
-      "recipe": {
-        "input": "Awkward Potion, Ghast Tear",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Regeneration (2:00)": {
-      "recipe": {
-        "input": "Potion of Regeneration (0:45), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Regeneration II (0:22)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Regeneration (0:45)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Slowness (1:30)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Potion of Swiftness (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Slowness (4:00)": {
-      "recipe": {
-        "input": "Potion of Slowness (1:30), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe2": {
-        "input": "Fermented Spider Eye, Potion of Fire Resistance (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe3": {
-        "input": "Fermented Spider Eye, Potion of Swiftness (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Strength (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Blaze Powder",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Strength (8:00)": {
-      "recipe": {
-        "input": "Potion of Strength (3:00), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Strength II (1:30)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Strength (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Swiftness (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Sugar",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Swiftness (8:00)": {
-      "recipe": {
-        "input": "Potion of Swiftness (3:00), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Swiftness II (1:30)": {
-      "recipe": {
-        "input": "Glowstone Dust, Potion of Swiftness (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Water Breathing (3:00)": {
-      "recipe": {
-        "input": "Awkward Potion, Pufferfish",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Water Breathing (8:00)": {
-      "recipe": {
-        "input": "Potion of Water Breathing (3:00), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Weakness (1:30)": {
-      "recipe": {
-        "input": "Fermented Spider Eye, Water Bottle",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Potion of Weakness (4:00)": {
-      "recipe": {
-        "input": "Potion of Weakness (1:30), Redstone",
-        "pattern": ".1. ... 000",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe2": {
-        "input": "Fermented Spider Eye, Mundane Potion",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe3": {
-        "input": "Fermented Spider Eye, Water Bottle",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      },
-      "recipe4": {
-        "input": "Fermented Spider Eye, Potion of Strength (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Thick Potion": {
-      "recipe": {
-        "input": "Glowstone Dust, Water Bottle",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    }
-  },
-  "Potions Splash": {
-    "Splash Potion of Fire Resistance (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Fire Resistance (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Fire Resistance (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Fire Resistance (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Harming": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Harming",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Harming II": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Harming II",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Healing": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Healing",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Healing II": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Healing II",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Invisibility (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Invisibility (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Invisibility (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Invisibility (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Night Vision (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Night Vision (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Night Vision (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Night Vision (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Poison (0:33)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Poison (0:45)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Poison (1:30)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Poison (2:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Poison II (0:16)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Poison II (0:22)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Regeneration (0:33)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Regeneration (0:45)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Regeneration (1:30)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Regeneration (2:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Regeneration II (0:16)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Regeneration II (0:22)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Slowness (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Slowness (1:30)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Slowness (3:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Slowness (4:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Strength (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Strength (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Strength (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Strength (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Strength II (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Strength II (1:30)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Swiftness (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Swiftness (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Swiftness (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Swiftness (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Swiftness II (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Swiftness II (1:30)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Water Breathing (2:15)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Water Breathing (3:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Water Breathing (6:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Water Breathing (8:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Weakness (1:07)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Weakness (1:30)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    },
-    "Splash Potion of Weakness (3:00)": {
-      "recipe": {
-        "input": "Gunpowder, Potion of Weakness (4:00)",
-        "pattern": ".0. ... 111",
-        "quantity": 3,
-        "tools": "Brewing Stand"
-      }
-    }
-  },
-  "Redstone Machines": {
-    "Button (stone)": {
-      "recipe": {
-        "input": "Stone",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Button (wood)": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... .0. ..."
-      }
-    },
-    "Daylight Sensor": {
-      "recipe": {
-        "input": "Glass, Nether Quartz, Oak Wood Slab",
-        "pattern": "000 111 222",
-        "tools": "Crafting Table"
-      }
-    },
-    "Dispenser": {
-      "recipe": {
-        "input": "Bow, Cobblestone, Redstone",
-        "pattern": "111 101 121",
-        "tools": "Crafting Table"
-      }
-    },
-    "Dropper": {
-      "recipe": {
-        "input": "Cobblestone, Redstone",
-        "pattern": "000 0.0 010",
-        "tools": "Crafting Table"
-      }
-    },
-    "Hopper": {
-      "recipe": {
-        "input": "Chest, Iron Ingot",
-        "pattern": "1.1 101 .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Lever": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Piston": {
-      "recipe": {
-        "input": "Cobblestone, Iron Ingot, Oak Wood Planks, Redstone",
-        "pattern": "222 010 030",
-        "tools": "Crafting Table"
-      }
-    },
-    "Pressure Plate (stone)": {
-      "recipe": {
-        "input": "Stone",
-        "pattern": "... 00. ..."
-      }
-    },
-    "Pressure Plate (wood)": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... 00. ..."
-      }
-    },
-    "Redstone Comparator": {
-      "recipe": {
-        "input": "Nether Quartz, Redstone Torch, Stone",
-        "pattern": ".1. 101 222",
-        "tools": "Crafting Table"
-      }
-    },
-    "Redstone Lamp": {
-      "recipe": {
-        "input": "Glowstone, Redstone",
-        "pattern": ".1. 101 .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Redstone Repeater": {
-      "recipe": {
-        "input": "Redstone, Redstone Torch, Stone",
-        "pattern": "... 101 222",
-        "tools": "Crafting Table"
-      }
-    },
-    "Redstone Torch": {
-      "recipe": {
-        "input": "Redstone, Stick",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Sticky Piston": {
-      "recipe": {
-        "input": "Piston, Slimeball",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Tripwire Hook": {
-      "recipe": {
-        "input": "Iron Ingot, Oak Wood Planks, Stick",
-        "pattern": ".0. .2. .1.",
-        "quantity": 2,
-        "tools": "Crafting Table"
-      }
-    },
-    "Weighted Pressure Plate (heavy)": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... 00. ..."
-      }
-    },
-    "Weighted Pressure Plate (light)": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "... 00. ..."
-      }
-    }
-  },
-  "Tools": {
-    "Bucket": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... 0.0 .0.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Clock": {
-      "recipe": {
-        "input": "Gold Ingot, Redstone",
-        "pattern": ".0. 010 .0.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Compass": {
-      "recipe": {
-        "input": "Iron Ingot, Redstone",
-        "pattern": ".0. 010 .0.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Axe": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "pattern": "00. 01. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Pickaxe": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "pattern": "000 .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Shovel": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "pattern": ".0. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Empty Map": {
-      "recipe": {
-        "input": "Compass, Paper",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      },
-      "recipe2": {
-        "input": "Map (completed), Paper",
-        "pattern": "111 101 111",
-        "tools": "Crafting Table"
-      }
-    },
-    "Eye of Ender": {
-      "recipe": {
-        "input": "Blaze Powder, Ender Pearl",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Fire Charge": {
-      "recipe": {
-        "input": "Blaze Powder, Coal, Gunpowder",
-        "pattern": ".2. .0. .1.",
-        "quantity": 3
-      },
-      "recipe2": {
-        "input": "Blaze Powder, Charcoal, Gunpowder",
-        "pattern": ".2. .0. .1.",
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:nether_wart,minecraft:potion",
+        "craftType": "POTION",
         "quantity": 3
       }
-    },
-    "Fishing Rod": {
-      "recipe": {
-        "input": "Stick, String",
-        "pattern": "..0 .01 0.1",
-        "tools": "Crafting Table"
-      }
-    },
-    "Flint and Steel": {
-      "recipe": {
-        "input": "Flint, Iron Ingot",
-        "pattern": "... .1. ..0"
-      }
-    },
-    "Golden Axe": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "pattern": "00. 01. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Hoe": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "pattern": "00. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Pickaxe": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "pattern": "000 .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Shovel": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "pattern": ".0. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Axe": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "pattern": "00. 01. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Hoe": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "pattern": "00. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Pickaxe": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "pattern": "000 .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Shovel": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "pattern": ".0. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Lava Bucket": {
-      "recipe": {
-        "input": "Bucket, Lava",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Music Disc": {
-      "gatherable": "yes"
-    },
-    "Shears": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... .0. ..0"
-      }
-    },
-    "Stick": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... .0. .0.",
-        "quantity": 4
-      }
-    },
-    "Stone Axe": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": "00. 01. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Stone Hoe": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": "00. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Stone Pickaxe": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": "000 .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Stone Shovel": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": ".0. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Water Bucket": {
-      "recipe": {
-        "input": "Bucket, Water",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Wooden Axe": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": "00. 01. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Wooden Hoe": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": "00. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Wooden Pickaxe": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": "000 .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Wooden Shovel": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": ".0. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    }
+    ],
+    "item": "minecraft:potion.16"
   },
-  "Tools Armor": {
-    "Chain Boots": {
-      "recipe": {
-        "input": "Fire",
-        "pattern": "... 0.0 0.0",
-        "tools": "Crafting Table"
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potato",
+        "craftType": "FOUR"
       }
-    },
-    "Chain Chestplate": {
-      "recipe": {
-        "input": "Fire",
-        "pattern": "0.0 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Chain Helmet": {
-      "recipe": {
-        "input": "Fire",
-        "pattern": "000 0.0 ...",
-        "tools": "Crafting Table"
-      }
-    },
-    "Chain Leggings": {
-      "recipe": {
-        "input": "Fire",
-        "pattern": "000 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Boots": {
-      "recipe": {
-        "input": "Diamond",
-        "pattern": "... 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Chestplate": {
-      "recipe": {
-        "input": "Diamond",
-        "pattern": "0.0 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Helmet": {
-      "recipe": {
-        "input": "Diamond",
-        "pattern": "000 0.0 ...",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Hoe": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "pattern": "00. .1. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Leggings": {
-      "recipe": {
-        "input": "Diamond",
-        "pattern": "000 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Boots": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "... 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Chestplate": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "0.0 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Helmet": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "000 0.0 ...",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Leggings": {
-      "recipe": {
-        "input": "Gold Ingot",
-        "pattern": "000 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Boots": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Chestplate": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "0.0 000 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Helmet": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "000 0.0 ...",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Leggings": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "000 0.0 0.0",
-        "tools": "Crafting Table"
-      }
-    },
-    "Leather Boots": {
-      "recipe": {
-        "input": "Leather",
-        "pattern": "... 0.0 0.0"
-      }
-    },
-    "Leather Cap": {
-      "recipe": {
-        "input": "Leather",
-        "pattern": "000 0.0 ..."
-      }
-    },
-    "Leather Pants": {
-      "recipe": {
-        "input": "Leather",
-        "pattern": "000 0.0 0.0"
-      }
-    },
-    "Leather Tunic": {
-      "recipe": {
-        "input": "Leather",
-        "pattern": "0.0 000 000"
-      }
-    }
+    ],
+    "item": "minecraft:baked_potato"
   },
-  "Tools Weapons": {
-    "Arrow": {
-      "recipe": {
-        "input": "Feather, Flint, Stick",
-        "pattern": ".1. .2. .0.",
-        "quantity": 4,
-        "tools": "Crafting Table"
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:nether_star,minecraft:glass,minecraft:obsidian,minecraft:obsidian,minecraft:obsidian",
+        "craftType": "CRAFT"
       }
-    },
-    "Bow": {
-      "recipe": {
-        "input": "Stick, String",
-        "pattern": ".01 0.1 .01",
-        "tools": "Crafting Table"
-      }
-    },
-    "Diamond Sword": {
-      "recipe": {
-        "input": "Diamond, Stick",
-        "pattern": ".0. .0. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Golden Sword": {
-      "recipe": {
-        "input": "Gold Ingot, Stick",
-        "pattern": ".0. .0. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Iron Sword": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "pattern": ".0. .0. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Stone Sword": {
-      "recipe": {
-        "input": "Cobblestone, Stick",
-        "pattern": ".0. .0. .1.",
-        "tools": "Crafting Table"
-      }
-    },
-    "Wooden Sword": {
-      "recipe": {
-        "input": "Oak Wood Planks, Stick",
-        "pattern": ".0. .0. .1.",
-        "tools": "Crafting Table"
-      }
-    }
+    ],
+    "item": "minecraft:beacon"
   },
-  "Transportation": {
-    "Activator Rail": {
-      "recipe": {
-        "input": "Iron Ingot, Redstone Torch, Stick",
-        "pattern": "020 010 020",
-        "quantity": 6,
-        "tools": "Crafting Table"
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool,minecraft:wool,minecraft:wool,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
       }
-    },
-    "Boat": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... 0.0 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Carrot on a Stick": {
-      "recipe": {
-        "input": "Carrot, Fishing Rod",
-        "pattern": "... 10. ..."
-      }
-    },
-    "Detector Rail": {
-      "recipe": {
-        "input": "Iron Ingot, Pressure Plate (stone), Redstone",
-        "pattern": "0.0 010 020",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Minecart": {
-      "recipe": {
-        "input": "Iron Ingot",
-        "pattern": "... 0.0 000",
-        "tools": "Crafting Table"
-      }
-    },
-    "Minecart with Chest": {
-      "recipe": {
-        "input": "Chest, Minecart",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Minecart with Furnace": {
-      "recipe": {
-        "input": "Furnace, Minecart",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Minecart with Hopper": {
-      "recipe": {
-        "input": "Hopper, Minecart",
-        "pattern": "... .0. .1."
-      }
-    },
-    "Minecart with TNT": {
-      "recipe": {
-        "input": "Minecart, TNT",
-        "pattern": "... .1. .0."
-      }
-    },
-    "Powered Rail": {
-      "recipe": {
-        "input": "Gold Ingot, Redstone, Stick",
-        "pattern": "0.0 020 010",
-        "quantity": 6,
-        "tools": "Crafting Table"
-      }
-    },
-    "Rail": {
-      "recipe": {
-        "input": "Iron Ingot, Stick",
-        "pattern": "0.0 010 0.0",
-        "quantity": 16,
-        "tools": "Crafting Table"
-      }
-    }
+    ],
+    "item": "minecraft:bed"
   },
-  "Wood": {
-    "Acacia Leaves": {
-      "gatherable": "yes"
-    },
-    "Acacia Sapling": {
-      "gatherable": "yes"
-    },
-    "Acacia Wood": {
-      "gatherable": "yes"
-    },
-    "Acacia Wood Planks": {
-      "recipe": {
-        "input": "Acacia Wood",
-        "pattern": "... .0. ...",
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:log.2,.,.,.,.",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Acacia Wood Slab": {
-      "recipe": {
-        "input": "Acacia Wood Planks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:planks.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks.2,minecraft:planks.2,minecraft:planks.2,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
       }
-    },
-    "Acacia Wood Stairs": {
-      "recipe": {
-        "input": "Acacia Wood Planks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
-      }
-    },
-    "Birch Leaves": {
-      "gatherable": "yes"
-    },
-    "Birch Sapling": {
-      "gatherable": "yes"
-    },
-    "Birch Wood": {
-      "gatherable": "yes"
-    },
-    "Birch Wood Planks": {
-      "recipe": {
-        "input": "Birch Wood",
-        "pattern": "... .0. ...",
+    ],
+    "item": "minecraft:wooden_slab.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks.2,.,.,minecraft:planks.2,minecraft:planks.2,.,minecraft:planks.2,minecraft:planks.2,minecraft:planks.2",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Birch Wood Slab": {
-      "recipe": {
-        "input": "Birch Wood Planks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:birch_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.15,minecraft:wool.15,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
       }
-    },
-    "Birch Wood Stairs": {
-      "recipe": {
-        "input": "Birch Wood Planks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:carpet.15"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT",
+        "quantity": 8
       }
-    },
-    "Dark Oak Leaves": {
-      "gatherable": "yes"
-    },
-    "Dark Oak Sapling": {
-      "gatherable": "yes"
-    },
-    "Dark Oak Wood": {
-      "gatherable": "yes"
-    },
-    "Dark Oak Wood Planks": {
-      "recipe": {
-        "input": "Dark Oak Wood",
-        "pattern": "... .0. ...",
+    ],
+    "item": "minecraft:stained_hardened_clay.15"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.15"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.15,minecraft:stained_glass.15,minecraft:stained_glass.15,minecraft:stained_glass.15,minecraft:stained_glass.15,minecraft:stained_glass.15",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.15"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.15"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:blaze_rod,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:blaze_powder"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:coal,minecraft:coal,minecraft:coal,minecraft:coal,minecraft:coal,minecraft:coal,minecraft:coal,minecraft:coal,minecraft:coal",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:coal_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:emerald,minecraft:emerald,minecraft:emerald,minecraft:emerald,minecraft:emerald,minecraft:emerald,minecraft:emerald,minecraft:emerald,minecraft:emerald",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:emerald_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:gold_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:quartz,minecraft:quartz,.,minecraft:quartz,minecraft:quartz,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:quartz_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:redstone,minecraft:redstone,minecraft:redstone,minecraft:redstone,minecraft:redstone,minecraft:redstone,minecraft:redstone,minecraft:redstone,minecraft:redstone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:redstone_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.11,minecraft:wool.11,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.11"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.4,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.11"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.4,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.11"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.11,minecraft:stained_glass.11,minecraft:stained_glass.11,minecraft:stained_glass.11,minecraft:stained_glass.11,minecraft:stained_glass.11",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.11"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.4,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.11"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks,.,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:boat"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:bone,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:dye.15"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:leather,minecraft:paper,.,minecraft:paper,minecraft:paper,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:book"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,minecraft:book,minecraft:book,minecraft:book,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:bookshelf"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:feather,.,minecraft:book,minecraft:dye,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:writable_book"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:stick,minecraft:string,minecraft:stick,.,minecraft:string,.,minecraft:stick,minecraft:string",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:bow"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks,.,minecraft:planks,.,minecraft:planks,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:bowl"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wheat,minecraft:wheat,minecraft:wheat,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:bread"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:blaze_rod,.,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:brewing_stand"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:clay_ball",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:brick"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:brick,minecraft:brick,.,minecraft:brick,minecraft:brick,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:brick_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:brick_block,minecraft:brick_block,minecraft:brick_block,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:brick_block,.,.,minecraft:brick_block,minecraft:brick_block,.,minecraft:brick_block,minecraft:brick_block,minecraft:brick_block",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Dark Oak Wood Slab": {
-      "recipe": {
-        "input": "Dark Oak Wood Planks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:brick_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.12,minecraft:wool.12,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
       }
-    },
-    "Dark Oak Wood Stairs": {
-      "recipe": {
-        "input": "Dark Oak Wood Planks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:carpet.12"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.3,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
       }
-    },
-    "Jungle Leaves": {
-      "gatherable": "yes"
-    },
-    "Jungle Sapling": {
-      "gatherable": "yes"
-    },
-    "Jungle Wood": {
-      "gatherable": "yes"
-    },
-    "Jungle Wood Planks": {
-      "recipe": {
-        "input": "Jungle Wood",
-        "pattern": "... .0. ...",
+    ],
+    "item": "minecraft:stained_hardened_clay.12"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.3,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.12"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.12,minecraft:stained_glass.12,minecraft:stained_glass.12,minecraft:stained_glass.12,minecraft:stained_glass.12,minecraft:stained_glass.12",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.12"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.3,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.12"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:iron_ingot,.,minecraft:iron_ingot,.,minecraft:iron_ingot,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:bucket"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:stone,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_button"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:planks,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_button"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cactus",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:dye.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:sugar,minecraft:egg,minecraft:sugar,minecraft:wheat,minecraft:wheat,minecraft:wheat",
+        "craftType": "CRAFT",
+        "extras": "3::minecraft:bucket"
+      }
+    ],
+    "item": "minecraft:cake"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool,minecraft:wool,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:fishing_rod,minecraft:carrot,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:carrot_on_a_stick"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:cauldron"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:fire,.,minecraft:fire,minecraft:fire,.,minecraft:fire",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:chainmail_boots"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fire,.,minecraft:fire,minecraft:fire,minecraft:fire,minecraft:fire,minecraft:fire,minecraft:fire,minecraft:fire",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:chainmail_chestplate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fire,minecraft:fire,minecraft:fire,minecraft:fire,.,minecraft:fire,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:chainmail_helmet"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fire,minecraft:fire,minecraft:fire,minecraft:fire,.,minecraft:fire,minecraft:fire,.,minecraft:fire",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:chainmail_leggings"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:log",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:coal.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,.,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:chest"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:stone_slab.7,.,.,minecraft:stone_slab.7,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:quartz_block.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:stone_slab.1,.,.,minecraft:stone_slab.1,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:sandstone.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:clay_ball,minecraft:clay_ball,.,minecraft:clay_ball,minecraft:clay_ball,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:clay"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:gold_ingot,.,minecraft:gold_ingot,minecraft:redstone,minecraft:gold_ingot,.,minecraft:gold_ingot,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:clock"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:coal_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:coal"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:cobblestone_wall"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:redstone,minecraft:iron_ingot,.,minecraft:iron_ingot,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:compass"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:chicken",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:cooked_chicken"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fish",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:cooked_fish"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:porkchop",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:cooked_porkchop"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fish.1",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:cooked_fish.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wheat,minecraft:dye.3,minecraft:wheat,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:cookie"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,.,minecraft:planks,minecraft:planks,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:crafting_table"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.9,minecraft:wool.9,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.9"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:dye.2,minecraft:dye.4,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:dye.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.6,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.9"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.6,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.9"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.9,minecraft:stained_glass.9,minecraft:stained_glass.9,minecraft:stained_glass.9,minecraft:stained_glass.9,minecraft:stained_glass.9",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.9"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.6,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.9"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:double_plant,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:yellow_flower,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:dye.11"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:log2.1,.,.,.,.",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Jungle Wood Slab": {
-      "recipe": {
-        "input": "Jungle Wood Planks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:planks.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks.5,minecraft:planks.5,minecraft:planks.5,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
       }
-    },
-    "Jungle Wood Stairs": {
-      "recipe": {
-        "input": "Jungle Wood Planks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
-      }
-    },
-    "Oak Leaves": {
-      "gatherable": "yes"
-    },
-    "Oak Sapling": {
-      "gatherable": "yes"
-    },
-    "Oak Wood": {
-      "gatherable": "yes"
-    },
-    "Oak Wood Planks": {
-      "recipe": {
-        "input": "Oak Wood",
-        "pattern": "... .0. ...",
+    ],
+    "item": "minecraft:wooden_slab.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks.5,.,.,minecraft:planks.5,minecraft:planks.5,.,minecraft:planks.5,minecraft:planks.5,minecraft:planks.5",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Oak Wood Slab": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:dark_oak_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:quartz,minecraft:quartz,minecraft:quartz,minecraft:wooden_slab,minecraft:wooden_slab,minecraft:wooden_slab",
+        "craftType": "CRAFT"
       }
-    },
-    "Oak Wood Stairs": {
-      "recipe": {
-        "input": "Oak Wood Planks",
-        "pattern": "0.. 00. 000",
+    ],
+    "item": "minecraft:daylight_detector"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:stone_pressure_plate,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:redstone,minecraft:iron_ingot",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:detector_rail"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:diamond_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:diamond"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,minecraft:diamond,.,minecraft:diamond,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_axe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:diamond,.,minecraft:diamond,minecraft:diamond,.,minecraft:diamond",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_boots"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,.,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_chestplate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,.,minecraft:diamond,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_helmet"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,minecraft:diamond,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_hoe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,minecraft:diamond,minecraft:diamond,minecraft:diamond,.,minecraft:diamond,minecraft:diamond,.,minecraft:diamond",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_leggings"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:diamond,minecraft:diamond,minecraft:diamond,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_pickaxe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:diamond,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_shovel"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:diamond,.,.,minecraft:diamond,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:diamond_sword"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:bow,minecraft:cobblestone,minecraft:cobblestone,minecraft:redstone,minecraft:cobblestone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:dispenser"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,.,minecraft:cobblestone,minecraft:cobblestone,minecraft:redstone,minecraft:cobblestone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:dropper"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:emerald_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      },
+      {
+        "pattern": "minecraft:emerald_ore",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:emerald"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:paper,minecraft:paper,minecraft:paper,minecraft:paper,minecraft:compass,minecraft:paper,minecraft:paper,minecraft:paper,minecraft:paper",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": "minecraft:paper,minecraft:paper,minecraft:paper,minecraft:paper,custom:map,minecraft:paper,minecraft:paper,minecraft:paper,minecraft:paper",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:map"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:book,.,minecraft:diamond,minecraft:obsidian,minecraft:diamond,minecraft:obsidian,minecraft:obsidian,minecraft:obsidian",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:enchanting_table"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:obsidian,minecraft:obsidian,minecraft:obsidian,minecraft:obsidian,minecraft:ender_eye,minecraft:obsidian,minecraft:obsidian,minecraft:obsidian,minecraft:obsidian",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:ender_chest"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:blaze_powder,.,.,minecraft:ender_pearl,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:ender_eye"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:fence"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks,minecraft:stick,minecraft:planks,minecraft:planks,minecraft:stick,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:fence_gate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:sugar,.,.,minecraft:brown_mushroom,.,.,minecraft:spider_eye,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:fermented_spider_eye"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:gunpowder,.,.,minecraft:blaze_powder,.,.,minecraft:coal,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      },
+      {
+        "pattern": ".,minecraft:gunpowder,.,.,minecraft:blaze_powder,.,.,minecraft:coal.1,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:fire_charge"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,minecraft:stick,.,minecraft:stick,minecraft:string,minecraft:stick,.,minecraft:string",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:fishing_rod"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:iron_ingot,.,.,.,minecraft:flint",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:flint_and_steel"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:brick,.,minecraft:brick,.,minecraft:brick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:flower_pot"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,.,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:furnace"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:sand",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:glass"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:glass,.,minecraft:glass,.,minecraft:glass,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:glass_bottle"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:glass_pane"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:melon,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:speckled_melon"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:glowstone_dust,.,minecraft:glowstone_dust,minecraft:glowstone_dust,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:glowstone"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:apple,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_apple"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_block,minecraft:gold_block,minecraft:gold_block,minecraft:gold_block,minecraft:apple,minecraft:gold_block,minecraft:gold_block,minecraft:gold_block,minecraft:gold_block",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_apple.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,.,minecraft:gold_ingot,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_axe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:gold_ingot,.,minecraft:gold_ingot,minecraft:gold_ingot,.,minecraft:gold_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_boots"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:carrot,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_carrot"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,.,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_chestplate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,.,minecraft:gold_ingot,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_helmet"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_hoe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,.,minecraft:gold_ingot,minecraft:gold_ingot,.,minecraft:gold_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_leggings"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,minecraft:gold_ingot,minecraft:gold_ingot,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_pickaxe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:gold_ingot,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_shovel"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:gold_ingot,.,.,minecraft:gold_ingot,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:golden_sword"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ore",
+        "craftType": "FOUR"
+      },
+      {
+        "pattern": "minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget,minecraft:gold_nugget",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:gold_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:gold_ingot"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:gold_ingot,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:gold_nugget"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.7,minecraft:wool.7,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:dye.15,.,.,minecraft:dye,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:dye.8"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.8,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.8,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.7,minecraft:stained_glass.7,minecraft:stained_glass.7,minecraft:stained_glass.7,minecraft:stained_glass.7,minecraft:stained_glass.7",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.8,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.13,minecraft:wool.13,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.13"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.2,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.13"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.2,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.13"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.13,minecraft:stained_glass.13,minecraft:stained_glass.13,minecraft:stained_glass.13,minecraft:stained_glass.13,minecraft:stained_glass.13",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.13"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.2,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.13"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:clay",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:hardened_clay"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:wheat,minecraft:wheat,minecraft:wheat,minecraft:wheat,minecraft:wheat,minecraft:wheat,minecraft:wheat,minecraft:wheat,minecraft:wheat",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:hay_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:chest,minecraft:iron_ingot,.,minecraft:iron_ingot,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:hopper"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_axe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:iron_bars"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_boots"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_chestplate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_door"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_helmet"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:iron_ingot,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_hoe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ore",
+        "craftType": "FOUR"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:iron_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:iron_ingot"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_leggings"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_pickaxe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:iron_ingot,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_shovel"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:iron_ingot,.,.,minecraft:iron_ingot,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:iron_sword"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:leather,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:item_frame"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:pumpkin,.,.,minecraft:torch,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:lit_pumpkin"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:diamond,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:jukebox"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:log.3,.,.,.,.",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Spruce Leaves": {
-      "gatherable": "yes"
-    },
-    "Spruce Sapling": {
-      "gatherable": "yes"
-    },
-    "Spruce Wood": {
-      "gatherable": "yes"
-    },
-    "Spruce Wood Planks": {
-      "recipe": {
-        "input": "Spruce Wood",
-        "pattern": "... .0. ...",
+    ],
+    "item": "minecraft:planks.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks.3,minecraft:planks.3,minecraft:planks.3,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:wooden_slab.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks.3,.,.,minecraft:planks.3,minecraft:planks.3,.,minecraft:planks.3,minecraft:planks.3,minecraft:planks.3",
+        "craftType": "CRAFT",
         "quantity": 4
       }
-    },
-    "Spruce Wood Slab": {
-      "recipe": {
-        "input": "Spruce Wood Planks",
-        "pattern": "... 000 ...",
-        "quantity": 6,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:jungle_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:stick,.,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick,.,minecraft:stick",
+        "craftType": "CRAFT"
       }
-    },
-    "Spruce Wood Stairs": {
-      "recipe": {
-        "input": "Spruce Wood Planks",
-        "pattern": "0.. 00. 000",
-        "quantity": 4,
-        "tools": "Crafting Table"
+    ],
+    "item": "minecraft:ladder"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:lapis_ore",
+        "craftType": "FOUR"
       }
-    }
+    ],
+    "item": "minecraft:dye.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:dye.4,minecraft:dye.4,minecraft:dye.4,minecraft:dye.4,minecraft:dye.4,minecraft:dye.4,minecraft:dye.4,minecraft:dye.4,minecraft:dye.4",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:lapis_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:lava,.,.,minecraft:bucket,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:lava_bucket"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:string,minecraft:string,.,minecraft:string,minecraft:slime_ball,.,.,.,minecraft:string",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:lead"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:leather,.,minecraft:leather,minecraft:leather,.,minecraft:leather",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:leather_boots"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:leather,minecraft:leather,minecraft:leather,minecraft:leather,.,minecraft:leather,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:leather_helmet"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:leather,minecraft:leather,minecraft:leather,minecraft:leather,.,minecraft:leather,minecraft:leather,.,minecraft:leather",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:leather_leggings"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:leather,.,minecraft:leather,minecraft:leather,minecraft:leather,minecraft:leather,minecraft:leather,minecraft:leather,minecraft:leather",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:leather_chestplate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:stick,.,.,minecraft:cobblestone,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:lever"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.3,minecraft:wool.3,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.1,.,.,.,.",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:dye.15,.,.,minecraft:dye.4,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:dye.12"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.12,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.12,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.3,minecraft:stained_glass.3,minecraft:stained_glass.3,minecraft:stained_glass.3,minecraft:stained_glass.3,minecraft:stained_glass.3",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.12,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.3"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.8,minecraft:wool.8,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.8"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.6,.,.,.,.",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:dye.15,.,.,minecraft:dye.8,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,minecraft:dye.15,minecraft:dye,minecraft:dye.15,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.8,.,.,.,.",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.3,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:dye.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.7,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.8"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.7,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.8"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.8,minecraft:stained_glass.8,minecraft:stained_glass.8,minecraft:stained_glass.8,minecraft:stained_glass.8,minecraft:stained_glass.8",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.8"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.7,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.8"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.5,minecraft:wool.5,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:dye.15,.,.,minecraft:dye.2,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:dye.10"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.10,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.10,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.5,minecraft:stained_glass.5,minecraft:stained_glass.5,minecraft:stained_glass.5,minecraft:stained_glass.5,minecraft:stained_glass.5",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.10,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.2,minecraft:wool.2,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:double_plant.1,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.2,.,.,.,.",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:dye.9,.,.,minecraft:dye.5,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,minecraft:dye.4,minecraft:dye.9,minecraft:dye.1,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:dye.1,minecraft:dye.1,.,minecraft:dye.15,minecraft:dye.4,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:dye.13"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.13,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.13,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.2,minecraft:stained_glass.2,minecraft:stained_glass.2,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.13,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:blaze_powder,.,.,minecraft:slime_ball,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:magma_cream"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:melon,minecraft:melon,minecraft:melon,minecraft:melon,minecraft:melon,minecraft:melon,minecraft:melon,minecraft:melon,minecraft:melon",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:melon_block"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:melon,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:melon_seeds"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:minecart"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:chest,.,.,minecraft:minecart,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:chest_minecart"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:furnace,.,.,minecraft:minecart,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:furnace_minecart"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:hopper,.,.,minecraft:minecart,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:hopper_minecart"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:tnt,.,.,minecraft:minecart,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:tnt_minecart"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:mossy_cobblestone,minecraft:mossy_cobblestone,minecraft:mossy_cobblestone,minecraft:mossy_cobblestone,minecraft:mossy_cobblestone,minecraft:mossy_cobblestone",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:cobblestone_wall.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:redstone,minecraft:potion",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8192"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8192",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16384"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:red_mushroom,.,.,minecraft:brown_mushroom,.,.,minecraft:bowl,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:mushroom_stew"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:netherrack",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:netherbrick"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:netherbrick,minecraft:netherbrick,.,minecraft:netherbrick,minecraft:netherbrick,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:nether_brick"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:netherbrick,minecraft:netherbrick,minecraft:netherbrick,minecraft:netherbrick,minecraft:netherbrick,minecraft:netherbrick",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:nether_brick_fence"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:nether_brick,minecraft:nether_brick,minecraft:nether_brick,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:nether_brick,.,.,minecraft:nether_brick,minecraft:nether_brick,.,minecraft:nether_brick,minecraft:nether_brick,minecraft:nether_brick",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:nether_brick_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:quartz_ore",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:quartz"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:redstone,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:noteblock"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:log,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:planks"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks,minecraft:planks,minecraft:planks,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:wooden_slab"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,.,.,minecraft:planks,minecraft:planks,.,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:oak_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.1,minecraft:wool.1,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.5,.,.,.,.",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:dye.11,.,.,minecraft:dye.1,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:dye.14"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.14,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.14,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.1,minecraft:stained_glass.1,minecraft:stained_glass.1,minecraft:stained_glass.1,minecraft:stained_glass.1,minecraft:stained_glass.1",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.14,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:wool,minecraft:stick,minecraft:stick,minecraft:stick,minecraft:stick",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:painting"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:reeds,minecraft:reeds,minecraft:reeds,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:paper"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:quartz_block,.,.,minecraft:quartz_block,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:quartz_block.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.6,minecraft:wool.6,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:double_plant.5,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:dye.15,.,.,minecraft:dye.1,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.7,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:dye.9"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.9,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.9,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.6,minecraft:stained_glass.6,minecraft:stained_glass.6,minecraft:stained_glass.6,minecraft:stained_glass.6,minecraft:stained_glass.6",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.9,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.6"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,minecraft:cobblestone,minecraft:iron_ingot,minecraft:cobblestone,minecraft:cobblestone,minecraft:redstone,minecraft:cobblestone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:piston"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:magma_cream",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8195"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8195,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8259"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8196",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8197",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8269",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8205",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8260",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8204"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion.8204",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8229",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8228",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8236"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:speckled_melon",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8197"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion.8197",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8229"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8198",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8206"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8206,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8262",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8270"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:golden_carrot",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8198"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8198,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8262"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:spider_eye",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8196"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion.8196",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8228"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:ghast_tear",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8193"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion.8193",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8225"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8193,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8257"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8194",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8202"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8202,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8258",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8259",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8266"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:blaze_powder",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8201"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion.8201",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8233"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8201,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8265"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:sugar",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8194"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion.8194",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8226"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8194,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8258"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.16,minecraft:fish.3",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8205"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8205,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8269"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8200"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:potion.8200,minecraft:redstone",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8265",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion",
+        "craftType": "POTION",
+        "quantity": 3
+      },
+      {
+        "pattern": "minecraft:fermented_spider_eye,minecraft:potion.8192",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.8264"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gold_ingot,.,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:stick,minecraft:gold_ingot,minecraft:gold_ingot,minecraft:redstone,minecraft:gold_ingot",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:golden_rail"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stone,minecraft:stone,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_pressure_plate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks,minecraft:planks,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_pressure_plate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:sugar,.,.,minecraft:egg,.,.,minecraft:pumpkin,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:pumpkin_pie"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:pumpkin,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:pumpkin_seeds"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.10,minecraft:wool.10,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.10"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:dye.4,.,.,minecraft:dye.1,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:dye.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.5,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.10"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.5,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.10"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.10,minecraft:stained_glass.10,minecraft:stained_glass.10,minecraft:stained_glass.10,minecraft:stained_glass.10,minecraft:stained_glass.10",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.10"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.5,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.10"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:quartz_block,minecraft:quartz_block,minecraft:quartz_block,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab.7"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:quartz_block,.,.,minecraft:quartz_block,minecraft:quartz_block,.,minecraft:quartz_block,minecraft:quartz_block,minecraft:quartz_block",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:quartz_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:iron_ingot,.,minecraft:iron_ingot,minecraft:iron_ingot,minecraft:stick,minecraft:iron_ingot,minecraft:iron_ingot,.,minecraft:iron_ingot",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:rail"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:redstone_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:redstone"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:redstone_torch,.,minecraft:redstone_torch,minecraft:quartz,minecraft:redstone_torch,minecraft:stone,minecraft:stone,minecraft:stone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:comparator"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:redstone,.,minecraft:redstone,minecraft:glowstone,minecraft:redstone,.,minecraft:redstone,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:redstone_lamp"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:redstone_torch,minecraft:redstone,minecraft:redstone_torch,minecraft:stone,minecraft:stone,minecraft:stone",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:repeater"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:redstone,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:redstone_torch"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.14,minecraft:wool.14,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.14"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.1,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.14"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.1,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.14"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.14,minecraft:stained_glass.14,minecraft:stained_glass.14,minecraft:stained_glass.14,minecraft:stained_glass.14,minecraft:stained_glass.14",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.14"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:wool,.,.,minecraft:dye.1,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.14"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:double_plant.4,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,.,.,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower.4,.,.,.,.",
+        "craftType": "CRAFT"
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:red_flower,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:dye.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:sand,minecraft:sand,.,minecraft:sand,minecraft:sand,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:sandstone"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:sandstone,minecraft:sandstone,minecraft:sandstone,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:sandstone,.,.,minecraft:sandstone,minecraft:sandstone,.,minecraft:sandstone,minecraft:sandstone,minecraft:sandstone",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:sandstone_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:iron_ingot,.,.,.,minecraft:iron_ingot",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:shears"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:sign"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:sandstone,minecraft:sandstone,.,minecraft:sandstone,minecraft:sandstone,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:sandstone.2"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:snow,minecraft:snow,minecraft:snow,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:snow_layer"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:snowball,minecraft:snowball,.,minecraft:snowball,minecraft:snowball,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:snow"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8195",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16387"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8259",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16451"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8204",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16396"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8236",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16428"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8197",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16389"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8229",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16421"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8206",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16398"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8270",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16462"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8198",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16390"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8262",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16454"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8196",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16388"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8228",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16420"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8260",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16452"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8193",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16385"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8225",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16417"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8257",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16449"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8202",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16394"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8266",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16458"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8201",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16393"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8233",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16425"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8265",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16457"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8194",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16386"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8226",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16418"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8258",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16450"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8205",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16397"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8269",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16461"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8200",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16392"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:potion.8264",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.16456"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:log.1,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:planks.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks.1,minecraft:planks.1,minecraft:planks.1,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:wooden_slab.1"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks.1,.,.,minecraft:planks.1,minecraft:planks.1,.,minecraft:planks.1,minecraft:planks.1,minecraft:planks.1",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:spruce_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:beef",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:cooked_beef"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:planks,.,.,minecraft:planks,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:stick"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:slime_ball,.,.,minecraft:piston,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:sticky_piston"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone",
+        "craftType": "FOUR"
+      }
+    ],
+    "item": "minecraft:stone"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,minecraft:cobblestone,.,minecraft:cobblestone,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_axe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:stone,minecraft:stone,.,minecraft:stone,minecraft:stone,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:stonebrick"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stonebrick,minecraft:stonebrick,minecraft:stonebrick,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab.5"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:stonebrick,.,.,minecraft:stonebrick,minecraft:stonebrick,.,minecraft:stonebrick,minecraft:stonebrick,minecraft:stonebrick",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:stone_brick_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,minecraft:cobblestone,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_hoe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_pickaxe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:cobblestone,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_shovel"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stone,minecraft:stone,minecraft:stone,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 6
+      }
+    ],
+    "item": "minecraft:stone_slab"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:cobblestone,.,.,minecraft:cobblestone,minecraft:cobblestone,.,minecraft:cobblestone,minecraft:cobblestone,minecraft:cobblestone",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:stone_stairs"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:cobblestone,.,.,minecraft:cobblestone,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stone_sword"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:reeds,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:sugar"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glowstone_dust,minecraft:potion",
+        "craftType": "POTION",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:potion.32"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:gunpowder,minecraft:sand,minecraft:gunpowder,minecraft:sand,minecraft:gunpowder,minecraft:sand,minecraft:gunpowder,minecraft:sand,minecraft:gunpowder",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:tnt"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:coal.1,.,.,minecraft:stick,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      },
+      {
+        "pattern": ".,.,.,.,minecraft:coal,.,.,minecraft:stick,.",
+        "craftType": "CRAFT",
+        "quantity": 4
+      }
+    ],
+    "item": "minecraft:torch"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:trapdoor"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:tripwire_hook,.,.,minecraft:chest,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:trapped_chest"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:iron_ingot,.,.,minecraft:stick,.,.,minecraft:planks,.",
+        "craftType": "CRAFT",
+        "quantity": 2
+      }
+    ],
+    "item": "minecraft:tripwire_hook"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:water,.,.,minecraft:bucket,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:water_bucket"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:iron_ingot,minecraft:iron_ingot,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:heavy_weighted_pressure_plate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:gold_ingot,minecraft:gold_ingot,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:light_weighted_pressure_plate"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:hay_block,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 9
+      }
+    ],
+    "item": "minecraft:wheat"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.15,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.15,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass,minecraft:stained_glass,minecraft:stained_glass,minecraft:stained_glass,minecraft:stained_glass,minecraft:stained_glass",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,.,minecraft:planks,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_axe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:planks,minecraft:planks,.,minecraft:planks,minecraft:planks,.,minecraft:planks,minecraft:planks",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_door"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_hoe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:planks,minecraft:planks,minecraft:planks,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_pickaxe"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:planks,.,.,minecraft:stick,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_shovel"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,minecraft:planks,.,.,minecraft:planks,.,.,minecraft:stick,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wooden_sword"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:string,minecraft:string,.,minecraft:string,minecraft:string,.,.,.,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:wool.4,minecraft:wool.4,.,.,.,.",
+        "craftType": "CRAFT",
+        "quantity": 3
+      }
+    ],
+    "item": "minecraft:carpet.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:dye.11,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay,minecraft:hardened_clay",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:stained_hardened_clay.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:dye.11,minecraft:glass,minecraft:glass,minecraft:glass,minecraft:glass",
+        "craftType": "CRAFT",
+        "quantity": 8
+      }
+    ],
+    "item": "minecraft:stained_glass.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,minecraft:stained_glass.4,minecraft:stained_glass.4,minecraft:stained_glass.4,minecraft:stained_glass.4,minecraft:stained_glass.4,minecraft:stained_glass.4",
+        "craftType": "CRAFT",
+        "quantity": 16
+      }
+    ],
+    "item": "minecraft:stained_glass_pane.4"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": ".,.,.,.,minecraft:dye.11,.,.,minecraft:wool,.",
+        "craftType": "CRAFT"
+      }
+    ],
+    "item": "minecraft:wool.4"
   }
-}
+]

@@ -1,7 +1,7 @@
 package model;
 
 import model.enums.EMod;
-import model.interfaces.AbstractItem;
+import model.impl.Item;
 
 /**
  * Objet inconnu et qui ne sera pas implémenté
@@ -9,10 +9,10 @@ import model.interfaces.AbstractItem;
  * @author Pyeroh
  *
  */
-public class UnknownItem extends AbstractItem {
+public class UnknownItem extends Item {
 
 	public UnknownItem(String displayName) {
-		super("", 0, "question.png", displayName, null, EMod.UNKNOWN);
+		super("unknown", 0, "unknown.png", displayName, null, EMod.UNKNOWN);
 	}
 
 }
