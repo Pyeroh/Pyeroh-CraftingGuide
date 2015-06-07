@@ -3,13 +3,18 @@
  */
 package model.impl;
 
+import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Properties;
+
+import javax.swing.ImageIcon;
 
 import model.enums.ECategory;
 import model.enums.EMod;
@@ -53,8 +58,7 @@ public class Item implements IItem {
 	}
 
 	/**
-	 * Permet d'initialiser la liste des items disponibles (sans image, avec la langue) TODO rajouter un objet "inconnu"
-	 * pouvant prendre n'importe quel nom
+	 * Permet d'initialiser la liste des items disponibles (sans image, avec la langue)
 	 *
 	 * @throws IOException
 	 * @throws URISyntaxException
@@ -75,7 +79,7 @@ public class Item implements IItem {
 				}
 
 				Properties lang = new Properties();
-				lang.load(Item.class.getResourceAsStream(mod.getPath() + "lang.properties"));
+				lang.load(Item.class.getResourceAsStream(mod.getPath() + String.format("lang_%s.properties", Locale.getDefault().getLanguage())));
 
 				JSONArray jsonArray = new JSONArray(buf.toString());
 				for (int i = 0; i < jsonArray.length(); i++) {
@@ -91,7 +95,7 @@ public class Item implements IItem {
 			}
 
 		}
-
+		
 	}
 
 	/**
@@ -115,6 +119,14 @@ public class Item implements IItem {
 		} while (item == null && i < IItem.itemList.size());
 
 		return item;
+	}
+	
+	public static List<Item> searchById(String id) {
+		
+		List<Item> items = new ArrayList<>();
+		
+		return items;
+		
 	}
 
 	/**
@@ -163,6 +175,71 @@ public class Item implements IItem {
 	@Override
 	public final EMod getMod() {
 		return mod;
+	}
+
+	public Image getImage() {
+		Image img = new ImageIcon(Item.class.getResource(getIconName())).getImage();
+		return img;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((category == null) ? 0 : category.hashCode());
+		result = prime * result
+				+ ((iconName == null) ? 0 : iconName.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + meta;
+		result = prime * result + ((mod == null) ? 0 : mod.hashCode());
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Item)) {
+			return false;
+		}
+		Item other = (Item) obj;
+		if (category != other.category) {
+			return false;
+		}
+		if (iconName == null) {
+			if (other.iconName != null) {
+				return false;
+			}
+		}
+		else if (!iconName.equals(other.iconName)) {
+			return false;
+		}
+		if (id == null) {
+			if (other.id != null) {
+				return false;
+			}
+		}
+		else if (!id.equals(other.id)) {
+			return false;
+		}
+		if (meta != other.meta) {
+			return false;
+		}
+		if (mod != other.mod) {
+			return false;
+		}
+		return true;
 	}
 
 }

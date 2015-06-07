@@ -1,6 +1,7 @@
 package helper;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -10,6 +11,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import model.enums.ECraftingType;
 import model.enums.EMod;
@@ -200,6 +202,34 @@ public abstract class Helper {
 
 	public static void formatItems() throws Exception {
 
+	}
+	
+	/**
+	 * <p>Cette méthode extrait, à partir d'un dump des objets d'un mod (en CSV) le fichier lang.properties.</p>
+	 * <p>Elle doit être exécutée après que les items aient été générés.</p>
+	 * @throws Exception
+	 */
+	public static void extractLang() throws Exception {
+		
+		List<String> source = Files.readAllLines(new File(Helper.class.getResource(EMod.MINECRAFT.getPath() + "itempanel.csv").toURI()).toPath(),
+				Charset.defaultCharset());
+		
+		Properties lang = new Properties();
+		
+		for (int i = 1; i < source.size(); i++) {
+			String[] parts = source.get(i).split(",");
+			
+			String id = parts[0] + (parts[2].equals("0") ? "" : "." + parts[2]);
+			String langID = id.replaceFirst(":", ".");
+			
+			if (Item.getById(id) != null) {
+				lang.put(langID, parts[4]);
+			}
+			
+			lang.store(new FileOutputStream("D:\\Workspace Eclipse Luna\\git\\Pyeroh-CraftingGuide\\Pyeroh-Crafting-Guide\\src\\gui\\items\\minecraft\\lang_fr.properties"), null);
+			
+		}
+		
 	}
 
 }

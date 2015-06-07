@@ -12,9 +12,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Hashtable;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 import model.UnknownItem;
 import model.enums.ECraftingType;
@@ -138,6 +140,10 @@ public class Recipe implements IRecipe {
 
 				break;
 			}
+			
+			Set<Item> il = new LinkedHashSet<>(IItem.itemList);
+			IItem.itemList.clear();
+			IItem.itemList.addAll(il);
 
 		}
 

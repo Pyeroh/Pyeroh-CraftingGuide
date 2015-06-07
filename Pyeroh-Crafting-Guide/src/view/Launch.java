@@ -1,5 +1,10 @@
 package view;
 
+import java.awt.Font;
+import java.awt.GraphicsEnvironment;
+
+import javax.swing.UIManager;
+
 import model.impl.Item;
 import model.impl.Recipe;
 
@@ -24,9 +29,18 @@ public class Launch {
 		// Paths.get("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc",
 		// file.getName() + ".png"), StandardCopyOption.ATOMIC_MOVE);
 		// }
+		
+		// 528,258
+		
+		Font minecraftia = Font.createFont(Font.TRUETYPE_FONT, Launch.class.getResourceAsStream("/gui/Minecraftia.ttf"));
+		GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(minecraftia);
+		
+		UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
 
 		Item.initialize();
 		Recipe.initialize();
+		
+		new MenuPrincipal();
 
 	}
 
