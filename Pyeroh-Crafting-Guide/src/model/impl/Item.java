@@ -95,7 +95,7 @@ public class Item implements IItem {
 			}
 
 		}
-		
+
 	}
 
 	/**
@@ -107,26 +107,119 @@ public class Item implements IItem {
 	 */
 	public static Item getById(String id) {
 
+		return getBy(id, ItemData.ID);
+	}
+
+	/**
+	 * Renvoie une liste d'items dont le nom "ressemble" à l'ID passé en paramètre
+	 *
+	 * @see #getById(String)
+	 * @param id
+	 * @return
+	 */
+	public static List<Item> searchById(String id) {
+
+		return searchBy(id, ItemData.ID);
+
+	}
+
+	/**
+	 * Renvoie un item à partir de son nom d'affichage
+	 *
+	 * @param id
+	 *            l'ID complet (<b>{@literal <nomDuMod>:<id>.[meta]}</b> avec la meta si elle existe)
+	 * @return l'item, ou null si non trouvé
+	 */
+	public static Item getByName(String name) {
+
+		return getBy(name, ItemData.NAME);
+
+	}
+
+	/**
+	 * Renvoie une liste d'items dont le nom "ressemble" à l'ID passé en paramètre
+	 *
+	 * @see #getById(String)
+	 * @param id
+	 * @return
+	 */
+	public static List<Item> searchByName(String name) {
+
+		return searchBy(name, ItemData.NAME);
+
+	}
+
+	/**
+	 * Méthode de base pour la récupération d'un item
+	 *
+	 * @param data
+	 * @param compare
+	 * @return
+	 */
+	private static Item getBy(String data, ItemData compare) {
+
 		Item item = null;
 		int i = 0;
 		do {
 
-			if (IItem.itemList.get(i).toString().equals(id)) {
-				item = IItem.itemList.get(i);
+			if (IItem.itemList.get(i).getMod() != EMod.UNKNOWN) {
+				switch (compare) {
+				case NAME:
+					if (IItem.itemList.get(i).getDisplayName().equalsIgnoreCase(data)) {
+						item = IItem.itemList.get(i);
+					}
+					break;
+				case ID:
+					if (IItem.itemList.get(i).toString().equalsIgnoreCase(data)) {
+						item = IItem.itemList.get(i);
+					}
+					break;
+				default:
+					break;
+				}
 			}
 			i++;
 
 		} while (item == null && i < IItem.itemList.size());
 
 		return item;
+
 	}
-	
-	public static List<Item> searchById(String id) {
-		
+
+	/**
+	 * Méthode de base pour la récupération d'une liste d'items
+	 *
+	 * @param data
+	 * @param compare
+	 * @return
+	 */
+	private static List<Item> searchBy(String data, ItemData compare) {
+
 		List<Item> items = new ArrayList<>();
-		
+
+		data = data.toLowerCase();
+
+		for (Item item : IItem.itemList) {
+			if (item.getMod() != EMod.UNKNOWN) {
+				switch (compare) {
+				case ID:
+					if (item.toString().toLowerCase().contains(data)) {
+						items.add(item);
+					}
+					break;
+				case NAME:
+					if (item.getDisplayName().toLowerCase().contains(data)) {
+						items.add(item);
+					}
+					break;
+				default:
+					break;
+				}
+			}
+		}
+
 		return items;
-		
+
 	}
 
 	/**
@@ -182,24 +275,26 @@ public class Item implements IItem {
 		return img;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 *
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result
-				+ ((category == null) ? 0 : category.hashCode());
-		result = prime * result
-				+ ((iconName == null) ? 0 : iconName.hashCode());
+		result = prime * result + ((category == null) ? 0 : category.hashCode());
+		result = prime * result + ((iconName == null) ? 0 : iconName.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + meta;
 		result = prime * result + ((mod == null) ? 0 : mod.hashCode());
 		return result;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 *
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -240,6 +335,13 @@ public class Item implements IItem {
 			return false;
 		}
 		return true;
+	}
+
+	enum ItemData {
+		ID,
+		NAME,
+		CATEGORY,
+		MOD;
 	}
 
 }

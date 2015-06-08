@@ -9,7 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
-import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JDialog;
@@ -20,6 +20,7 @@ import model.impl.Item;
 import org.jdesktop.swingx.JXSearchField;
 
 import sun.font.FontDesignMetrics;
+import view.components.event.SearchedItemChangeListener;
 
 public class JComboSearchField extends JXSearchField {
 
@@ -37,31 +38,25 @@ public class JComboSearchField extends JXSearchField {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (!e.getActionCommand().equals("")) {
+				if (!e.getActionCommand().isEmpty()) {
 
-					Item finalItem = Item.getById(e.getActionCommand());
+					Item finalItem = Item.getByName(e.getActionCommand());
 					if (finalItem == null) {
-						ArrayList<Item> searches = Item.searchBy(e
-								.getActionCommand());
-						Item item = Item.strictSearchBy(e.getActionCommand(),
-								false);
-						if (item == null && searches.size() > 1) {
-							list = new JDropDownList(JComboSearchField.this,
-									searches);
-						} else {
-							if (item != null) {
-								finalItem = item;
-							}
+						List<Item> searches = Item.searchByName(e.getActionCommand());
+						if (searches.size() > 1) {
+							list = new JDropDownList(JComboSearchField.this, searches);
+						}
+						else {
 							if (searches.size() == 1) {
 								finalItem = searches.get(0);
 							}
 							if (finalItem != null) {
 								JComboSearchField.this.setItem(finalItem);
-								JComboSearchField.this.setText(finalItem
-										.getGuiName());
+								JComboSearchField.this.setText(finalItem.getDisplayName());
 							}
 						}
-					} else {
+					}
+					else {
 						JComboSearchField.this.setItem(finalItem);
 					}
 
@@ -102,15 +97,18 @@ public class JComboSearchField extends JXSearchField {
 class JDropDownList extends JDialog {
 
 	private static final long serialVersionUID = 4346096598210553609L;
+
 	private JComboSearchField parent;
+
 	private JScrollPane scroll;
+
 	private JHoverList<Item> list;
 
 	public int getSelectedIndex() {
 		return list.getSelectedIndex();
 	}
 
-	public JDropDownList(JComboSearchField parent, ArrayList<Item> results) {
+	public JDropDownList(JComboSearchField parent, List<Item> results) {
 		addWindowFocusListener(new WindowFocusListener() {
 
 			@Override
@@ -137,43 +135,43 @@ class JDropDownList extends JDialog {
 
 		DefaultListModel<Item> model = new DefaultListModel<>();
 		int mlength = 0;
-		int max = this.parent.getWidth() + 70;
+		int max = this.parent.getWidth() + 80;
 		for (Item result : results) {
 			model.addElement(result);
-			int length = FontDesignMetrics.getMetrics(this.parent.getFont())
-					.stringWidth(result.getGuiName());
-			if (length > mlength)
-				mlength = length;
+			int length = FontDesignMetrics.getMetrics(this.parent.getFont()).stringWidth(result.getDisplayName());
+			mlength = Math.max(length, mlength);
 		}
 		if (mlength > max)
 			mlength = max;
+		mlength = Math.max(mlength, max) + 50;
 		list.setModel(model);
 
 		list.addMouseListener(new MouseAdapter() {
+
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				JDropDownList.this.parent.setText(list.getSelectedValue()
-						.getGuiName());
-				dispose();
+				selectItem();
 			}
 		});
 
 		list.addKeyListener(new KeyAdapter() {
+
 			@Override
 			public void keyPressed(KeyEvent e) {
 				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-					JDropDownList.this.parent.setText(list.getSelectedValue()
-							.getGuiName());
-					dispose();
+					selectItem();
 				}
 			}
 		});
 
 		setSize(mlength + 70, 150);
-		setLocation(this.parent.getLocationOnScreen().x,
-				this.parent.getLocationOnScreen().y + this.parent.getHeight()
-						+ 5);
+		setLocation(this.parent.getLocationOnScreen().x, this.parent.getLocationOnScreen().y + this.parent.getHeight() + 5);
 		setVisible(true);
+	}
+
+	private void selectItem() {
+		JDropDownList.this.parent.setText(list.getSelectedValue().getDisplayName());
+		dispose();
 	}
 
 }

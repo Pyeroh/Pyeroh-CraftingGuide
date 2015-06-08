@@ -130,7 +130,7 @@ public abstract class Helper {
 							}
 
 							Map<Item, Integer> recipeExtras = new LinkedHashMap<>();
-							if (!extras.equals("")) {
+							if (!extras.isEmpty()) {
 								String[] extrass = extras.split(", ");
 								for (String extra : extrass) {
 									String extraItem = extra.split("^\\d+ ")[1];
@@ -203,33 +203,33 @@ public abstract class Helper {
 	public static void formatItems() throws Exception {
 
 	}
-	
+
 	/**
 	 * <p>Cette méthode extrait, à partir d'un dump des objets d'un mod (en CSV) le fichier lang.properties.</p>
 	 * <p>Elle doit être exécutée après que les items aient été générés.</p>
 	 * @throws Exception
 	 */
 	public static void extractLang() throws Exception {
-		
+
 		List<String> source = Files.readAllLines(new File(Helper.class.getResource(EMod.MINECRAFT.getPath() + "itempanel.csv").toURI()).toPath(),
 				Charset.defaultCharset());
-		
+
 		Properties lang = new Properties();
-		
+
 		for (int i = 1; i < source.size(); i++) {
 			String[] parts = source.get(i).split(",");
-			
+
 			String id = parts[0] + (parts[2].equals("0") ? "" : "." + parts[2]);
 			String langID = id.replaceFirst(":", ".");
-			
+
 			if (Item.getById(id) != null) {
 				lang.put(langID, parts[4]);
 			}
-			
+
 			lang.store(new FileOutputStream("D:\\Workspace Eclipse Luna\\git\\Pyeroh-CraftingGuide\\Pyeroh-Crafting-Guide\\src\\gui\\items\\minecraft\\lang_fr.properties"), null);
-			
+
 		}
-		
+
 	}
 
 }

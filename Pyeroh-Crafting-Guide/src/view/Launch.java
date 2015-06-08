@@ -11,6 +11,8 @@ import model.impl.Recipe;
 // TODO Ajouter une description sur les items (ex: Il faut utiliser un seau sur une vache pour avoir du lait/ ex2: comment obtenir le Kikoku d'ExtraUtils...)
 public class Launch {
 
+	private static Font MINECRAFTIA;
+
 	public static void main(String[] args) throws Exception {
 		// File mcItems = new
 		// File("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc");
@@ -29,19 +31,23 @@ public class Launch {
 		// Paths.get("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc",
 		// file.getName() + ".png"), StandardCopyOption.ATOMIC_MOVE);
 		// }
-		
+
 		// 528,258
-		
-		Font minecraftia = Font.createFont(Font.TRUETYPE_FONT, Launch.class.getResourceAsStream("/gui/Minecraftia.ttf"));
-		GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(minecraftia);
-		
+
+		MINECRAFTIA = Font.createFont(Font.TRUETYPE_FONT, Launch.class.getResourceAsStream("/gui/Minecraftia.ttf"));
+		GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(MINECRAFTIA);
+
 		UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
 
 		Item.initialize();
 		Recipe.initialize();
-		
+
 		new MenuPrincipal();
 
+	}
+
+	public static Font getMinecraftia() {
+		return MINECRAFTIA;
 	}
 
 }
