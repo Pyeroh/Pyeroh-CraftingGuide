@@ -99,64 +99,13 @@ public class Item implements IItem {
 	}
 
 	/**
-	 * Renvoie un item à partir de son ID
-	 *
-	 * @param id
-	 *            l'ID complet (<b>{@literal <nomDuMod>:<id>.[meta]}</b> avec la meta si elle existe)
-	 * @return l'item, ou null si non trouvé
-	 */
-	public static Item getById(String id) {
-
-		return getBy(id, ItemData.ID);
-	}
-
-	/**
-	 * Renvoie une liste d'items dont le nom "ressemble" à l'ID passé en paramètre
-	 *
-	 * @see #getById(String)
-	 * @param id
-	 * @return
-	 */
-	public static List<Item> searchById(String id) {
-
-		return searchBy(id, ItemData.ID);
-
-	}
-
-	/**
-	 * Renvoie un item à partir de son nom d'affichage
-	 *
-	 * @param id
-	 *            l'ID complet (<b>{@literal <nomDuMod>:<id>.[meta]}</b> avec la meta si elle existe)
-	 * @return l'item, ou null si non trouvé
-	 */
-	public static Item getByName(String name) {
-
-		return getBy(name, ItemData.NAME);
-
-	}
-
-	/**
-	 * Renvoie une liste d'items dont le nom "ressemble" à l'ID passé en paramètre
-	 *
-	 * @see #getById(String)
-	 * @param id
-	 * @return
-	 */
-	public static List<Item> searchByName(String name) {
-
-		return searchBy(name, ItemData.NAME);
-
-	}
-
-	/**
 	 * Méthode de base pour la récupération d'un item
 	 *
 	 * @param data
 	 * @param compare
 	 * @return
 	 */
-	private static Item getBy(String data, ItemData compare) {
+	public static Item getBy(String data, ItemData compare) {
 
 		Item item = null;
 		int i = 0;
@@ -169,13 +118,13 @@ public class Item implements IItem {
 						item = IItem.itemList.get(i);
 					}
 					break;
-				case ID:
+				case ID_AND_META:
 					if (IItem.itemList.get(i).toString().equalsIgnoreCase(data)) {
 						item = IItem.itemList.get(i);
 					}
 					break;
 				default:
-					break;
+					throw new UnsupportedOperationException("Item.getBy() : pas d'implémentation pour " + compare);
 				}
 			}
 			i++;
@@ -193,16 +142,17 @@ public class Item implements IItem {
 	 * @param compare
 	 * @return
 	 */
-	private static List<Item> searchBy(String data, ItemData compare) {
+	public static List<Item> searchBy(String data, ItemData compare) {
 
 		List<Item> items = new ArrayList<>();
 
+		ECategory catData = compare == ItemData.CATEGORY ? ECategory.valueOf(data) : null;
 		data = data.toLowerCase();
 
 		for (Item item : IItem.itemList) {
 			if (item.getMod() != EMod.UNKNOWN) {
 				switch (compare) {
-				case ID:
+				case ID_AND_META:
 					if (item.toString().toLowerCase().contains(data)) {
 						items.add(item);
 					}
@@ -212,8 +162,13 @@ public class Item implements IItem {
 						items.add(item);
 					}
 					break;
-				default:
+				case CATEGORY:
+					if (item.getCategory() == catData) {
+						items.add(item);
+					}
 					break;
+				default:
+					throw new UnsupportedOperationException("Item.searchBy() : pas d'implémentation pour " + compare);
 				}
 			}
 		}
@@ -337,10 +292,33 @@ public class Item implements IItem {
 		return true;
 	}
 
-	enum ItemData {
-		ID,
+	/**
+	 * Enum pour la comparaison de valeurs, pour la recherche d'éléments dans la liste des items
+	 *
+	 * @author Pyeroh
+	 *
+	 */
+	public static enum ItemData {
+
+		/**
+		 * Recherche par l'ID. La donnée doit être au format <b>{@literal <nomDuMod>:<id>.[meta]}</b> avec la meta si
+		 * elle existe.
+		 */
+		ID_AND_META,
+
+		/**
+		 * Recherche par le nom d'affichage
+		 */
 		NAME,
+
+		/**
+		 * Recherche par la catégorie
+		 */
 		CATEGORY,
+
+		/**
+		 * Recherche par le mod
+		 */
 		MOD;
 	}
 

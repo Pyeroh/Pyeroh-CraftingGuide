@@ -13,7 +13,7 @@ public class Launch {
 
 	private static Font MINECRAFTIA;
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String... args) throws Exception {
 		// File mcItems = new
 		// File("C:\\Users\\DENANTEUILQ\\Documents\\WS-eclipse-perso\\Pyeroh-Crafting-Guide\\src\\gui\\items\\mc");
 		// File[] files = mcItems.listFiles();
@@ -32,8 +32,6 @@ public class Launch {
 		// file.getName() + ".png"), StandardCopyOption.ATOMIC_MOVE);
 		// }
 
-		// 528,258
-
 		MINECRAFTIA = Font.createFont(Font.TRUETYPE_FONT, Launch.class.getResourceAsStream("/gui/Minecraftia.ttf"));
 		GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(MINECRAFTIA);
 
@@ -42,7 +40,9 @@ public class Launch {
 		Item.initialize();
 		Recipe.initialize();
 
-		new MenuPrincipal();
+		new TestFrame();
+
+//		new MenuPrincipal();
 
 	}
 

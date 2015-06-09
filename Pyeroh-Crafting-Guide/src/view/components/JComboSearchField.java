@@ -16,6 +16,7 @@ import javax.swing.JDialog;
 import javax.swing.JScrollPane;
 
 import model.impl.Item;
+import model.impl.Item.ItemData;
 
 import org.jdesktop.swingx.JXSearchField;
 
@@ -40,9 +41,9 @@ public class JComboSearchField extends JXSearchField {
 			public void actionPerformed(ActionEvent e) {
 				if (!e.getActionCommand().isEmpty()) {
 
-					Item finalItem = Item.getByName(e.getActionCommand());
+					Item finalItem = Item.getBy(e.getActionCommand(), ItemData.NAME);
 					if (finalItem == null) {
-						List<Item> searches = Item.searchByName(e.getActionCommand());
+						List<Item> searches = Item.searchBy(e.getActionCommand(), ItemData.NAME);
 						if (searches.size() > 1) {
 							list = new JDropDownList(JComboSearchField.this, searches);
 						}

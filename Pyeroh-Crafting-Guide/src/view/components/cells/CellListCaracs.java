@@ -1,5 +1,6 @@
 package view.components.cells;
 
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 
@@ -34,8 +35,10 @@ public class CellListCaracs extends JPanel {
 	}
 
 	public static Image scaleImage(Image source, JComponent component) {
-		int height = component.getHeight();
-		int width = component.getWidth();
-		return source.getScaledInstance(width, height, Image.SCALE_AREA_AVERAGING);
+		return scaleImage(source, component.getSize());
+	}
+
+	public static Image scaleImage(Image source, Dimension dim) {
+		return source.getScaledInstance(dim.width, dim.height, Image.SCALE_AREA_AVERAGING);
 	}
 }

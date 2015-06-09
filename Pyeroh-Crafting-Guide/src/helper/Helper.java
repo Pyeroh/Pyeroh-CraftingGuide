@@ -17,6 +17,7 @@ import model.enums.ECraftingType;
 import model.enums.EMod;
 import model.impl.Item;
 import model.impl.Recipe;
+import model.impl.Item.ItemData;
 import model.interfaces.IItem;
 import model.interfaces.IRecipe;
 
@@ -222,7 +223,7 @@ public abstract class Helper {
 			String id = parts[0] + (parts[2].equals("0") ? "" : "." + parts[2]);
 			String langID = id.replaceFirst(":", ".");
 
-			if (Item.getById(id) != null) {
+			if (Item.getBy(id, ItemData.ID_AND_META) != null) {
 				lang.put(langID, parts[4]);
 			}
 

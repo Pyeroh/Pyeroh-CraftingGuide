@@ -21,6 +21,7 @@ import java.util.Set;
 import model.UnknownItem;
 import model.enums.ECraftingType;
 import model.enums.EMod;
+import model.impl.Item.ItemData;
 import model.interfaces.IItem;
 import model.interfaces.IRecipe;
 
@@ -100,7 +101,7 @@ public class Recipe implements IRecipe {
 				for (int i = 0; i < jsonArray.length(); i++) {
 					JSONObject obj = jsonArray.getJSONObject(i);
 
-					Item item = Item.getById(obj.getString("item"));
+					Item item = Item.getBy(obj.getString("item"), ItemData.ID_AND_META);
 					JSONArray recipes = obj.getJSONArray("recipes");
 
 					for (int j = 0; j < recipes.length(); j++) {
@@ -117,7 +118,7 @@ public class Recipe implements IRecipe {
 							String[] extrass = extras.split(",");
 							for (String extra : extrass) {
 								String[] parts = extra.split("::");
-								recipeExtras.put(Item.getById(parts[1]), Integer.parseInt(parts[0]));
+								recipeExtras.put(Item.getBy(parts[1], ItemData.ID_AND_META), Integer.parseInt(parts[0]));
 							}
 						}
 
@@ -125,7 +126,7 @@ public class Recipe implements IRecipe {
 						String[] patternParts = pattern.split(",");
 						Item[] recipePattern = new Item[patternParts.length];
 						for (int k = 0; k < patternParts.length; k++) {
-							Item patElement = Item.getById(patternParts[k]);
+							Item patElement = Item.getBy(patternParts[k], ItemData.ID_AND_META);
 							if (patElement == null) {
 								patElement = new UnknownItem(patternParts[k]);
 								IItem.itemList.add(patElement);
@@ -140,7 +141,7 @@ public class Recipe implements IRecipe {
 
 				break;
 			}
-			
+
 			Set<Item> il = new LinkedHashSet<>(IItem.itemList);
 			IItem.itemList.clear();
 			IItem.itemList.addAll(il);

@@ -11,19 +11,23 @@ public enum EMod {
 	/**
 	 * Objets inconnus
 	 */
-	UNKNOWN("custom", null),
+	UNKNOWN("custom", null, null),
 	/**
 	 * Minecraft
 	 */
-	MINECRAFT("minecraft", "Mojang");
+	MINECRAFT("minecraft", "Minecraft", "Mojang");
 
 	private String path;
 
+	private String modName;
+
 	private String creator;
 
-	EMod(String path, String creator) {
+	EMod(String path, String modName, String creator) {
 		String format = "/gui/items/%s/";
 		this.path = String.format(format, path);
+		this.modName = modName;
+		this.creator = creator;
 	}
 
 	/**
@@ -31,6 +35,13 @@ public enum EMod {
 	 */
 	public String getPath() {
 		return path;
+	}
+
+	/**
+	 * @return {@link #modName}
+	 */
+	public String getModName() {
+		return modName;
 	}
 
 	/**

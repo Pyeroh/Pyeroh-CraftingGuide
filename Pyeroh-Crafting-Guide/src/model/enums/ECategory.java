@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import model.EnumName;
+
 /**
  * Décrit les catégories d'un mod
  *
@@ -45,7 +47,7 @@ public enum ECategory {
 
 	private ECategory(EMod mod, EMod... mods) {
 		List<EMod> modList = new ArrayList<>(Arrays.asList(mods));
-		if (modList.size() == 0) {
+		if (modList.isEmpty()) {
 			modList.add(mod);
 		}
 		else {
@@ -59,6 +61,13 @@ public enum ECategory {
 	 */
 	public List<EMod> getMods() {
 		return mods;
+	}
+
+	/**
+	 * @return le nom pour l'affichage
+	 */
+	public String getDisplayName() {
+		return EnumName.getString(String.format("category.%s", this.name().toLowerCase()));
 	}
 
 	/**
