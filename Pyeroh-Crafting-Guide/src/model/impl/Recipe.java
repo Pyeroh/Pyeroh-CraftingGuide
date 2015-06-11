@@ -14,6 +14,7 @@ import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
@@ -63,8 +64,7 @@ public class Recipe implements IRecipe {
 		for (Item item : getPattern()) {
 			if (items.containsKey(item)) {
 				items.put(item, items.get(item) + 1);
-			}
-			else {
+			} else {
 				items.put(item, 1);
 			}
 		}
@@ -81,7 +81,7 @@ public class Recipe implements IRecipe {
 	public static void initialize() throws IOException, URISyntaxException {
 
 		Properties unknownLang = new Properties();
-		unknownLang.load(Recipe.class.getResourceAsStream(EMod.UNKNOWN.getPath() + "lang.properties"));
+		unknownLang.load(Recipe.class.getResourceAsStream(EMod.UNKNOWN.getPath() + String.format("lang_%s.properties", Locale.getDefault().getLanguage())));
 
 		for (EMod mod : EMod.values()) {
 
@@ -109,7 +109,7 @@ public class Recipe implements IRecipe {
 						JSONObject recipe = recipes.getJSONObject(j);
 						String pattern = recipe.getString("pattern");
 						ECraftingType craftType = ECraftingType.valueOf(recipe.getString("craftType"));
-						int quantity = recipe.optInt("quantity");
+						int quantity = recipe.optInt("quantity", 1);
 						String extras = recipe.optString("extras");
 
 						// Traitement des extras
@@ -127,8 +127,8 @@ public class Recipe implements IRecipe {
 						Item[] recipePattern = new Item[patternParts.length];
 						for (int k = 0; k < patternParts.length; k++) {
 							Item patElement = Item.getBy(patternParts[k], ItemData.ID_AND_META);
-							if (patElement == null) {
-								patElement = new UnknownItem(patternParts[k]);
+							if (patElement == null && !patternParts[k].equals(".")) {
+								patElement = new UnknownItem(patternParts[k], unknownLang.getProperty(patternParts[k]));
 								IItem.itemList.add(patElement);
 							}
 							recipePattern[k] = patElement;
@@ -151,16 +151,50 @@ public class Recipe implements IRecipe {
 	}
 
 	/**
-	 * @param item
-	 * @return la liste des recettes qui donnent l'item passé en paramètre
+	 * Recherche basique de recette entre une donnée et un critère de comparaison
+	 * @param data Doit correspondre au type indiqué par les valeurs de {@link RecipeData}
+	 * @param compare
+	 * @return
 	 */
-	public static List<Recipe> getRecipesByItem(Item item) {
+	public static List<Recipe> searchBy(Object data, RecipeData compare) {
 
 		List<Recipe> recipes = new ArrayList<>();
 
+		Item item = null;
+		ECraftingType type = null;
+		EMod mod = null;
+
+		switch (compare) {
+		case ITEM:
+			item = (Item) data;
+			break;
+		case TYPE:
+			type = (ECraftingType) data;
+			break;
+		case MOD:
+			mod = (EMod) data;
+			break;
+		default:
+			throw new UnsupportedOperationException("Recipe.searchBy() : pas d'implémentation pour " + compare);
+		}
+
 		for (Recipe recipe : IRecipe.recipeList) {
-			if (recipe.getItem() == item) {
-				recipes.add(recipe);
+			switch (compare) {
+			case ITEM:
+				if (recipe.getItem() == item) {
+					recipes.add(recipe);
+				}
+				break;
+			case TYPE:
+				if (recipe.getType() == type) {
+					recipes.add(recipe);
+				}
+				break;
+			case MOD:
+				if (recipe.getMod() == mod) {
+					recipes.add(recipe);
+				}
+				break;
 			}
 		}
 
@@ -207,6 +241,32 @@ public class Recipe implements IRecipe {
 	 */
 	public final EMod getMod() {
 		return mod;
+	}
+
+	/**
+	 * Enum pour la comparaison de valeurs, pour la recherche d'éléments dans la
+	 * liste des recettes
+	 *
+	 * @author Pyeroh
+	 *
+	 */
+	public static enum RecipeData {
+
+		/**
+		 * Recherche par {@link Item}
+		 */
+		ITEM,
+
+		/**
+		 * Recherche par {@link ECraftingType}
+		 */
+		TYPE,
+
+		/**
+		 * Recherche par {@link EMod}
+		 */
+		MOD;
+
 	}
 
 }

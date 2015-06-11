@@ -26,7 +26,8 @@ public class JHoverList<E> extends JList<E> {
 	 */
 	public void toggleHoverable() {
 		MouseAdapter handler = renderer.getHandler();
-		if (!hoverable) {
+		hoverable = !hoverable;
+		if (hoverable) {
 			this.addMouseListener(handler);
 			this.addMouseMotionListener(handler);
 		}
@@ -34,7 +35,6 @@ public class JHoverList<E> extends JList<E> {
 			this.removeMouseListener(handler);
 			this.removeMouseMotionListener(handler);
 		}
-		hoverable = !hoverable;
 	}
 
 }

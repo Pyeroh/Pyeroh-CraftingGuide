@@ -73,11 +73,12 @@ public class MenuPrincipal extends JFrame {
 
 	public MenuPrincipal() {
 		super();
+		setResizable(false);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuPrincipal.class.getResource("/gui/items/minecraft/icons/crafting_table.png")));
 		setTitle("Pyeroh Crafting Guide v1");
 
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		setSize(796, 471);
+		setSize(785, 470);
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
@@ -118,7 +119,7 @@ public class MenuPrincipal extends JFrame {
 		};
 
 		tabpan_mainContainer = new JTabbedPane(JTabbedPane.TOP);
-		tabpan_mainContainer.setBounds(0, 6, 780, 427);
+		tabpan_mainContainer.setBounds(0, 6, 780, 436);
 		getContentPane().add(tabpan_mainContainer);
 
 		pan_configure = new JPanel();
@@ -158,7 +159,7 @@ public class MenuPrincipal extends JFrame {
 
 		scrpan_browsed = new JScrollPane();
 		scrpan_browsed.setVisible(false);
-		scrpan_browsed.setBounds(511, 60, 263, 331);
+		scrpan_browsed.setBounds(511, 60, 263, 340);
 		pan_browse.add(scrpan_browsed);
 
 		tree_browsed = new JXTree();

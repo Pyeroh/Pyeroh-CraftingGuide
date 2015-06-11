@@ -502,7 +502,7 @@
   {
     "recipes": [
       {
-        "pattern": ".,.,.,minecraft:sugar,minecraft:egg,minecraft:sugar,minecraft:wheat,minecraft:wheat,minecraft:wheat",
+        "pattern": "minecraft:milk_bucket,minecraft:milk_bucket,minecraft:milk_bucket,minecraft:sugar,minecraft:egg,minecraft:sugar,minecraft:wheat,minecraft:wheat,minecraft:wheat",
         "craftType": "CRAFT",
         "extras": "3::minecraft:bucket"
       }
@@ -2778,6 +2778,16 @@
         "pattern": ".,.,.,.,minecraft:redstone_block,.,.,.,.",
         "craftType": "CRAFT",
         "quantity": 9
+      }
+    ],
+    "item": "minecraft:redstone"
+  },
+  {
+    "recipes": [
+      {
+        "pattern": "minecraft:redstone_ore",
+        "craftType": "FOUR",
+        "quantity": 1
       }
     ],
     "item": "minecraft:redstone"

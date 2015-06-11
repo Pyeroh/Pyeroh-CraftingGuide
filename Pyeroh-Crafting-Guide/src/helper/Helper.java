@@ -18,6 +18,7 @@ import model.enums.EMod;
 import model.impl.Item;
 import model.impl.Recipe;
 import model.impl.Item.ItemData;
+import model.impl.Recipe.RecipeData;
 import model.interfaces.IItem;
 import model.interfaces.IRecipe;
 
@@ -152,7 +153,7 @@ public abstract class Helper {
 		JSONArray jsonArray = new JSONArray();
 		for (Item item : IItem.itemList) {
 			jsonObject = new JSONObject();
-			List<Recipe> recipes = Recipe.getRecipesByItem(item);
+			List<Recipe> recipes = Recipe.searchBy(item, RecipeData.ITEM);
 			if (!recipes.isEmpty()) {
 				jsonObject.put("item", item.toString());
 				JSONArray recipesArray = new JSONArray();

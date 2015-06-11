@@ -3,7 +3,6 @@ package view.components;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -13,20 +12,14 @@ import javax.swing.JList;
 
 import model.impl.Item;
 import view.components.cells.CellListItem;
-import view.components.cells.CellListQuantityItem;
 
 public class HoverListCellRenderer extends DefaultListCellRenderer {
 
 	private static final long serialVersionUID = 9037091771053473873L;
-
-	private static final Color HOVER_COLOR = new Color(208, 233, 253);
-
-	private static final Color SELECTED_COLOR = new Color(247, 212, 170);
-
+	private static final Color HOVER_COLOR = new Color(208,233,253);
+	private static final Color SELECTED_COLOR = new Color(247,212,170);
 	private int hoverIndex = -1;
-
 	private MouseAdapter handler;
-
 	private JList<?> list;
 
 	public HoverListCellRenderer(JList<?> list) {
@@ -38,15 +31,19 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 	public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
 		super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
 
+		/*JList thisvalue = (JList) value;
+		thisvalue.setPreferredSize(new Dimension(list.getWidth()-20, thisvalue.getHeight()));
+		thisvalue.setMinimumSize(thisvalue.getPreferredSize());
+		thisvalue.setMaximumSize(thisvalue.getPreferredSize());*/
+
 		if (value != null) {
 			if (value instanceof Item) {
 				Item item = (Item) value;
-				setIcon(new ImageIcon(item.getImage().getScaledInstance(32, 32, Image.SCALE_AREA_AVERAGING)));
+				setIcon(new ImageIcon(item.getImage()));
 				setText(item.getDisplayName());
 
 				if (!isSelected) {
-					setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list.getBackground()
-							: Color.white));
+					setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list.getBackground() : Color.white));
 				}
 				else {
 					setBackground(SELECTED_COLOR);
@@ -54,33 +51,15 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 				setForeground(Color.black);
 
 				return this;
-			}
-			else if (value instanceof CellListQuantityItem) {
-				CellListQuantityItem cell = (CellListQuantityItem) value;
-				setIcon(new ImageIcon(cell.getItem().getImage()));
-				setText(cell.getItem().getDisplayName() + (cell.getQuantity() == 1 ? "" : " x" + cell.getQuantity()));
-
-				if (!isSelected) {
-					setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list.getBackground()
-							: Color.white));
-				}
-				else {
-					setBackground(SELECTED_COLOR);
-				}
-				setForeground(Color.black);
-
-				return cell;
-			}
-			else if (value instanceof CellListItem) {
+			} else if (value instanceof CellListItem) {
 				CellListItem cell = (CellListItem) value;
 
-				cell.setPreferredSize(new Dimension(list.getWidth() - 20, cell.getHeight()));
+				cell.setPreferredSize(new Dimension(list.getWidth()-20, cell.getHeight()));
 				cell.setMinimumSize(cell.getPreferredSize());
 				cell.setMaximumSize(cell.getPreferredSize());
 
 				if (!isSelected) {
-					cell.setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list
-							.getBackground() : Color.white));
+					cell.setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list.getBackground() : Color.white));
 				}
 				else {
 					cell.setBackground(SELECTED_COLOR);
@@ -104,7 +83,6 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 
 	/**
 	 * Donne l'index survolé par la souris
-	 *
 	 * @return -1 s'il n'y a pas de survol, l'index survolé sinon
 	 */
 	public int getHoverIndex() {
@@ -124,15 +102,15 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 		}
 
 		public void mouseMoved(MouseEvent e) {
-			if (flist.getModel().getSize() != 0) {
+			if (flist.getModel().getSize()!=0) {
 				int index = flist.locationToIndex(e.getPoint());
-				setHoverIndex(flist.getCellBounds(index, index).contains(e.getPoint()) ? index : -1);
+				setHoverIndex(flist.getCellBounds(index, index).contains(
+						e.getPoint()) ? index : -1);
 			}
 		}
 
 		private void setHoverIndex(int index) {
-			if (hoverIndex == index)
-				return;
+			if (hoverIndex == index) return;
 			hoverIndex = index;
 			flist.repaint();
 		}

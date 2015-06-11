@@ -13,7 +13,9 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Rectangle2D;
 
 import javax.swing.ImageIcon;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
@@ -21,6 +23,12 @@ import javax.swing.border.LineBorder;
 import model.impl.Item;
 import sun.font.FontDesignMetrics;
 
+/**
+ * Conteneur d'image d'item
+ *
+ * @author Pyeroh
+ *
+ */
 public class MCImage extends JLabel {
 
 	private static final long serialVersionUID = -2326467037839641043L;
@@ -29,15 +37,48 @@ public class MCImage extends JLabel {
 
 	private Item item = null;
 
-	private JPanel container;
+	private JComponent container;
 
+	private MouseAdapter mouseAdapter;
+
+	private boolean isHoverable = false;
+
+	/**
+	 * Construit une MCImage avec le JPanel dans lequel elle est contenue
+	 *
+	 * @param container
+	 */
 	public MCImage(JPanel container) {
 		super();
 		this.container = container;
 		init();
 	}
 
+	/**
+	 * Construit une MCImage avec le JPanel dans lequel elle est contenue, ainsi
+	 * que l'item qu'elle affichera
+	 *
+	 * @param container
+	 * @param item
+	 */
 	public MCImage(JPanel container, Item item) {
+		this(container);
+		this.item = item;
+	}
+
+	/**
+	 * @see #MCImage(JPanel)
+	 */
+	public MCImage(JLayeredPane container) {
+		super();
+		this.container = container;
+		init();
+	}
+
+	/**
+	 * @see #MCImage(JPanel, Item)
+	 */
+	public MCImage(JLayeredPane container, Item item) {
 		this(container);
 		this.item = item;
 	}
@@ -75,19 +116,33 @@ public class MCImage extends JLabel {
 		scaleImage();
 	}
 
+	/**
+	 * Rend alternativement l'image "survolable" ou pas : au survol de la
+	 * souris, est-ce que du texte s'affichera ?
+	 */
+	public void toggleHoverable() {
+		isHoverable = !isHoverable;
+		if (isHoverable) {
+			addMouseListener(mouseAdapter);
+			addMouseMotionListener(mouseAdapter);
+		}
+		else {
+			removeMouseListener(mouseAdapter);
+			removeMouseMotionListener(mouseAdapter);
+		}
+	}
+
 	private void scaleImage() {
 		if (item != null) {
-			Image img = this.item.getImage().getScaledInstance(getWidth(),
-					getHeight(), Image.SCALE_AREA_AVERAGING);
+			Image img = this.item.getImage().getScaledInstance(getWidth(), getHeight(), Image.SCALE_AREA_AVERAGING);
 			setIcon(new ImageIcon(img));
-		}
-		else
+		} else
 			setIcon(null);
 	}
 
 	private void init() {
 
-		MouseAdapter adapter = new MouseAdapter() {
+		mouseAdapter = new MouseAdapter() {
 
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -109,8 +164,7 @@ public class MCImage extends JLabel {
 
 			@Override
 			public void mouseMoved(MouseEvent e) {
-				Point p = new Point(getX() + e.getX() + 12, getY() + e.getY()
-						+ 19);
+				Point p = new Point(getX() + e.getX() + 12, getY() + e.getY() + 19);
 				if (item != null) {
 					if (p.x + pan.getWidth() > container.getWidth()) {
 						p.setLocation(p.x - pan.getWidth() - 14, p.y);
@@ -119,21 +173,25 @@ public class MCImage extends JLabel {
 						p.setLocation(p.x, p.y - pan.getHeight() - 21);
 					}
 					pan.setLocation(p);
-				}
-				else {
+				} else {
 					mouseExited(e);
 				}
 			}
 
 		};
 
-		addMouseListener(adapter);
-		addMouseMotionListener(adapter);
+		toggleHoverable();
 
 	}
 
 }
 
+/**
+ * Le panel qui est affiché au survol de la souris sur l'item
+ *
+ * @author Pyeroh
+ *
+ */
 class MCPanel extends RoundedPanel {
 
 	private static final long serialVersionUID = -3879589255803613800L;
@@ -142,8 +200,7 @@ class MCPanel extends RoundedPanel {
 
 	private static MCPanel pan;
 
-	private static final Font MINECRAFTIA_FONT = new Font("Minecraftia",
-			Font.PLAIN, 12);
+	private static final Font MINECRAFTIA_FONT = new Font("Minecraftia", Font.PLAIN, 12);
 
 	private MCPanel() {
 		super();

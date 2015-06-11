@@ -2,22 +2,27 @@ package view;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
-import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 
-import model.enums.ECraftingType;
 import model.impl.Item;
-import view.components.JHoverList;
-import view.components.cells.CellListCaracs;
-import view.components.cells.CellListQuantityItem;
+import view.components.MCImage;
 
-// TODO Il faut créer un panel custom pour les crafting type (pour avoir directement la recette renseignée sans se casser la tête avec les labels...)
-// TODO Il faut aussi un panel custom pour le couple CraftingPanel/IngredientsListe pour pouvoir le "dupliquer" comme une liste
+/**
+ * Un panel pour afficher les informations d'un item
+ *
+ * @author Pyeroh
+ *
+ */
+// TODO Ajouter la possibilité de désactiver des mods pour sélectionner
+// seulement certains objets en fonction des mods actifs
 public class ItemPane extends JPanel {
 
 	/**
@@ -25,60 +30,80 @@ public class ItemPane extends JPanel {
 	 */
 	private static final long serialVersionUID = 8397804417232569776L;
 
-	private JLabel img_mainImg;
+	private Item item;
+
+	private MCImage img_mainImg;
 
 	private JLabel lib_item;
 
-	private JPanel pan_recipe;
+	private JButton btn_craftingPlan;
 
-	private JLabel img_craftBackground;
+	private JScrollPane scrpan_recipes;
 
-	private JHoverList<CellListQuantityItem> list_ingredients;
+	private JScrollPane scrpan_usage;
 
-	private JLabel lib_ingredients;
-
-	private JScrollPane scrpan_ingredients;
+	private JScrollPane scrpan_fromCategory;
 
 	public ItemPane(Item item) {
 		super();
-
+		this.item = item;
+		setSize(810, 700);
 		setLayout(null);
-		setSize(965, 467);
 
-		img_mainImg = new JLabel();
+		img_mainImg = new MCImage(this);
 		img_mainImg.setBounds(6, 6, 64, 64);
+		img_mainImg.toggleHoverable();
 		add(img_mainImg);
 
-		lib_item = new JLabel("");
+		lib_item = new JLabel();
+		lib_item.setBounds(82, 6, 480, 22);
 		lib_item.setFont(Launch.getMinecraftia().deriveFont(Font.PLAIN).deriveFont(14f));
-		lib_item.setBounds(82, 6, 310, 22);
 		add(lib_item);
 
-		pan_recipe = new JPanel();
-		pan_recipe.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Recipe", TitledBorder.LEADING, TitledBorder.TOP, Launch
-				.getMinecraftia().deriveFont(12f), null));
-		pan_recipe.setBounds(82, 40, 787, 301);
-		add(pan_recipe);
-		pan_recipe.setLayout(null);
+		btn_craftingPlan = new JButton("See Crafting Plan");
+		btn_craftingPlan.addMouseListener(new MouseAdapter() {
 
-		img_craftBackground = new JLabel();
-		img_craftBackground.setBounds(21, 26, 528, 258);
-		img_craftBackground.setIcon(new ImageIcon(CellListCaracs.scaleImage(ECraftingType.CRAFT.getInterfaceImage(), img_craftBackground)));
-		pan_recipe.add(img_craftBackground);
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				System.out.println("Pressed");
+			}
+		});
+		btn_craftingPlan.setBounds(80, 39, 131, 31);
+		add(btn_craftingPlan);
 
-		scrpan_ingredients = new JScrollPane();
-		scrpan_ingredients.setBounds(561, 26, 208, 258);
-		scrpan_ingredients.setBackground(getBackground());
-		pan_recipe.add(scrpan_ingredients);
+		scrpan_recipes = new JScrollPane(new FullRecipePanel(item));
+		scrpan_recipes.setBounds(6, 82, 796, 305);
+		scrpan_recipes.getViewport().setSize(770, 280);
+		scrpan_recipes.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Recipe", TitledBorder.LEADING,
+				TitledBorder.TOP, Launch.getMinecraftia().deriveFont(12f), null));
+		add(scrpan_recipes);
 
-		lib_ingredients = new JLabel("Ingredients");
-		lib_ingredients.setFont(Launch.getMinecraftia().deriveFont(12f));
-		scrpan_ingredients.setColumnHeaderView(lib_ingredients);
+		scrpan_usage = new JScrollPane();
+		scrpan_usage.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Used to make", TitledBorder.LEADING,
+				TitledBorder.TOP, null, null));
+		scrpan_usage.setBounds(6, 399, 392, 295);
+		add(scrpan_usage);
 
-		list_ingredients = new JHoverList<CellListQuantityItem>();
-		list_ingredients.setBackground(new Color(214, 217, 223));
-		list_ingredients.toggleHoverable();
-		scrpan_ingredients.setViewportView(list_ingredients);
+		scrpan_fromCategory = new JScrollPane();
+		scrpan_fromCategory.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Other %s", TitledBorder.LEADING,
+				TitledBorder.TOP, null, null));
+		scrpan_fromCategory.setBounds(410, 399, 392, 295);
+		add(scrpan_fromCategory);
 
+		loadItem();
+
+	}
+
+	private void loadItem() {
+		img_mainImg.setItem(item);
+		lib_item.setText(item.getDisplayName());
+
+	}
+
+	/**
+	 * @return {@link item}
+	 */
+	public Item getItem() {
+		return item;
 	}
 }

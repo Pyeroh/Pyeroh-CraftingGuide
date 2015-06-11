@@ -17,10 +17,19 @@ public enum EMod {
 	 */
 	MINECRAFT("minecraft", "Minecraft", "Mojang");
 
+	/**
+	 * Chemin d'accès aux données du mod
+	 */
 	private String path;
 
+	/**
+	 * Nom du mod
+	 */
 	private String modName;
 
+	/**
+	 * Créateur du mod
+	 */
 	private String creator;
 
 	EMod(String path, String modName, String creator) {
