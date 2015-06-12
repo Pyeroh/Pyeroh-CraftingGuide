@@ -4,7 +4,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
@@ -24,6 +26,7 @@ import model.impl.Recipe;
 import model.impl.Recipe.RecipeData;
 import view.Launch;
 import view.components.cells.CellListItem;
+import view.components.cells.CellListQuantityItem;
 
 /**
  * Un panel pour afficher les informations d'un item
@@ -90,15 +93,17 @@ public class ItemDialog extends JDialog {
 			public void mouseReleased(MouseEvent e) {
 				System.out.println("Pressed");
 			}
+			
 		});
 		btn_craftingPlan.setBounds(80, 39, 166, 31);
 		getContentPane().add(btn_craftingPlan);
 
-		scrpan_recipes = new JScrollPane(new FullRecipePanel(item));
+		scrpan_recipes = new JScrollPane();
 		scrpan_recipes.setBounds(6, 82, 796, 305);
 		scrpan_recipes.getViewport().setSize(770, 280);
 		scrpan_recipes.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
 				.getString("ItemPane.scrpan_recipes.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, null, null)); //$NON-NLS-1$
+		scrpan_recipes.getVerticalScrollBar().setUnitIncrement(260);
 		getContentPane().add(scrpan_recipes);
 
 		scrpan_usage = new JScrollPane();
@@ -107,7 +112,22 @@ public class ItemDialog extends JDialog {
 		scrpan_usage.setBounds(6, 399, 392, 220);
 		getContentPane().add(scrpan_usage);
 
+		MouseAdapter changeItem = new MouseAdapter() {
+
+			@SuppressWarnings("unchecked")
+			@Override
+			public void mouseReleased(MouseEvent e) {
+
+				JHoverList<CellListItem> list = (JHoverList<CellListItem>) e.getSource();
+				if (!list.isSelectionEmpty() && e.getClickCount() == 2) {
+					reloadItem(list.getSelectedValue().getItem());
+				}
+
+			}
+		};
+		
 		list_usage = new JHoverList<>();
+		list_usage.addMouseListener(changeItem);
 		scrpan_usage.setViewportView(list_usage);
 
 		scrpan_fromCategory = new JScrollPane();
@@ -117,25 +137,58 @@ public class ItemDialog extends JDialog {
 		getContentPane().add(scrpan_fromCategory);
 
 		list_fromCategory = new JHoverList<>();
+		list_fromCategory.addMouseListener(changeItem);
 		scrpan_fromCategory.setViewportView(list_fromCategory);
 
 		loadItem();
 
 		setVisible(true);
-
+		
 	}
 
 	private void loadItem() {
 		img_mainImg.setItem(item);
 		lib_item.setText(item.getDisplayName());
+		
+		FullRecipePanel frp = new FullRecipePanel(item);
+		frp.addMouseListener(new MouseAdapter() {
+			
+			@SuppressWarnings("unchecked")
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				Object source = e.getSource();
+				Item item = null;
+				
+				if (source instanceof MCImage) {
+					MCImage mcImage = (MCImage) source;
+					item = mcImage.getItem();
+				}
+				else if (source instanceof JHoverList) {
+					JHoverList<CellListQuantityItem> list = (JHoverList<CellListQuantityItem>) source;
+					item = list.getSelectedValue().getItem();
+				}
+				else {
+					return;
+				}
+				
+				
+				reloadItem(item);
+			}
+			
+		});
+		scrpan_recipes.setViewportView(frp);
 
 		((TitledBorder) scrpan_fromCategory.getBorder()).setTitle(String.format(
 				Messages.getString("ItemPane.scrpan_fromCategory.borderTitle"), item.getCategory().getDisplayName().toLowerCase()));
 
 		List<Recipe> usedToMake = Recipe.searchBy(item, RecipeData.CONTENT);
-		DefaultListModel<CellListItem> model = new DefaultListModel<>();
+		Set<Item> usedToMakeItemSet = new LinkedHashSet<>();
 		for (Recipe recipe : usedToMake) {
-			model.addElement(new CellListItem(recipe.getItem()));
+			usedToMakeItemSet.add(recipe.getItem());
+		}
+		DefaultListModel<CellListItem> model = new DefaultListModel<>();
+		for (Item item : usedToMakeItemSet) {
+			model.addElement(new CellListItem(item));
 		}
 		list_usage.setModel(model);
 
@@ -147,7 +200,14 @@ public class ItemDialog extends JDialog {
 		list_fromCategory.setModel(model);
 
 		setTitle(String.format("%s - %s", title, item.getDisplayName()));
+		
+		repaint();
 
+	}
+	
+	private void reloadItem(Item item) {
+		this.item = item;
+		loadItem();
 	}
 
 }

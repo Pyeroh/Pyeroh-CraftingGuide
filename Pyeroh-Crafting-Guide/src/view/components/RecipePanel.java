@@ -19,7 +19,6 @@ import javax.swing.JScrollPane;
 
 import model.Messages;
 import model.impl.Item;
-import model.impl.Item.ItemData;
 import model.impl.Recipe;
 import view.Launch;
 import view.components.cells.CellListQuantityItem;
@@ -63,7 +62,7 @@ public class RecipePanel extends JPanel {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				((CraftingPanel) e.getSource()).getParent().dispatchEvent(e);
+				RecipePanel.this.dispatchEvent(e);
 			}
 
 		});
@@ -74,7 +73,18 @@ public class RecipePanel extends JPanel {
 		scrpan_ingredients.setBounds(548, 11, 212, 165);
 		add(scrpan_ingredients);
 
+		MouseAdapter eventDispatcher = new MouseAdapter() {
+			@SuppressWarnings("rawtypes")
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				if (!((JHoverList) e.getSource()).isSelectionEmpty() && e.getClickCount() == 2) {
+					RecipePanel.this.dispatchEvent(e);
+				}
+			}
+		};
+		
 		list_ingredients = new JHoverList<>();
+		list_ingredients.addMouseListener(eventDispatcher);
 		scrpan_ingredients.setViewportView(list_ingredients);
 
 		lib_ingredients = new JLabel(Messages.getString("FullRecipePanel.lib_ingredients.text")); //$NON-NLS-1$
@@ -87,9 +97,7 @@ public class RecipePanel extends JPanel {
 		add(scrpan_extras);
 
 		list_extras = new JHoverList<>();
-		DefaultListModel<CellListQuantityItem> model = new DefaultListModel<>();
-		model.addElement(new CellListQuantityItem(Item.searchBy("redstone", ItemData.NAME).get(0), 1));
-		list_extras.setModel(model);
+		list_extras.addMouseListener(eventDispatcher);
 		scrpan_extras.setViewportView(list_extras);
 
 		lib_extras = new JLabel(Messages.getString("FullRecipePanel.lib_extras.text")); //$NON-NLS-1$

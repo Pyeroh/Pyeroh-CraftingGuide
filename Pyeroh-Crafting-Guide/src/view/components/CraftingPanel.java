@@ -83,7 +83,7 @@ public class CraftingPanel extends JLayeredPane {
 			public void mouseReleased(MouseEvent e) {
 
 				MCImage source = (MCImage) e.getSource();
-				if (source.getItem() != null) {
+				if (source.getItem() != null && e.getClickCount() == 2) {
 					source.getParent().dispatchEvent(e);
 				}
 

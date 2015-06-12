@@ -5,6 +5,8 @@ package view.components;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.List;
 
 import javax.swing.JPanel;
@@ -44,6 +46,14 @@ public class FullRecipePanel extends JPanel {
 		if (!recipes.isEmpty()) {
 			for (Recipe recipe : recipes) {
 				RecipePanel rp = new RecipePanel(recipe);
+				rp.addMouseListener(new MouseAdapter() {
+					
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						FullRecipePanel.this.dispatchEvent(e);
+					}
+					
+				});
 				setSize(0, getHeight() + rp.getHeight());
 				rp.setLocation(0, getHeight() - rp.getHeight());
 				add(rp);
