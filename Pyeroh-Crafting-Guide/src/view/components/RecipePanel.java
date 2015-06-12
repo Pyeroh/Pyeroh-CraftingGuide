@@ -1,11 +1,13 @@
 /**
  *
  */
-package view;
+package view.components;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -19,7 +21,7 @@ import model.Messages;
 import model.impl.Item;
 import model.impl.Item.ItemData;
 import model.impl.Recipe;
-import view.components.JHoverList;
+import view.Launch;
 import view.components.cells.CellListQuantityItem;
 
 /**
@@ -57,6 +59,14 @@ public class RecipePanel extends JPanel {
 		setSize(770, 280);
 
 		craftingPan = new CraftingPanel(recipe);
+		craftingPan.addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				((CraftingPanel) e.getSource()).getParent().dispatchEvent(e);
+			}
+
+		});
 		craftingPan.setBounds(10, 11, 528, 258);
 		add(craftingPan);
 

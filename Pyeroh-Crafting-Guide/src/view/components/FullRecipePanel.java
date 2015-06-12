@@ -1,7 +1,7 @@
 /**
  *
  */
-package view;
+package view.components;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -49,6 +49,23 @@ public class FullRecipePanel extends JPanel {
 				add(rp);
 			}
 		}
+	}
+
+	/**
+	 * @return {@link item}
+	 */
+	public Item getItem() {
+		return item;
+	}
+
+	/**
+	 * @param item
+	 *            {@link item}
+	 */
+	public void setItem(Item item) {
+		this.item = item;
+		removeAll();
+		loadItem();
 	}
 
 	@Override

@@ -1,11 +1,13 @@
 /**
  *
  */
-package view;
+package view.components;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -14,8 +16,7 @@ import javax.swing.SwingConstants;
 
 import model.impl.Item;
 import model.impl.Recipe;
-import view.components.MCImage;
-import view.components.ShadowLabel;
+import view.Launch;
 import view.components.cells.CellListCaracs;
 
 /**
@@ -76,6 +77,19 @@ public class CraftingPanel extends JLayeredPane {
 		setSize(528, 258);
 		setLayout(null);
 
+		MouseAdapter imgAdapter = new MouseAdapter() {
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+
+				MCImage source = (MCImage) e.getSource();
+				if (source.getItem() != null) {
+					source.getParent().dispatchEvent(e);
+				}
+
+			}
+		};
+
 		img_background = new JLabel();
 		setLayer(img_background, 0);
 		img_background.setBounds(0, 0, 528, 258);
@@ -83,51 +97,61 @@ public class CraftingPanel extends JLayeredPane {
 		add(img_background);
 
 		img_craft1 = new MCImage(this);
+		img_craft1.addMouseListener(imgAdapter);
 		setLayer(img_craft1, 1);
 		img_craft1.setBounds(90, 51, 48, 48);
 		add(img_craft1);
 
 		img_craft2 = new MCImage(this);
+		img_craft2.addMouseListener(imgAdapter);
 		setLayer(img_craft2, 1);
 		img_craft2.setBounds(144, 51, 48, 48);
 		add(img_craft2);
 
 		img_craft3 = new MCImage(this);
+		img_craft3.addMouseListener(imgAdapter);
 		setLayer(img_craft3, 1);
 		img_craft3.setBounds(197, 51, 48, 48);
 		add(img_craft3);
 
 		img_craft4 = new MCImage(this);
+		img_craft4.addMouseListener(imgAdapter);
 		setLayer(img_craft4, 1);
 		img_craft4.setBounds(90, 105, 48, 48);
 		add(img_craft4);
 
 		img_craft5 = new MCImage(this);
+		img_craft5.addMouseListener(imgAdapter);
 		setLayer(img_craft5, 1);
 		img_craft5.setBounds(144, 105, 48, 48);
 		add(img_craft5);
 
 		img_craft6 = new MCImage(this);
+		img_craft6.addMouseListener(imgAdapter);
 		setLayer(img_craft6, 1);
 		img_craft6.setBounds(197, 105, 48, 48);
 		add(img_craft6);
 
 		img_craft7 = new MCImage(this);
+		img_craft7.addMouseListener(imgAdapter);
 		setLayer(img_craft7, 1);
 		img_craft7.setBounds(90, 158, 48, 48);
 		add(img_craft7);
 
 		img_craft8 = new MCImage(this);
+		img_craft8.addMouseListener(imgAdapter);
 		setLayer(img_craft8, 1);
 		img_craft8.setBounds(144, 158, 48, 48);
 		add(img_craft8);
 
 		img_craft9 = new MCImage(this);
+		img_craft9.addMouseListener(imgAdapter);
 		setLayer(img_craft9, 1);
 		img_craft9.setBounds(197, 158, 48, 48);
 		add(img_craft9);
 
 		img_craftRes = new MCImage(this);
+		img_craftRes.addMouseListener(imgAdapter);
 		setLayer(img_craftRes, 1);
 		img_craftRes.setBounds(372, 106, 48, 48);
 		add(img_craftRes);
@@ -143,11 +167,13 @@ public class CraftingPanel extends JLayeredPane {
 		add(lib_craftQuantity);
 
 		img_four1 = new MCImage(this);
+		img_four1.addMouseListener(imgAdapter);
 		setLayer(img_four1, 1);
 		img_four1.setBounds(167, 50, 48, 48);
 		add(img_four1);
 
 		img_fourRes = new MCImage(this);
+		img_fourRes.addMouseListener(imgAdapter);
 		setLayer(img_fourRes, 1);
 		img_fourRes.setBounds(347, 105, 48, 48);
 		add(img_fourRes);
@@ -163,16 +189,19 @@ public class CraftingPanel extends JLayeredPane {
 		add(lib_fourQuantity);
 
 		img_potion1 = new MCImage(this);
+		img_potion1.addMouseListener(imgAdapter);
 		setLayer(img_potion1, 1);
 		img_potion1.setBounds(236, 50, 48, 48);
 		add(img_potion1);
 
 		img_potion2 = new MCImage(this);
+		img_potion2.addMouseListener(imgAdapter);
 		setLayer(img_potion2, 1);
 		img_potion2.setBounds(167, 137, 48, 48);
 		add(img_potion2);
 
 		img_potionRes = new MCImage(this);
+		img_potionRes.addMouseListener(imgAdapter);
 		setLayer(img_potionRes, 1);
 		img_potionRes.setBounds(306, 137, 48, 48);
 		add(img_potionRes);

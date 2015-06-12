@@ -9,6 +9,7 @@ import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Hashtable;
 import java.util.LinkedHashMap;
@@ -166,6 +167,7 @@ public class Recipe implements IRecipe {
 
 		switch (compare) {
 		case ITEM:
+		case CONTENT:
 			item = (Item) data;
 			break;
 		case TYPE:
@@ -179,22 +181,29 @@ public class Recipe implements IRecipe {
 		}
 
 		for (Recipe recipe : IRecipe.recipeList) {
-			switch (compare) {
-			case ITEM:
-				if (recipe.getItem() == item) {
-					recipes.add(recipe);
+			if (recipe.getMod().isActivated()) {
+				switch (compare) {
+				case ITEM:
+					if (recipe.getItem() == item) {
+						recipes.add(recipe);
+					}
+					break;
+				case CONTENT:
+					if (Arrays.asList(recipe.getPattern()).contains(item)) {
+						recipes.add(recipe);
+					}
+					break;
+				case TYPE:
+					if (recipe.getType() == type) {
+						recipes.add(recipe);
+					}
+					break;
+				case MOD:
+					if (recipe.getMod() == mod) {
+						recipes.add(recipe);
+					}
+					break;
 				}
-				break;
-			case TYPE:
-				if (recipe.getType() == type) {
-					recipes.add(recipe);
-				}
-				break;
-			case MOD:
-				if (recipe.getMod() == mod) {
-					recipes.add(recipe);
-				}
-				break;
 			}
 		}
 
@@ -253,9 +262,14 @@ public class Recipe implements IRecipe {
 	public static enum RecipeData {
 
 		/**
-		 * Recherche par {@link Item}
+		 * Recherche par résultat de la recette, un {@link Item}
 		 */
 		ITEM,
+
+		/**
+		 * Recherche par contenu de la recette, un {@link Item}
+		 */
+		CONTENT,
 
 		/**
 		 * Recherche par {@link ECraftingType}

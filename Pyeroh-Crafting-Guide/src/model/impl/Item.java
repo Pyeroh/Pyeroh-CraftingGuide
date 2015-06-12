@@ -25,6 +25,9 @@ import org.json.JSONObject;
 
 /**
  * Définition des items
+ * TODO ajouter une description (ex: Il faut utiliser un
+ * seau sur une vache pour avoir du lait/ ex2: comment obtenir le Kikoku
+ * d'ExtraUtils...)
  *
  * @author Pyeroh
  *
@@ -58,7 +61,8 @@ public class Item implements IItem {
 	}
 
 	/**
-	 * Permet d'initialiser la liste des items disponibles (sans image, avec la langue)
+	 * Permet d'initialiser la liste des items disponibles (sans image, avec la
+	 * langue)
 	 *
 	 * @throws IOException
 	 * @throws URISyntaxException
@@ -79,7 +83,8 @@ public class Item implements IItem {
 				}
 
 				Properties lang = new Properties();
-				lang.load(Item.class.getResourceAsStream(mod.getPath() + String.format("lang_%s.properties", Locale.getDefault().getLanguage())));
+				lang.load(Item.class.getResourceAsStream(mod.getPath()
+						+ String.format("lang_%s.properties", Locale.getDefault().getLanguage())));
 
 				JSONArray jsonArray = new JSONArray(buf.toString());
 				for (int i = 0; i < jsonArray.length(); i++) {
@@ -88,8 +93,8 @@ public class Item implements IItem {
 					int meta = obj.getInt("meta");
 					String iconName = obj.getString("iconName");
 					String category = obj.getString("cat");
-					itemList.add(new Item(id, meta, lang.getProperty(mod.name().toLowerCase() + "." + id + (meta == 0 ? "" : "." + meta), ""),
-							iconName, ECategory.valueOf(category), mod));
+					itemList.add(new Item(id, meta, lang.getProperty(mod.name().toLowerCase() + "." + id + (meta == 0 ? "" : "." + meta),
+							""), iconName, ECategory.valueOf(category), mod));
 				}
 				break;
 			}
@@ -111,16 +116,17 @@ public class Item implements IItem {
 		int i = 0;
 		do {
 
-			if (IItem.itemList.get(i).getMod() != EMod.UNKNOWN) {
+			Item currentItem = IItem.itemList.get(i);
+			if (currentItem.getMod().isActivated() && currentItem.getMod() != EMod.UNKNOWN) {
 				switch (compare) {
 				case NAME:
-					if (IItem.itemList.get(i).getDisplayName().equalsIgnoreCase(data)) {
-						item = IItem.itemList.get(i);
+					if (currentItem.getDisplayName().equalsIgnoreCase(data)) {
+						item = currentItem;
 					}
 					break;
 				case ID_AND_META:
-					if (IItem.itemList.get(i).toString().equalsIgnoreCase(data)) {
-						item = IItem.itemList.get(i);
+					if (currentItem.toString().equalsIgnoreCase(data)) {
+						item = currentItem;
 					}
 					break;
 				default:
@@ -150,7 +156,7 @@ public class Item implements IItem {
 		data = data.toLowerCase();
 
 		for (Item item : IItem.itemList) {
-			if (item.getMod() != EMod.UNKNOWN) {
+			if (item.getMod().isActivated() && item.getMod() != EMod.UNKNOWN) {
 				switch (compare) {
 				case ID_AND_META:
 					if (item.toString().toLowerCase().contains(data)) {
@@ -271,16 +277,14 @@ public class Item implements IItem {
 			if (other.iconName != null) {
 				return false;
 			}
-		}
-		else if (!iconName.equals(other.iconName)) {
+		} else if (!iconName.equals(other.iconName)) {
 			return false;
 		}
 		if (id == null) {
 			if (other.id != null) {
 				return false;
 			}
-		}
-		else if (!id.equals(other.id)) {
+		} else if (!id.equals(other.id)) {
 			return false;
 		}
 		if (meta != other.meta) {
@@ -293,7 +297,8 @@ public class Item implements IItem {
 	}
 
 	/**
-	 * Enum pour la comparaison de valeurs, pour la recherche d'éléments dans la liste des items
+	 * Enum pour la comparaison de valeurs, pour la recherche d'éléments dans la
+	 * liste des items
 	 *
 	 * @author Pyeroh
 	 *
@@ -301,8 +306,8 @@ public class Item implements IItem {
 	public static enum ItemData {
 
 		/**
-		 * Recherche par l'ID. La donnée doit être au format <b>{@literal <nomDuMod>:<id>.[meta]}</b> avec la meta si
-		 * elle existe.
+		 * Recherche par l'ID. La donnée doit être au format <b>
+		 * {@literal <nomDuMod>:<id>.[meta]}</b> avec la meta si elle existe.
 		 */
 		ID_AND_META,
 

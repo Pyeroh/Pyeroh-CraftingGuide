@@ -16,10 +16,15 @@ import view.components.cells.CellListItem;
 public class HoverListCellRenderer extends DefaultListCellRenderer {
 
 	private static final long serialVersionUID = 9037091771053473873L;
-	private static final Color HOVER_COLOR = new Color(208,233,253);
-	private static final Color SELECTED_COLOR = new Color(247,212,170);
+
+	private static final Color HOVER_COLOR = new Color(208, 233, 253);
+
+	public static final Color SELECTED_COLOR = new Color(247, 212, 170);
+
 	private int hoverIndex = -1;
+
 	private MouseAdapter handler;
+
 	private JList<?> list;
 
 	public HoverListCellRenderer(JList<?> list) {
@@ -31,10 +36,12 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 	public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
 		super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
 
-		/*JList thisvalue = (JList) value;
-		thisvalue.setPreferredSize(new Dimension(list.getWidth()-20, thisvalue.getHeight()));
-		thisvalue.setMinimumSize(thisvalue.getPreferredSize());
-		thisvalue.setMaximumSize(thisvalue.getPreferredSize());*/
+		/*
+		 * JList thisvalue = (JList) value; thisvalue.setPreferredSize(new
+		 * Dimension(list.getWidth()-20, thisvalue.getHeight()));
+		 * thisvalue.setMinimumSize(thisvalue.getPreferredSize());
+		 * thisvalue.setMaximumSize(thisvalue.getPreferredSize());
+		 */
 
 		if (value != null) {
 			if (value instanceof Item) {
@@ -43,9 +50,9 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 				setText(item.getDisplayName());
 
 				if (!isSelected) {
-					setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list.getBackground() : Color.white));
-				}
-				else {
+					setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list
+							.getBackground() : Color.white));
+				} else {
 					setBackground(SELECTED_COLOR);
 				}
 				setForeground(Color.black);
@@ -54,14 +61,14 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 			} else if (value instanceof CellListItem) {
 				CellListItem cell = (CellListItem) value;
 
-				cell.setPreferredSize(new Dimension(list.getWidth()-20, cell.getHeight()));
+				cell.setPreferredSize(new Dimension(list.getWidth() - 20, cell.getHeight()));
 				cell.setMinimumSize(cell.getPreferredSize());
 				cell.setMaximumSize(cell.getPreferredSize());
 
 				if (!isSelected) {
-					cell.setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list.getBackground() : Color.white));
-				}
-				else {
+					cell.setBackground(index == hoverIndex ? HOVER_COLOR : (list.getBackground().getClass().equals(Color.class) ? list
+							.getBackground() : Color.white));
+				} else {
 					cell.setBackground(SELECTED_COLOR);
 				}
 				cell.setForeground(Color.black);
@@ -83,6 +90,7 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 
 	/**
 	 * Donne l'index survolé par la souris
+	 *
 	 * @return -1 s'il n'y a pas de survol, l'index survolé sinon
 	 */
 	public int getHoverIndex() {
@@ -102,15 +110,15 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 		}
 
 		public void mouseMoved(MouseEvent e) {
-			if (flist.getModel().getSize()!=0) {
+			if (flist.getModel().getSize() != 0) {
 				int index = flist.locationToIndex(e.getPoint());
-				setHoverIndex(flist.getCellBounds(index, index).contains(
-						e.getPoint()) ? index : -1);
+				setHoverIndex(flist.getCellBounds(index, index).contains(e.getPoint()) ? index : -1);
 			}
 		}
 
 		private void setHoverIndex(int index) {
-			if (hoverIndex == index) return;
+			if (hoverIndex == index)
+				return;
 			hoverIndex = index;
 			flist.repaint();
 		}

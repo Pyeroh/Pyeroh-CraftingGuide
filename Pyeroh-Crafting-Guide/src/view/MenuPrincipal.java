@@ -23,6 +23,8 @@ import javax.swing.JTree;
 import javax.swing.WindowConstants;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreePath;
 
 import model.Messages;
 import model.enums.ECategory;
@@ -32,9 +34,8 @@ import model.impl.Item.ItemData;
 
 import org.jdesktop.swingx.JXTree;
 
+import view.components.ItemDialog;
 import view.components.cells.CellListCaracs;
-
-import javax.swing.tree.DefaultTreeModel;
 
 /**
  * Fenêtre principale pour l'affichage
@@ -163,6 +164,22 @@ public class MenuPrincipal extends JFrame {
 		pan_browse.add(scrpan_browsed);
 
 		tree_browsed = new JXTree();
+		tree_browsed.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+
+				TreePath tp = tree_browsed.getPathForLocation(e.getX(), e.getY());
+				if (e.getClickCount() == 2) {
+					if (tp != null) {
+						DefaultMutableTreeNode node = (DefaultMutableTreeNode) tp.getLastPathComponent();
+						if (node.getUserObject() instanceof Item) {
+							Item selectedItem = (Item) node.getUserObject();
+							new ItemDialog(selectedItem, MenuPrincipal.this);
+						}
+					}
+				}
+			}
+		});
 		tree_browsed.setRootVisible(false);
 		tree_browsed.setCellRenderer(new DefaultTreeCellRenderer() {
 

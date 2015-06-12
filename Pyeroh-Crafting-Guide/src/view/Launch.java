@@ -8,7 +8,6 @@ import javax.swing.UIManager;
 import model.impl.Item;
 import model.impl.Recipe;
 
-// TODO Ajouter une description sur les items (ex: Il faut utiliser un seau sur une vache pour avoir du lait/ ex2: comment obtenir le Kikoku d'ExtraUtils...)
 public class Launch {
 
 	private static Font MINECRAFTIA;
@@ -40,9 +39,9 @@ public class Launch {
 		Item.initialize();
 		Recipe.initialize();
 
-		new TestFrame();
+//		new TestFrame();
 
-//		new MenuPrincipal();
+		new MenuPrincipal();
 
 	}
 
