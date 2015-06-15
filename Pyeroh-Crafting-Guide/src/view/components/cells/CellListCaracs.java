@@ -11,18 +11,18 @@ import javax.swing.JPanel;
 public class CellListCaracs extends JPanel {
 
 	private static final long serialVersionUID = 6617466786415092311L;
+
 	protected JLabel lib_desc;
 
 	public CellListCaracs(String desc) {
 
-		setSize(220,30);
+		setSize(220, 30);
 		setLayout(null);
 
 		lib_desc = new JLabel(desc);
 		lib_desc.setBounds(4, 0, 216, 30);
 		lib_desc.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		add(lib_desc);
-
 
 	}
 

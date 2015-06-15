@@ -9,7 +9,7 @@ public class CellListItem extends CellListCaracs {
 
 	private static final long serialVersionUID = -489871563289609199L;
 
-	private JLabel image = new JLabel();
+	protected JLabel image = new JLabel();
 
 	private Item item;
 

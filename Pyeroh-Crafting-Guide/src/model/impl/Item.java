@@ -24,8 +24,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * Définition des items
- * TODO ajouter une description (ex: Il faut utiliser un
+ * Définition des items TODO ajouter une description (ex: Il faut utiliser un
  * seau sur une vache pour avoir du lait/ ex2: comment obtenir le Kikoku
  * d'ExtraUtils...)
  *
@@ -153,6 +152,7 @@ public class Item implements IItem {
 		List<Item> items = new ArrayList<>();
 
 		ECategory catData = compare == ItemData.CATEGORY ? ECategory.valueOf(data) : null;
+		EMod modData = compare == ItemData.MOD ? EMod.valueOf(data) : null;
 		data = data.toLowerCase();
 
 		for (Item item : IItem.itemList) {
@@ -170,6 +170,11 @@ public class Item implements IItem {
 					break;
 				case CATEGORY:
 					if (item.getCategory() == catData) {
+						items.add(item);
+					}
+					break;
+				case MOD:
+					if (item.getMod() == modData) {
 						items.add(item);
 					}
 					break;

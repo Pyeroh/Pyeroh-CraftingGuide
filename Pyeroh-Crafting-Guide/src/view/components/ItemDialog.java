@@ -41,6 +41,8 @@ public class ItemDialog extends JDialog {
 	 */
 	private static final long serialVersionUID = 8397804417232569776L;
 
+	private final Font MINECRAFTIA = Launch.getMinecraftia().deriveFont(12f);
+
 	private String title;
 
 	private Item item;
@@ -61,7 +63,7 @@ public class ItemDialog extends JDialog {
 
 	private JHoverList<CellListItem> list_fromCategory;
 
-	public ItemDialog(Item item, JFrame frame) {
+	public ItemDialog(Item item, final JFrame frame) {
 		super();
 		this.item = item;
 		this.title = frame.getTitle();
@@ -83,7 +85,7 @@ public class ItemDialog extends JDialog {
 
 		lib_item = new JLabel();
 		lib_item.setBounds(82, 6, 480, 22);
-		lib_item.setFont(Launch.getMinecraftia().deriveFont(Font.PLAIN).deriveFont(14f));
+		lib_item.setFont(MINECRAFTIA);
 		getContentPane().add(lib_item);
 
 		btn_craftingPlan = new JButton(Messages.getString("ItemPane.btn_craftingPlan.text")); //$NON-NLS-1$
@@ -91,9 +93,10 @@ public class ItemDialog extends JDialog {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				System.out.println("Pressed");
+				e.setSource(img_mainImg);
+				frame.getContentPane().dispatchEvent(e);
 			}
-			
+
 		});
 		btn_craftingPlan.setBounds(80, 39, 166, 31);
 		getContentPane().add(btn_craftingPlan);
@@ -102,13 +105,13 @@ public class ItemDialog extends JDialog {
 		scrpan_recipes.setBounds(6, 82, 796, 305);
 		scrpan_recipes.getViewport().setSize(770, 280);
 		scrpan_recipes.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
-				.getString("ItemPane.scrpan_recipes.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, null, null)); //$NON-NLS-1$
+				.getString("ItemPane.scrpan_recipes.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null)); //$NON-NLS-1$
 		scrpan_recipes.getVerticalScrollBar().setUnitIncrement(260);
 		getContentPane().add(scrpan_recipes);
 
 		scrpan_usage = new JScrollPane();
 		scrpan_usage.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
-				.getString("ItemPane.scrpan_usage.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, null, null)); //$NON-NLS-1$
+				.getString("ItemPane.scrpan_usage.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null)); //$NON-NLS-1$
 		scrpan_usage.setBounds(6, 399, 392, 220);
 		getContentPane().add(scrpan_usage);
 
@@ -125,14 +128,14 @@ public class ItemDialog extends JDialog {
 
 			}
 		};
-		
+
 		list_usage = new JHoverList<>();
 		list_usage.addMouseListener(changeItem);
 		scrpan_usage.setViewportView(list_usage);
 
 		scrpan_fromCategory = new JScrollPane();
 		scrpan_fromCategory.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), null, TitledBorder.LEADING,
-				TitledBorder.TOP, null, null));
+				TitledBorder.TOP, MINECRAFTIA, null));
 		scrpan_fromCategory.setBounds(410, 399, 392, 220);
 		getContentPane().add(scrpan_fromCategory);
 
@@ -142,23 +145,21 @@ public class ItemDialog extends JDialog {
 
 		loadItem();
 
-		setVisible(true);
-		
 	}
 
 	private void loadItem() {
 		img_mainImg.setItem(item);
 		lib_item.setText(item.getDisplayName());
-		
+
 		FullRecipePanel frp = new FullRecipePanel(item);
 		frp.addMouseListener(new MouseAdapter() {
-			
+
 			@SuppressWarnings("unchecked")
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				Object source = e.getSource();
 				Item item = null;
-				
+
 				if (source instanceof MCImage) {
 					MCImage mcImage = (MCImage) source;
 					item = mcImage.getItem();
@@ -170,11 +171,11 @@ public class ItemDialog extends JDialog {
 				else {
 					return;
 				}
-				
-				
+
+
 				reloadItem(item);
 			}
-			
+
 		});
 		scrpan_recipes.setViewportView(frp);
 
@@ -200,11 +201,11 @@ public class ItemDialog extends JDialog {
 		list_fromCategory.setModel(model);
 
 		setTitle(String.format("%s - %s", title, item.getDisplayName()));
-		
+
 		repaint();
 
 	}
-	
+
 	private void reloadItem(Item item) {
 		this.item = item;
 		loadItem();

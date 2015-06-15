@@ -3,13 +3,17 @@
  */
 package view;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -21,6 +25,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTree;
 import javax.swing.WindowConstants;
+import javax.swing.border.LineBorder;
+import javax.swing.border.TitledBorder;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
@@ -35,7 +41,9 @@ import model.impl.Item.ItemData;
 import org.jdesktop.swingx.JXTree;
 
 import view.components.ItemDialog;
+import view.components.MCImage;
 import view.components.cells.CellListCaracs;
+import view.components.cells.FullQuantityItemPanel;
 
 /**
  * Fenêtre principale pour l'affichage
@@ -72,6 +80,17 @@ public class MenuPrincipal extends JFrame {
 
 	private JScrollPane scrpan_browsed;
 
+	private ItemDialog itemDialog;
+
+	private JPanel pan_itemsToMake;
+
+	private JScrollPane scrpan_itemsToMake;
+
+	private JButton btn_addRandom;
+
+	private Map<Item, Integer> itemsToMake = new LinkedHashMap<>();
+	private FullQuantityItemPanel fqip_itemsToMake;
+
 	public MenuPrincipal() {
 		super();
 		setResizable(false);
@@ -107,11 +126,11 @@ public class MenuPrincipal extends JFrame {
 					}
 					tree_browsed.setModel(new DefaultTreeModel(root));
 
-					lib_modAuthor.setText(String.format(Messages.getString("MenuPrincipal.lib_modAuthor.text"), EMod.MINECRAFT.getCreator()));
+					lib_modAuthor
+							.setText(String.format(Messages.getString("MenuPrincipal.lib_modAuthor.text"), EMod.MINECRAFT.getCreator()));
 					lib_modName.setText(EMod.MINECRAFT.getModName());
 
-				}
-				else {
+				} else {
 					throw new UnsupportedOperationException(String.format("Bouton de navigation non géré : %s", button.getName()));
 				}
 
@@ -165,6 +184,7 @@ public class MenuPrincipal extends JFrame {
 
 		tree_browsed = new JXTree();
 		tree_browsed.addMouseListener(new MouseAdapter() {
+
 			@Override
 			public void mouseClicked(MouseEvent e) {
 
@@ -174,7 +194,8 @@ public class MenuPrincipal extends JFrame {
 						DefaultMutableTreeNode node = (DefaultMutableTreeNode) tp.getLastPathComponent();
 						if (node.getUserObject() instanceof Item) {
 							Item selectedItem = (Item) node.getUserObject();
-							new ItemDialog(selectedItem, MenuPrincipal.this);
+							itemDialog = new ItemDialog(selectedItem, MenuPrincipal.this);
+							itemDialog.setVisible(true);
 						}
 					}
 				}
@@ -189,8 +210,8 @@ public class MenuPrincipal extends JFrame {
 			public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row,
 					boolean hasFocus) {
 
-				DefaultTreeCellRenderer render = (DefaultTreeCellRenderer) super.getTreeCellRendererComponent(tree, value, sel, expanded, leaf, row,
-						hasFocus);
+				DefaultTreeCellRenderer render = (DefaultTreeCellRenderer) super.getTreeCellRendererComponent(tree, value, sel, expanded,
+						leaf, row, hasFocus);
 				Object obj = ((DefaultMutableTreeNode) value).getUserObject();
 
 				if (obj instanceof Item) {
@@ -198,8 +219,7 @@ public class MenuPrincipal extends JFrame {
 
 					render.setIcon(new ImageIcon(CellListCaracs.scaleImage(item.getImage(), new Dimension(24, 24))));
 					render.setText(item.getDisplayName());
-				}
-				else {
+				} else {
 					render.setIcon(null);
 				}
 
@@ -213,6 +233,57 @@ public class MenuPrincipal extends JFrame {
 		tabpan_mainContainer.addTab(Messages.getString("MenuPrincipal.pan_craft.title"), null, pan_craft, null); //$NON-NLS-1$
 		pan_craft.setLayout(null);
 
+		pan_itemsToMake = new JPanel();
+		pan_itemsToMake.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Items to make", TitledBorder.LEADING,
+				TitledBorder.TOP, Launch.getMinecraftia().deriveFont(12f), null));
+		pan_itemsToMake.setBounds(6, 6, 768, 281);
+		pan_craft.add(pan_itemsToMake);
+		pan_itemsToMake.setLayout(null);
+
+		scrpan_itemsToMake = new JScrollPane();
+		scrpan_itemsToMake.setBackground(Color.WHITE);
+		scrpan_itemsToMake.getViewport().setBackground(Color.white);
+		scrpan_itemsToMake.setBounds(6, 25, 756, 134);
+		pan_itemsToMake.add(scrpan_itemsToMake);
+
+		fqip_itemsToMake = new FullQuantityItemPanel();
+		scrpan_itemsToMake.setViewportView(fqip_itemsToMake);
+
+		btn_addRandom = new JButton("add random"); //$NON-NLS-1$
+		btn_addRandom.setBounds(6, 188, 245, 28);
+		btn_addRandom.addMouseListener(new MouseAdapter() {
+
+			public void mouseReleased(MouseEvent e) {
+				List<Item> items = Item.searchBy(EMod.MINECRAFT.name(), ItemData.MOD);
+				itemsToMake.put(items.get(new Random().nextInt(items.size())), 1);
+
+				reloadItemsToCraft();
+			};
+
+		});
+		pan_itemsToMake.add(btn_addRandom);
+
+		getContentPane().addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				if (e.getSource() instanceof MCImage) {
+					itemDialog.setVisible(false);
+					itemDialog = null;
+					System.out.println(((MCImage) e.getSource()).getItem());
+				}
+			}
+
+		});
+
 		setVisible(true);
+	}
+
+	private void reloadItemsToCraft() {
+		fqip_itemsToMake.clear();
+		for (Item item : itemsToMake.keySet()) {
+			fqip_itemsToMake.add(item);
+		}
+
 	}
 }
