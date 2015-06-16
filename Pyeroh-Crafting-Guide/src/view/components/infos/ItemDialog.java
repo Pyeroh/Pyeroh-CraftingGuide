@@ -1,4 +1,4 @@
-package view.components;
+package view.components.infos;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -27,6 +27,8 @@ import model.impl.Recipe.RecipeData;
 import view.Launch;
 import view.components.cells.CellListItem;
 import view.components.cells.CellListQuantityItem;
+import view.components.core.JHoverList;
+import view.components.core.MCImage;
 
 /**
  * Un panel pour afficher les informations d'un item

@@ -1,7 +1,7 @@
 /**
  *
  */
-package view.components;
+package view.components.infos;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;

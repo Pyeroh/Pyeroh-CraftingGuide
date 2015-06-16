@@ -1,7 +1,7 @@
 /**
  *
  */
-package view.components;
+package view.components.infos;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -22,6 +22,7 @@ import model.impl.Item;
 import model.impl.Recipe;
 import view.Launch;
 import view.components.cells.CellListQuantityItem;
+import view.components.core.JHoverList;
 
 /**
  * Panel pour afficher une recette avec tous ses ingrédients et les extras

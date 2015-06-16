@@ -1,7 +1,7 @@
 /**
  *
  */
-package view.components;
+package view.components.infos;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -18,6 +18,8 @@ import model.impl.Item;
 import model.impl.Recipe;
 import view.Launch;
 import view.components.cells.CellListCaracs;
+import view.components.core.MCImage;
+import view.components.core.ShadowLabel;
 
 /**
  * Panel qui affiche le pattern d'un craft

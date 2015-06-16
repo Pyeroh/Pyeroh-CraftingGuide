@@ -10,10 +10,7 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -40,10 +37,14 @@ import model.impl.Item.ItemData;
 
 import org.jdesktop.swingx.JXTree;
 
-import view.components.ItemDialog;
-import view.components.MCImage;
 import view.components.cells.CellListCaracs;
-import view.components.cells.FullQuantityItemPanel;
+import view.components.core.JComboSearchField;
+import view.components.core.MCImage;
+import view.components.craft.CellEditQuantity;
+import view.components.craft.FullQuantityItemPanel;
+import view.components.craft.CellEditQuantity.ButtonType;
+import view.components.event.SearchedItemChangeListener;
+import view.components.infos.ItemDialog;
 
 /**
  * Fenêtre principale pour l'affichage
@@ -86,10 +87,11 @@ public class MenuPrincipal extends JFrame {
 
 	private JScrollPane scrpan_itemsToMake;
 
-	private JButton btn_addRandom;
-
-	private Map<Item, Integer> itemsToMake = new LinkedHashMap<>();
 	private FullQuantityItemPanel fqip_itemsToMake;
+
+	private JComboSearchField search_itemsToMake;
+
+	private JPanel pan_ingredients;
 
 	public MenuPrincipal() {
 		super();
@@ -98,7 +100,7 @@ public class MenuPrincipal extends JFrame {
 		setTitle("Pyeroh Crafting Guide v1");
 
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		setSize(785, 470);
+		setSize(785, 600);
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
@@ -130,7 +132,8 @@ public class MenuPrincipal extends JFrame {
 							.setText(String.format(Messages.getString("MenuPrincipal.lib_modAuthor.text"), EMod.MINECRAFT.getCreator()));
 					lib_modName.setText(EMod.MINECRAFT.getModName());
 
-				} else {
+				}
+				else {
 					throw new UnsupportedOperationException(String.format("Bouton de navigation non géré : %s", button.getName()));
 				}
 
@@ -139,7 +142,7 @@ public class MenuPrincipal extends JFrame {
 		};
 
 		tabpan_mainContainer = new JTabbedPane(JTabbedPane.TOP);
-		tabpan_mainContainer.setBounds(0, 6, 780, 436);
+		tabpan_mainContainer.setBounds(0, 6, 780, 566);
 		getContentPane().add(tabpan_mainContainer);
 
 		pan_configure = new JPanel();
@@ -179,7 +182,7 @@ public class MenuPrincipal extends JFrame {
 
 		scrpan_browsed = new JScrollPane();
 		scrpan_browsed.setVisible(false);
-		scrpan_browsed.setBounds(511, 60, 263, 340);
+		scrpan_browsed.setBounds(511, 60, 263, 471);
 		pan_browse.add(scrpan_browsed);
 
 		tree_browsed = new JXTree();
@@ -219,7 +222,8 @@ public class MenuPrincipal extends JFrame {
 
 					render.setIcon(new ImageIcon(CellListCaracs.scaleImage(item.getImage(), new Dimension(24, 24))));
 					render.setText(item.getDisplayName());
-				} else {
+				}
+				else {
 					render.setIcon(null);
 				}
 
@@ -234,34 +238,52 @@ public class MenuPrincipal extends JFrame {
 		pan_craft.setLayout(null);
 
 		pan_itemsToMake = new JPanel();
-		pan_itemsToMake.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Items to make", TitledBorder.LEADING,
-				TitledBorder.TOP, Launch.getMinecraftia().deriveFont(12f), null));
-		pan_itemsToMake.setBounds(6, 6, 768, 281);
+		pan_itemsToMake.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
+				.getString("MenuPrincipal.pan_itemsToMake.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, Launch.getMinecraftia()
+				.deriveFont(12f), null));//$NON-NLS-1$
+		pan_itemsToMake.setBounds(6, 6, 768, 228);
 		pan_craft.add(pan_itemsToMake);
 		pan_itemsToMake.setLayout(null);
 
 		scrpan_itemsToMake = new JScrollPane();
 		scrpan_itemsToMake.setBackground(Color.WHITE);
 		scrpan_itemsToMake.getViewport().setBackground(Color.white);
-		scrpan_itemsToMake.setBounds(6, 25, 756, 134);
+		scrpan_itemsToMake.setBounds(6, 25, 756, 151);
+		scrpan_itemsToMake.getVerticalScrollBar().setUnitIncrement(45);
 		pan_itemsToMake.add(scrpan_itemsToMake);
 
-		fqip_itemsToMake = new FullQuantityItemPanel();
+		fqip_itemsToMake = new FullQuantityItemPanel(ButtonType.ANNULER);
 		scrpan_itemsToMake.setViewportView(fqip_itemsToMake);
+		fqip_itemsToMake.setSize(scrpan_itemsToMake.getViewport().getWidth(), fqip_itemsToMake.getHeight());
 
-		btn_addRandom = new JButton("add random"); //$NON-NLS-1$
-		btn_addRandom.setBounds(6, 188, 245, 28);
-		btn_addRandom.addMouseListener(new MouseAdapter() {
+		search_itemsToMake = new JComboSearchField();
+		search_itemsToMake.addSearchedItemChangeListener(new SearchedItemChangeListener() {
 
-			public void mouseReleased(MouseEvent e) {
-				List<Item> items = Item.searchBy(EMod.MINECRAFT.name(), ItemData.MOD);
-				itemsToMake.put(items.get(new Random().nextInt(items.size())), 1);
-
-				reloadItemsToCraft();
-			};
-
+			@Override
+			public void searchedItemChanged(Item item) {
+				if (item != null) {
+					if (fqip_itemsToMake.contains(item)) {
+						CellEditQuantity ceq = fqip_itemsToMake.getItemsToCellsMap().get(item);
+						ceq.setQuantity(ceq.getQuantity() + 1);
+					}
+					else {
+						fqip_itemsToMake.add(item);
+					}
+					search_itemsToMake.setItem(null);
+				}
+			}
 		});
-		pan_itemsToMake.add(btn_addRandom);
+		search_itemsToMake.setPrompt(Messages.getString("MenuPrincipal.search_itemsToMake.prompt")); //$NON-NLS-1$
+		search_itemsToMake.setBounds(215, 188, 311, 28);
+		pan_itemsToMake.add(search_itemsToMake);
+		search_itemsToMake.setColumns(10);
+
+		pan_ingredients = new JPanel();
+		pan_ingredients.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
+				.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP, Launch.getMinecraftia()
+				.deriveFont(12f), null));
+		pan_ingredients.setBounds(6, 246, 768, 128);
+		pan_craft.add(pan_ingredients);
 
 		getContentPane().addMouseListener(new MouseAdapter() {
 
@@ -277,13 +299,5 @@ public class MenuPrincipal extends JFrame {
 		});
 
 		setVisible(true);
-	}
-
-	private void reloadItemsToCraft() {
-		fqip_itemsToMake.clear();
-		for (Item item : itemsToMake.keySet()) {
-			fqip_itemsToMake.add(item);
-		}
-
 	}
 }

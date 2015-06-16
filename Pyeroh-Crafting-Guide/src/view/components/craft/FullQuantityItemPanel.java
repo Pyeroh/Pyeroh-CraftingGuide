@@ -1,20 +1,25 @@
 /**
  *
  */
-package view.components.cells;
+package view.components.craft;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.JPanel;
 
 import model.impl.Item;
-import view.components.cells.CellListEditQuantity.ButtonType;
+import view.components.craft.CellEditQuantity.ButtonType;
 
 /**
  * JPanel fait pour afficher tous les CellListEditQuantity qu'il contient
@@ -31,8 +36,15 @@ public class FullQuantityItemPanel extends JPanel {
 
 	private List<Item> itemList = new ArrayList<>();
 
-	public FullQuantityItemPanel() {
+	private Map<Item, Integer> itemsQuantity = new LinkedHashMap<>();
+
+	private Map<Item, CellEditQuantity> itemsToCells = new LinkedHashMap<>();
+
+	private ButtonType buttonType;
+
+	public FullQuantityItemPanel(ButtonType buttonType) {
 		super();
+		this.buttonType = buttonType;
 		setLayout(null);
 		setBackground(Color.white);
 		reloadCells();
@@ -40,40 +52,58 @@ public class FullQuantityItemPanel extends JPanel {
 
 	private void reloadCells() {
 
+		for (Component component : getComponents()) {
+			CellEditQuantity ceq = (CellEditQuantity) component;
+			itemsQuantity.put(ceq.getItem(), ceq.getQuantity());
+		}
+
 		setSize(0, 0);
+		removeAll();
+		itemsToCells.clear();
 		if (!itemList.isEmpty()) {
 			for (Item item : itemList) {
-				CellListEditQuantity cleq = new CellListEditQuantity(item, ButtonType.ANNULER);
-				setSize(0, getHeight() + cleq.getHeight());
-				cleq.setLocation(0, getHeight() - cleq.getHeight());
-				add(cleq);
+				CellEditQuantity ceq = new CellEditQuantity(item, buttonType);
+				ceq.addMouseListener(new MouseAdapter() {
+
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						CellEditQuantity ceq = (CellEditQuantity) e.getSource();
+						remove(ceq.getItem());
+					}
+				});
+				ceq.setQuantity(itemsQuantity.get(item));
+				itemsToCells.put(item, ceq);
+				setSize(0, getHeight() + ceq.getHeight());
+				ceq.setLocation(0, getHeight() - ceq.getHeight());
+				add(ceq);
 			}
 		}
-	}
 
-	@Override
-	public void setBounds(Rectangle r) {
-		setBounds(r.x, r.y, 0, r.height);
-	}
-
-	@Override
-	public void setBounds(int x, int y, int width, int height) {
-		super.setBounds(x, y, 500, height);
 	}
 
 	@Override
 	public void setSize(Dimension d) {
-		setSize(0, d.height);
+		setSize(d.width, d.height);
 	}
 
 	@Override
 	public void setSize(int width, int height) {
-		super.setSize(500, height);
-
-		// A laisser pour le JScrollPane
+		super.setSize(width, height);
 		setMinimumSize(getSize());
 		setMaximumSize(getSize());
 		setPreferredSize(getSize());
+
+		for (Component component : getComponents()) {
+			component.setSize(getWidth(), component.getHeight());
+		}
+	}
+
+	public Map<Item, CellEditQuantity> getItemsToCellsMap() {
+		return Collections.unmodifiableMap(itemsToCells);
+	}
+
+	protected Map<Item, Integer> getItemsQuantityMap() {
+		return itemsQuantity;
 	}
 
 	public int itemListSize() {
@@ -94,12 +124,14 @@ public class FullQuantityItemPanel extends JPanel {
 
 	public boolean add(Item item) {
 		boolean b = itemList.add(item);
+		itemsQuantity.put(item, 1);
 		reloadCells();
 		return b;
 	}
 
 	public boolean remove(Item item) {
 		boolean b = itemList.remove(item);
+		itemsQuantity.remove(item);
 		reloadCells();
 		return b;
 	}
@@ -110,30 +142,45 @@ public class FullQuantityItemPanel extends JPanel {
 
 	public boolean addAll(Collection<? extends Item> paramCollection) {
 		boolean b = itemList.addAll(paramCollection);
+		for (Item item : paramCollection) {
+			itemsQuantity.put(item, 1);
+		}
 		reloadCells();
 		return b;
 	}
 
 	public boolean addAll(int paramInt, Collection<? extends Item> paramCollection) {
 		boolean b = itemList.addAll(paramInt, paramCollection);
+		for (Item item : paramCollection) {
+			itemsQuantity.put(item, 1);
+		}
 		reloadCells();
 		return b;
 	}
 
-	public boolean removeAll(Collection<?> paramCollection) {
+	public boolean removeAll(Collection<? extends Item> paramCollection) {
 		boolean b = itemList.removeAll(paramCollection);
+		for (Item item : paramCollection) {
+			itemsQuantity.remove(item);
+		}
 		reloadCells();
 		return b;
 	}
 
-	public boolean retainAll(Collection<?> paramCollection) {
+	public boolean retainAll(Collection<? extends Item> paramCollection) {
 		boolean b = itemList.retainAll(paramCollection);
+		for (Item item : itemsQuantity.keySet()) {
+			if (!paramCollection.contains(item)) {
+				itemsQuantity.remove(item);
+			}
+		}
 		reloadCells();
 		return b;
 	}
 
 	public void clear() {
 		itemList.clear();
+		itemsQuantity.clear();
 		reloadCells();
 	}
 
@@ -141,19 +188,23 @@ public class FullQuantityItemPanel extends JPanel {
 		return itemList.get(paramInt);
 	}
 
-	public Item set(int paramInt, Item paramE) {
-		Item set = itemList.set(paramInt, paramE);
+	public Item set(int index, Item item) {
+		Item set = itemList.set(index, item);
+		int q = itemsQuantity.remove(set);
+		itemsQuantity.put(item, q);
 		reloadCells();
 		return set;
 	}
 
-	public void add(int paramInt, Item paramE) {
-		itemList.add(paramInt, paramE);
+	public void add(int index, Item item) {
+		itemList.add(index, item);
+		itemsQuantity.put(item, 1);
 		reloadCells();
 	}
 
 	public Item itemListremove(int paramInt) {
 		Item remove = itemList.remove(paramInt);
+		itemsQuantity.remove(remove);
 		reloadCells();
 		return remove;
 	}

@@ -14,7 +14,7 @@
  *  limitations under the License.
  *  under the License.
  */
-package view.components;
+package view.components.core;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

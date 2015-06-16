@@ -1,4 +1,4 @@
-package view.components;
+package view.components.core;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -11,6 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JList;
 
 import model.impl.Item;
+import view.components.cells.CellListCaracs;
 import view.components.cells.CellListItem;
 
 public class HoverListCellRenderer extends DefaultListCellRenderer {
@@ -46,7 +47,7 @@ public class HoverListCellRenderer extends DefaultListCellRenderer {
 		if (value != null) {
 			if (value instanceof Item) {
 				Item item = (Item) value;
-				setIcon(new ImageIcon(item.getImage()));
+				setIcon(new ImageIcon(CellListCaracs.scaleImage(item.getImage(), new Dimension(32, 32))));
 				setText(item.getDisplayName());
 
 				if (!isSelected) {

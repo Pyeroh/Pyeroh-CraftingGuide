@@ -1,4 +1,4 @@
-package view.components;
+package view.components.core;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -23,6 +23,12 @@ import org.jdesktop.swingx.JXSearchField;
 import sun.font.FontDesignMetrics;
 import view.components.event.SearchedItemChangeListener;
 
+/**
+ * Champ de recherche pour un {@link Item}
+ *
+ * @author Pyeroh
+ *
+ */
 public class JComboSearchField extends JXSearchField {
 
 	private static final long serialVersionUID = 5987013368749228268L;
@@ -46,18 +52,15 @@ public class JComboSearchField extends JXSearchField {
 						List<Item> searches = Item.searchBy(e.getActionCommand(), ItemData.NAME);
 						if (searches.size() > 1) {
 							list = new JDropDownList(JComboSearchField.this, searches);
-						}
-						else {
+						} else {
 							if (searches.size() == 1) {
 								finalItem = searches.get(0);
 							}
 							if (finalItem != null) {
 								JComboSearchField.this.setItem(finalItem);
-								JComboSearchField.this.setText(finalItem.getDisplayName());
 							}
 						}
-					}
-					else {
+					} else {
 						JComboSearchField.this.setItem(finalItem);
 					}
 
@@ -70,8 +73,9 @@ public class JComboSearchField extends JXSearchField {
 		return item;
 	}
 
-	private void setItem(Item item) {
+	public void setItem(Item item) {
 		this.item = item;
+		this.setText(item == null ? "" : item.getDisplayName());
 		fireSearchedItemChanged(item);
 	}
 
