@@ -98,6 +98,7 @@ public class MenuPrincipal extends JFrame {
 	private JScrollPane scrpan_ingredientsPresent;
 
 	private JComboSearchField search_ingredientsPresent;
+	private JScrollPane scrpan_ingredientsNeeded;
 
 	public MenuPrincipal() {
 		super();
@@ -138,8 +139,7 @@ public class MenuPrincipal extends JFrame {
 							.setText(String.format(Messages.getString("MenuPrincipal.lib_modAuthor.text"), EMod.MINECRAFT.getCreator()));
 					lib_modName.setText(EMod.MINECRAFT.getModName());
 
-				}
-				else {
+				} else {
 					throw new UnsupportedOperationException(String.format("Bouton de navigation non géré : %s", button.getName()));
 				}
 
@@ -228,8 +228,7 @@ public class MenuPrincipal extends JFrame {
 
 					render.setIcon(new ImageIcon(CellListCaracs.scaleImage(item.getImage(), new Dimension(24, 24))));
 					render.setText(item.getDisplayName());
-				}
-				else {
+				} else {
 					render.setIcon(null);
 				}
 
@@ -270,8 +269,7 @@ public class MenuPrincipal extends JFrame {
 					if (fqip_itemsToMake.contains(item)) {
 						CellEditQuantity ceq = fqip_itemsToMake.getItemsToCellsMap().get(item);
 						ceq.setQuantity(ceq.getQuantity() + 1);
-					}
-					else {
+					} else {
 						fqip_itemsToMake.add(item);
 					}
 					search_itemsToMake.setItem(null);
@@ -284,8 +282,7 @@ public class MenuPrincipal extends JFrame {
 		search_itemsToMake.setColumns(10);
 
 		pan_ingredients = new JPanel();
-		pan_ingredients.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
-				.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null));
+		pan_ingredients.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP, null, new Color(59, 59, 59)));
 		pan_ingredients.setBounds(413, 6, 389, 307);
 		pan_craft.add(pan_ingredients);
 		pan_ingredients.setLayout(null);
@@ -305,6 +302,15 @@ public class MenuPrincipal extends JFrame {
 		search_ingredientsPresent.setPrompt(Messages.getString("MenuPrincipal.search_itemsToMake.prompt"));
 		pan_ingredients.add(search_ingredientsPresent);
 		search_ingredientsPresent.setColumns(10);
+		
+		scrpan_ingredientsNeeded = new JScrollPane();
+		scrpan_ingredientsNeeded.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Need to gather", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		scrpan_ingredientsNeeded.setBounds(6, 188, 377, 113);
+		pan_ingredients.add(scrpan_ingredientsNeeded);
+		
+		final FullQuantityItemPanel fqip_ingredientsNeeded = new FullQuantityItemPanel(ButtonType.AJOUTER);
+		scrpan_ingredientsNeeded.setViewportView(fqip_ingredientsNeeded);
+		fqip_ingredientsNeeded.setSize(scrpan_ingredientsNeeded.getViewport().getWidth(), fqip_ingredientsNeeded.getHeight());
 
 		scrpan_steps = new JScrollPane();
 		scrpan_steps.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Steps", TitledBorder.LEADING,
