@@ -18,7 +18,8 @@
     "cat": "WOOD",
     "mod": "MINECRAFT",
     "iconName": "acacia_wood.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "planks",
@@ -137,7 +138,8 @@
     "cat": "WOOD",
     "mod": "MINECRAFT",
     "iconName": "birch_wood.png",
-    "meta": 2
+    "meta": 2,
+    "primary": true
   },
   {
     "id": "planks",
@@ -578,7 +580,8 @@
     "cat": "CLAY",
     "mod": "MINECRAFT",
     "iconName": "clay.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "clay",
@@ -606,7 +609,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "coal.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "coal_ore",
@@ -620,7 +624,8 @@
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "cobblestone.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "stone_slab",
@@ -795,7 +800,8 @@
     "cat": "WOOD",
     "mod": "MINECRAFT",
     "iconName": "dark_oak_wood.png",
-    "meta": 1
+    "meta": 1,
+    "primary": true
   },
   {
     "id": "planks",
@@ -844,7 +850,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "diamond.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "diamond_axe",
@@ -928,7 +935,8 @@
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "dirt.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "dispenser",
@@ -970,7 +978,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "emerald.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "emerald_ore",
@@ -984,7 +993,8 @@
     "cat": "TOOLS",
     "mod": "MINECRAFT",
     "iconName": "empty_map.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "enchanted_book",
@@ -1089,7 +1099,8 @@
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "flint.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "flint_and_steel",
@@ -1159,7 +1170,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "glowstone_dust.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "golden_apple",
@@ -1257,7 +1269,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "gold_ingot.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "gold_nugget",
@@ -1481,7 +1494,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "iron_ingot.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "iron_leggings",
@@ -1558,7 +1572,8 @@
     "cat": "WOOD",
     "mod": "MINECRAFT",
     "iconName": "jungle_wood.png",
-    "meta": 3
+    "meta": 3,
+    "primary": true
   },
   {
     "id": "planks",
@@ -1593,7 +1608,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "lapis_lazuli.png",
-    "meta": 4
+    "meta": 4,
+    "primary": true
   },
   {
     "id": "lapis_block",
@@ -2055,7 +2071,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "nether_quartz.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "quartz_ore",
@@ -2104,7 +2121,8 @@
     "cat": "WOOD",
     "mod": "MINECRAFT",
     "iconName": "oak_wood.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "planks",
@@ -2132,7 +2150,8 @@
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "obsidian.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "carpet",
@@ -2741,7 +2760,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "redstone.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "comparator",
@@ -2860,7 +2880,8 @@
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "sand.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "sandstone",
@@ -2937,7 +2958,8 @@
     "cat": "MINERALS",
     "mod": "MINECRAFT",
     "iconName": "snowball.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "snow",
@@ -3350,7 +3372,8 @@
     "cat": "WOOD",
     "mod": "MINECRAFT",
     "iconName": "spruce_wood.png",
-    "meta": 1
+    "meta": 1,
+    "primary": true
   },
   {
     "id": "planks",
@@ -3399,7 +3422,8 @@
     "cat": "EARTH_MATERIALS",
     "mod": "MINECRAFT",
     "iconName": "stone.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "stone_axe",
@@ -3672,7 +3696,8 @@
     "cat": "HUSBANDRY_WOOL",
     "mod": "MINECRAFT",
     "iconName": "wool.png",
-    "meta": 0
+    "meta": 0,
+    "primary": true
   },
   {
     "id": "written_book",

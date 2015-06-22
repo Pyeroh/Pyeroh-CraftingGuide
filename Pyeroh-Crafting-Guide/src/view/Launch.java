@@ -6,8 +6,10 @@ import java.awt.GraphicsEnvironment;
 import javax.swing.UIManager;
 
 import model.impl.Item;
+import model.impl.Item.ItemData;
 import model.impl.Recipe;
 
+// TODO calcul des ingrédients nécessaires pour une recette, avec le moins d'étapes possibles (pour les moyens multiples d'obtention)
 public class Launch {
 
 	private static Font MINECRAFTIA;
@@ -38,6 +40,8 @@ public class Launch {
 
 		Item.initialize();
 		Recipe.initialize();
+
+		Recipe.getIngredientsNeeded(Item.getBy("minecraft:piston", ItemData.ID_AND_META), 1, null);
 
 		// new TestFrame();
 

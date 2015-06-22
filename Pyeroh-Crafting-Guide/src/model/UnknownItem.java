@@ -12,7 +12,7 @@ import model.impl.Item;
 public class UnknownItem extends Item {
 
 	public UnknownItem(String ID, String displayName) {
-		super(ID, 0, "unknown.png", displayName, null, EMod.UNKNOWN);
+		super(ID, 0, displayName, "", "unknown.png", null, EMod.UNKNOWN, true);
 	}
 
 }

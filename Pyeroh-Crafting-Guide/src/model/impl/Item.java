@@ -45,13 +45,23 @@ public class Item implements IItem {
 
 	private EMod mod;
 
-	public Item(String id, int meta, String displayName, String iconName, ECategory category, EMod mod) {
+	private String description;
+
+	private boolean primary;
+
+	public Item(String id, int meta, String displayName, String description, String iconName, ECategory category, EMod mod) {
 		this.id = id;
 		this.meta = meta;
 		this.displayName = displayName;
+		this.description = description;
 		this.iconName = iconName;
 		this.category = category;
 		this.mod = mod;
+	}
+
+	public Item(String id, int meta, String displayName, String description, String iconName, ECategory category, EMod mod, boolean primary) {
+		this(id, meta, displayName, description, iconName, category, mod);
+		this.primary = primary;
 	}
 
 	@Override
@@ -92,8 +102,10 @@ public class Item implements IItem {
 					int meta = obj.getInt("meta");
 					String iconName = obj.getString("iconName");
 					String category = obj.getString("cat");
+					String description = obj.optString("description", "");
+					boolean primary = obj.optBoolean("primary", false);
 					itemList.add(new Item(id, meta, lang.getProperty(mod.name().toLowerCase() + "." + id + (meta == 0 ? "" : "." + meta),
-							""), iconName, ECategory.valueOf(category), mod));
+							""), description, iconName, ECategory.valueOf(category), mod, primary));
 				}
 				break;
 			}
@@ -213,6 +225,13 @@ public class Item implements IItem {
 	}
 
 	/**
+	 * @return {@link description}
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
 	 * @return {@link #iconName}
 	 */
 	@Override
@@ -236,6 +255,13 @@ public class Item implements IItem {
 		return mod;
 	}
 
+	/**
+	 * @return {@link primary}
+	 */
+	public boolean isPrimary() {
+		return primary;
+	}
+
 	public Image getImage() {
 		Image img = new ImageIcon(Item.class.getResource(getIconName())).getImage();
 		return img;
@@ -251,7 +277,6 @@ public class Item implements IItem {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((category == null) ? 0 : category.hashCode());
-		result = prime * result + ((iconName == null) ? 0 : iconName.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + meta;
 		result = prime * result + ((mod == null) ? 0 : mod.hashCode());
@@ -271,25 +296,19 @@ public class Item implements IItem {
 		if (obj == null) {
 			return false;
 		}
-		if (!(obj instanceof Item)) {
+		if (getClass() != obj.getClass()) {
 			return false;
 		}
 		Item other = (Item) obj;
 		if (category != other.category) {
 			return false;
 		}
-		if (iconName == null) {
-			if (other.iconName != null) {
-				return false;
-			}
-		} else if (!iconName.equals(other.iconName)) {
-			return false;
-		}
 		if (id == null) {
 			if (other.id != null) {
 				return false;
 			}
-		} else if (!id.equals(other.id)) {
+		}
+		else if (!id.equals(other.id)) {
 			return false;
 		}
 		if (meta != other.meta) {

@@ -69,6 +69,7 @@ public class FullQuantityItemPanel extends JPanel {
 					public void mouseReleased(MouseEvent e) {
 						CellEditQuantity ceq = (CellEditQuantity) e.getSource();
 						remove(ceq.getItem());
+						dispatchEvent(e);
 					}
 				});
 				ceq.setQuantity(itemsQuantity.get(item));

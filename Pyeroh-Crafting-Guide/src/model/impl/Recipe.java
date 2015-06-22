@@ -210,6 +210,19 @@ public class Recipe implements IRecipe {
 		return recipes;
 	}
 
+	public static Map<Item, Integer> getIngredientsNeeded(Item item, int quantity, Map<Item, Integer> owned) {
+
+		List<Recipe> recipes = Recipe.searchBy(item, RecipeData.ITEM);
+
+		if (!item.isPrimary()) {
+			// TODO
+		}
+
+		System.out.println(recipes);
+
+		return null;
+	}
+
 	/**
 	 * @return {@link #item}
 	 */
