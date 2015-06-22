@@ -99,6 +99,7 @@ public class MenuPrincipal extends JFrame {
 
 	private JComboSearchField search_ingredientsPresent;
 	private JScrollPane scrpan_ingredientsNeeded;
+	private JComboSearchField search_item;
 
 	public MenuPrincipal() {
 		super();
@@ -146,6 +147,12 @@ public class MenuPrincipal extends JFrame {
 			}
 
 		};
+		
+		search_item = new JComboSearchField();
+		search_item.setText("");
+		search_item.setBounds(625, 3, 181, 28);
+		getContentPane().add(search_item);
+		search_item.setColumns(10);
 
 		tabpan_mainContainer = new JTabbedPane(JTabbedPane.TOP);
 		tabpan_mainContainer.setBounds(0, 6, 812, 666);
@@ -282,13 +289,13 @@ public class MenuPrincipal extends JFrame {
 		search_itemsToMake.setColumns(10);
 
 		pan_ingredients = new JPanel();
-		pan_ingredients.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP, null, new Color(59, 59, 59)));
+		pan_ingredients.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null));
 		pan_ingredients.setBounds(413, 6, 389, 307);
 		pan_craft.add(pan_ingredients);
 		pan_ingredients.setLayout(null);
 
 		scrpan_ingredientsPresent = new JScrollPane();
-		scrpan_ingredientsPresent.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0)), "Already in inventory",
+		scrpan_ingredientsPresent.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Already in inventory",
 				TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		scrpan_ingredientsPresent.setBounds(6, 25, 377, 111);
 		pan_ingredients.add(scrpan_ingredientsPresent);
