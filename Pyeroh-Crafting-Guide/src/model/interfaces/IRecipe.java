@@ -6,6 +6,7 @@ import java.util.Map;
 
 import model.enums.ECraftingType;
 import model.impl.Item;
+import model.impl.ItemWithQuantity;
 import model.impl.Recipe;
 
 /**
@@ -34,7 +35,7 @@ public interface IRecipe extends IMod {
 	/**
 	 * @return les extras éventuels de la recette (des seaux vides pour un cake de Minecraft par exemple)
 	 */
-	Map<Item, Integer> getExtras();
+	List<ItemWithQuantity> getExtras();
 
 	/**
 	 * @return le pattern de craft de l'item. Selon le type de la recette, il y aura plus ou moins d'items dans le

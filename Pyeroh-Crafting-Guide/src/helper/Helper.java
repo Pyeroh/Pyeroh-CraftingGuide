@@ -16,6 +16,7 @@ import java.util.Properties;
 import model.enums.ECraftingType;
 import model.enums.EMod;
 import model.impl.Item;
+import model.impl.ItemWithQuantity;
 import model.impl.Recipe;
 import model.impl.Item.ItemData;
 import model.impl.Recipe.RecipeData;
@@ -131,13 +132,13 @@ public abstract class Helper {
 								break;
 							}
 
-							Map<Item, Integer> recipeExtras = new LinkedHashMap<>();
+							List<ItemWithQuantity> recipeExtras = new ArrayList<>();
 							if (!extras.isEmpty()) {
 								String[] extrass = extras.split(", ");
 								for (String extra : extrass) {
 									String extraItem = extra.split("^\\d+ ")[1];
 									int q = Integer.parseInt(extra.replaceAll(extraItem, "").trim());
-									recipeExtras.put(itemList.get(extraItem), q);
+									recipeExtras.add(new ItemWithQuantity(itemList.get(extraItem), q));
 								}
 							}
 
@@ -179,10 +180,10 @@ public abstract class Helper {
 					}
 					if (!recipe.getExtras().isEmpty()) {
 						buf = new StringBuffer();
-						for (Item extraKey : recipe.getExtras().keySet()) {
-							buf.append(recipe.getExtras().get(extraKey));
+						for (ItemWithQuantity extraKey : recipe.getExtras()) {
+							buf.append(extraKey.getQuantity());
 							buf.append("::");
-							buf.append(extraKey.toString());
+							buf.append(extraKey.getItem().toString());
 							buf.append(",");
 						}
 						jsonRecipe.put("extras", buf.toString().substring(0, buf.length() - 1));

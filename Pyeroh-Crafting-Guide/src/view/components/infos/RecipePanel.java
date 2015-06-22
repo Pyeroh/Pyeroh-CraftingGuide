@@ -8,9 +8,7 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.List;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JLabel;
@@ -18,7 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 import model.Messages;
-import model.impl.Item;
+import model.impl.ItemWithQuantity;
 import model.impl.Recipe;
 import view.Launch;
 import view.components.cells.CellListQuantityItem;
@@ -75,6 +73,7 @@ public class RecipePanel extends JPanel {
 		add(scrpan_ingredients);
 
 		MouseAdapter eventDispatcher = new MouseAdapter() {
+
 			@SuppressWarnings("rawtypes")
 			@Override
 			public void mouseReleased(MouseEvent e) {
@@ -83,7 +82,7 @@ public class RecipePanel extends JPanel {
 				}
 			}
 		};
-		
+
 		list_ingredients = new JHoverList<>();
 		list_ingredients.addMouseListener(eventDispatcher);
 		scrpan_ingredients.setViewportView(list_ingredients);
@@ -109,31 +108,18 @@ public class RecipePanel extends JPanel {
 	}
 
 	private void loadRecipe() {
-		Item[] pattern = recipe.getPattern();
-		Map<Item, Integer> extras = recipe.getExtras();
-
-		Map<Item, Integer> ingredients = new LinkedHashMap<>();
-		for (Item item : pattern) {
-			if (item != null) {
-				if (ingredients.containsKey(item)) {
-					ingredients.put(item, ingredients.get(item) + 1);
-				} else {
-					ingredients.put(item, 1);
-				}
-			}
-		}
+		List<ItemWithQuantity> extras = recipe.getExtras();
+		List<ItemWithQuantity> ingredients = recipe.getIngredients();
 
 		DefaultListModel<CellListQuantityItem> modelIngredients = new DefaultListModel<CellListQuantityItem>();
-		for (Iterator<Item> iterator = ingredients.keySet().iterator(); iterator.hasNext();) {
-			Item item = iterator.next();
-			modelIngredients.addElement(new CellListQuantityItem(item, ingredients.get(item)));
+		for (ItemWithQuantity ingredient : ingredients) {
+			modelIngredients.addElement(new CellListQuantityItem(ingredient));
 		}
 		list_ingredients.setModel(modelIngredients);
 
 		DefaultListModel<CellListQuantityItem> modelExtras = new DefaultListModel<CellListQuantityItem>();
-		for (Iterator<Item> iterator = extras.keySet().iterator(); iterator.hasNext();) {
-			Item extra = iterator.next();
-			modelExtras.addElement(new CellListQuantityItem(extra, extras.get(extra)));
+		for (ItemWithQuantity extra : extras) {
+			modelExtras.addElement(new CellListQuantityItem(extra));
 		}
 		list_extras.setModel(modelExtras);
 

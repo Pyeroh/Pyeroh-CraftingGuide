@@ -11,7 +11,6 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -42,7 +41,7 @@ public class Recipe implements IRecipe {
 
 	private int quantity;
 
-	private Map<Item, Integer> extras;
+	private List<ItemWithQuantity> extras;
 
 	private Item[] pattern;
 
@@ -50,7 +49,7 @@ public class Recipe implements IRecipe {
 
 	private EMod mod;
 
-	public Recipe(Item item, int quantity, Map<Item, Integer> extras, Item[] pattern, ECraftingType type, EMod mod) {
+	public Recipe(Item item, int quantity, List<ItemWithQuantity> extras, Item[] pattern, ECraftingType type, EMod mod) {
 		this.item = item;
 		this.quantity = quantity;
 		this.extras = extras;
@@ -61,16 +60,7 @@ public class Recipe implements IRecipe {
 
 	@Override
 	public String toString() {
-		Map<Item, Integer> items = new LinkedHashMap<>();
-		for (Item item : getPattern()) {
-			if (items.containsKey(item)) {
-				items.put(item, items.get(item) + 1);
-			} else {
-				items.put(item, 1);
-			}
-		}
-		items.remove(null);
-		return String.format("%s : %s -> %d %s", getType().name(), items.toString(), getQuantity(), getItem().toString());
+		return String.format("%s : %s -> %d %s", getType().name(), getIngredients().toString(), getQuantity(), getItem().toString());
 	}
 
 	/**
@@ -82,7 +72,8 @@ public class Recipe implements IRecipe {
 	public static void initialize() throws IOException, URISyntaxException {
 
 		Properties unknownLang = new Properties();
-		unknownLang.load(Recipe.class.getResourceAsStream(EMod.UNKNOWN.getPath() + String.format("lang_%s.properties", Locale.getDefault().getLanguage())));
+		unknownLang.load(Recipe.class.getResourceAsStream(EMod.UNKNOWN.getPath()
+				+ String.format("lang_%s.properties", Locale.getDefault().getLanguage())));
 
 		for (EMod mod : EMod.values()) {
 
@@ -114,12 +105,15 @@ public class Recipe implements IRecipe {
 						String extras = recipe.optString("extras");
 
 						// Traitement des extras
-						Map<Item, Integer> recipeExtras = new Hashtable<Item, Integer>();
+						List<ItemWithQuantity> recipeExtras = new ArrayList<>();
 						if (!extras.isEmpty()) {
 							String[] extrass = extras.split(",");
 							for (String extra : extrass) {
 								String[] parts = extra.split("::");
-								recipeExtras.put(Item.getBy(parts[1], ItemData.ID_AND_META), Integer.parseInt(parts[0]));
+								Item extraItem = Item.getBy(parts[1], ItemData.ID_AND_META);
+								if (extraItem != null) {
+									recipeExtras.add(new ItemWithQuantity(extraItem, Integer.parseInt(parts[0])));
+								}
 							}
 						}
 
@@ -143,17 +137,27 @@ public class Recipe implements IRecipe {
 				break;
 			}
 
-			Set<Item> il = new LinkedHashSet<>(IItem.itemList);
-			IItem.itemList.clear();
-			IItem.itemList.addAll(il);
-
+		}
+		
+		Set<Item> il = new LinkedHashSet<>(IItem.itemList);
+		IItem.itemList.clear();
+		IItem.itemList.addAll(il);
+		
+		for (Item item : IItem.itemList) {
+			if (searchBy(item, RecipeData.ITEM).isEmpty()) {
+				item.setPrimary(true);
+			}
 		}
 
 	}
 
 	/**
-	 * Recherche basique de recette entre une donnée et un critère de comparaison
-	 * @param data Doit correspondre au type indiqué par les valeurs de {@link RecipeData}
+	 * Recherche basique de recette entre une donnée et un critère de
+	 * comparaison
+	 * 
+	 * @param data
+	 *            Doit correspondre au type indiqué par les valeurs de
+	 *            {@link RecipeData}
 	 * @param compare
 	 * @return
 	 */
@@ -210,17 +214,52 @@ public class Recipe implements IRecipe {
 		return recipes;
 	}
 
-	public static Map<Item, Integer> getIngredientsNeeded(Item item, int quantity, Map<Item, Integer> owned) {
-
+	/**
+	 * Renvoie la liste des ingrédients nécessaires pour un item
+	 * @param item
+	 * @param quantity
+	 * @param owned
+	 * @return
+	 */
+	public static List<ItemWithQuantity> getIngredientsNeeded(Item item, int quantity, List<ItemWithQuantity> owned) {
+		
+		Map<List<ItemWithQuantity>,Integer> ingredientsNeeded = getIngredientsNeededImpl(item, quantity, owned);
+		
+		return new ArrayList<>(ingredientsNeeded.keySet()).get(0);
+	}
+	
+	/**
+	 * Renvoie la liste des ingrédients nécessaires pour un item, avec la quantité d'étapes nécessaires
+	 * @param item l'item à créer
+	 * @param quantity la quantité à créer
+	 * @param owned la liste des items déjà en stock
+	 * @return Un couple entre la liste des ingrédients nécessaires, et la quantité d'étapes
+	 */
+	private static Map<List<ItemWithQuantity>, Integer> getIngredientsNeededImpl(Item item, int quantity, List<ItemWithQuantity> owned) {
+		
 		List<Recipe> recipes = Recipe.searchBy(item, RecipeData.ITEM);
+		Map<List<ItemWithQuantity>, Integer> res = new LinkedHashMap<>();
 
 		if (!item.isPrimary()) {
-			// TODO
+			for (Recipe recipe : recipes) {
+				
+			}
+		}
+		else {
+			List<ItemWithQuantity> list = new ArrayList<>();
+			list.add(new ItemWithQuantity(item, quantity));
+			res.put(list, 1);
+			
+			if (owned.contains(list.get(0))) {
+				// TODO
+				ItemWithQuantity itemWithQuantity = owned.get(owned.indexOf(list.get(0)));
+				itemWithQuantity.setQuantity(quantity);
+			}
 		}
 
 		System.out.println(recipes);
 
-		return null;
+		return res;
 	}
 
 	/**
@@ -240,8 +279,29 @@ public class Recipe implements IRecipe {
 	/**
 	 * @return {@link #extras}
 	 */
-	public final Map<Item, Integer> getExtras() {
-		return Collections.unmodifiableMap(extras);
+	public final List<ItemWithQuantity> getExtras() {
+		return Collections.unmodifiableList(extras);
+	}
+	
+	public List<ItemWithQuantity> getIngredients() {
+		
+		List<ItemWithQuantity> ingredients = new ArrayList<>();
+		for (Item item : pattern) {
+			if (item != null) {
+				ItemWithQuantity itemWithQuantity = new ItemWithQuantity(item);
+				if (ingredients.contains(itemWithQuantity)) {
+					int index = ingredients.indexOf(itemWithQuantity);
+					itemWithQuantity = ingredients.get(index);
+					itemWithQuantity.setQuantity(itemWithQuantity.getQuantity() + 1);
+				}
+				else {
+					ingredients.add(new ItemWithQuantity(item, 1));
+				}
+			}
+		}
+		ingredients.remove(new ItemWithQuantity(null));
+		
+		return Collections.unmodifiableList(ingredients);
 	}
 
 	/**

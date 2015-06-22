@@ -24,9 +24,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * Définition des items TODO ajouter une description (ex: Il faut utiliser un
- * seau sur une vache pour avoir du lait/ ex2: comment obtenir le Kikoku
- * d'ExtraUtils...)
+ * Définition des items
  *
  * @author Pyeroh
  *
@@ -227,7 +225,7 @@ public class Item implements IItem {
 	/**
 	 * @return {@link description}
 	 */
-	public String getDescription() {
+	public final String getDescription() {
 		return description;
 	}
 
@@ -258,18 +256,22 @@ public class Item implements IItem {
 	/**
 	 * @return {@link primary}
 	 */
-	public boolean isPrimary() {
+	public final boolean isPrimary() {
 		return primary;
 	}
 
-	public Image getImage() {
+	protected final void setPrimary(boolean primary) {
+		this.primary = primary;
+	}
+
+	public final Image getImage() {
 		Image img = new ImageIcon(Item.class.getResource(getIconName())).getImage();
 		return img;
 	}
 
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -285,7 +287,7 @@ public class Item implements IItem {
 
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override

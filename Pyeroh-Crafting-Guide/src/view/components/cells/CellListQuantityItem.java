@@ -1,6 +1,6 @@
 package view.components.cells;
 
-import model.impl.Item;
+import model.impl.ItemWithQuantity;
 
 public class CellListQuantityItem extends CellListItem {
 
@@ -8,11 +8,11 @@ public class CellListQuantityItem extends CellListItem {
 
 	private int quantity;
 
-	public CellListQuantityItem(Item item, int quantity) {
-		super(item);
-		this.quantity = quantity;
+	public CellListQuantityItem(ItemWithQuantity itemWithQuantity) {
+		super(itemWithQuantity.getItem());
+		this.quantity = itemWithQuantity.getQuantity();
 
-		lib_desc.setText(item.getDisplayName()
+		lib_desc.setText(getItem().getDisplayName()
 				+ (getQuantity() != 1 ? " x" + getQuantity() : ""));
 
 	}
