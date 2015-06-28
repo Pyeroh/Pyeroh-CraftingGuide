@@ -60,7 +60,8 @@ public class Recipe implements IRecipe {
 
 	@Override
 	public String toString() {
-		return String.format("%s : %s -> %d %s", getType().name(), getIngredients().toString(), getQuantity(), getItem().toString());
+		return String.format("%s : %s -> %d %s", getType().name(), getIngredients().toString(), getQuantity(),
+				getItem().toString());
 	}
 
 	/**
@@ -82,8 +83,8 @@ public class Recipe implements IRecipe {
 				break;
 			default:
 
-				List<String> source = Files.readAllLines(new File(Item.class.getResource(mod.getPath() + "recipes.json").toURI()).toPath(),
-						Charset.defaultCharset());
+				List<String> source = Files.readAllLines(new File(Item.class
+						.getResource(mod.getPath() + "recipes.json").toURI()).toPath(), Charset.defaultCharset());
 				StringBuffer buf = new StringBuffer();
 				for (String string : source) {
 					buf.append(string);
@@ -138,11 +139,11 @@ public class Recipe implements IRecipe {
 			}
 
 		}
-		
+
 		Set<Item> il = new LinkedHashSet<>(IItem.itemList);
 		IItem.itemList.clear();
 		IItem.itemList.addAll(il);
-		
+
 		for (Item item : IItem.itemList) {
 			if (searchBy(item, RecipeData.ITEM).isEmpty()) {
 				item.setPrimary(true);
@@ -216,44 +217,53 @@ public class Recipe implements IRecipe {
 
 	/**
 	 * Renvoie la liste des ingrédients nécessaires pour un item
+	 * 
 	 * @param item
 	 * @param quantity
 	 * @param owned
 	 * @return
 	 */
-	public static List<ItemWithQuantity> getIngredientsNeeded(Item item, int quantity, List<ItemWithQuantity> owned) {
-		
-		Map<List<ItemWithQuantity>,Integer> ingredientsNeeded = getIngredientsNeededImpl(item, quantity, owned);
-		
+	public static List<ItemWithQuantity> getIngredientsNeeded(ItemWithQuantity item, List<ItemWithQuantity> owned) {
+
+		Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(item);
+
+		// TODO retirer de la liste des ingrédients nécessaires la liste des
+		// ingrédients en stock (et bien sûr, prendre la recette avec le plus
+		// court chemin)
+
 		return new ArrayList<>(ingredientsNeeded.keySet()).get(0);
 	}
-	
+
 	/**
-	 * Renvoie la liste des ingrédients nécessaires pour un item, avec la quantité d'étapes nécessaires
-	 * @param item l'item à créer
-	 * @param quantity la quantité à créer
-	 * @param owned la liste des items déjà en stock
-	 * @return Un couple entre la liste des ingrédients nécessaires, et la quantité d'étapes
+	 * Renvoie la liste des ingrédients nécessaires pour un item, avec la
+	 * quantité d'étapes nécessaires
+	 * 
+	 * @param item
+	 *            l'item à créer
+	 * @param quantity
+	 *            la quantité à créer
+	 * @return Un couple entre la liste des ingrédients nécessaires, et la
+	 *         quantité d'étapes
 	 */
-	private static Map<List<ItemWithQuantity>, Integer> getIngredientsNeededImpl(Item item, int quantity, List<ItemWithQuantity> owned) {
-		
-		List<Recipe> recipes = Recipe.searchBy(item, RecipeData.ITEM);
+	private static Map<List<ItemWithQuantity>, Integer> getIngredientsNeededImpl(ItemWithQuantity item) {
+
+		Item loneItem = item.getItem();
+		int quantity = item.getQuantity();
+
+		List<Recipe> recipes = Recipe.searchBy(loneItem, RecipeData.ITEM);
 		Map<List<ItemWithQuantity>, Integer> res = new LinkedHashMap<>();
 
-		if (!item.isPrimary()) {
+		// Si l'objet est primaire (pas de recettes), renvoyer une liste
+		// singleton de l'objet, avec le nombre 1 (une étape)
+		if (loneItem.isPrimary()) {
+			res.put(Collections.singletonList(item), 1);
+		}
+		// Sinon, appel récursif de la méthode sur toutes les recettes de
+		// l'objet, incrémentation des valeurs (longueur du chemin), et retour
+		// du chemin le plus court
+		else {
 			for (Recipe recipe : recipes) {
 				
-			}
-		}
-		else {
-			List<ItemWithQuantity> list = new ArrayList<>();
-			list.add(new ItemWithQuantity(item, quantity));
-			res.put(list, 1);
-			
-			if (owned.contains(list.get(0))) {
-				// TODO
-				ItemWithQuantity itemWithQuantity = owned.get(owned.indexOf(list.get(0)));
-				itemWithQuantity.setQuantity(quantity);
 			}
 		}
 
@@ -282,9 +292,9 @@ public class Recipe implements IRecipe {
 	public final List<ItemWithQuantity> getExtras() {
 		return Collections.unmodifiableList(extras);
 	}
-	
+
 	public List<ItemWithQuantity> getIngredients() {
-		
+
 		List<ItemWithQuantity> ingredients = new ArrayList<>();
 		for (Item item : pattern) {
 			if (item != null) {
@@ -300,7 +310,7 @@ public class Recipe implements IRecipe {
 			}
 		}
 		ingredients.remove(new ItemWithQuantity(null));
-		
+
 		return Collections.unmodifiableList(ingredients);
 	}
 

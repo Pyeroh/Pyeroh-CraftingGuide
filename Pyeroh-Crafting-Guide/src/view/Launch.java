@@ -45,13 +45,13 @@ public class Launch {
 		Item.initialize();
 		Recipe.initialize();
 
-//		List<ItemWithQuantity> owned = new ArrayList<>();
-//		owned.add(new ItemWithQuantity(Item.getBy("minecraft:redstone", ItemData.ID_AND_META), 10));
-//		Recipe.getIngredientsNeeded(Item.getBy("minecraft:piston", ItemData.ID_AND_META), 1, owned);
+		List<ItemWithQuantity> owned = new ArrayList<>();
+		owned.add(new ItemWithQuantity(Item.getBy("minecraft:redstone", ItemData.ID_AND_META), 10));
+		Recipe.getIngredientsNeeded(new ItemWithQuantity(Item.getBy("minecraft:piston", ItemData.ID_AND_META)), owned);
 
 		// new TestFrame();
 
-		new MenuPrincipal();
+//		new MenuPrincipal();
 
 	}
 
