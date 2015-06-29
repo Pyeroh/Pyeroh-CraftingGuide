@@ -1,12 +1,12 @@
 /**
- * 
+ *
  */
 package model.impl;
 
 
 /**
  * Un item avec une quantité
- * 
+ *
  * @author Pyeroh
  *
  */
@@ -49,7 +49,7 @@ public class ItemWithQuantity {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class ItemWithQuantity {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -95,6 +95,11 @@ public class ItemWithQuantity {
 			return false;
 		}
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return quantity + "x " + item.toString();
 	}
 
 }

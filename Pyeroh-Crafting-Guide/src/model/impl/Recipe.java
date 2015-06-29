@@ -155,7 +155,7 @@ public class Recipe implements IRecipe {
 	/**
 	 * Recherche basique de recette entre une donnée et un critère de
 	 * comparaison
-	 * 
+	 *
 	 * @param data
 	 *            Doit correspondre au type indiqué par les valeurs de
 	 *            {@link RecipeData}
@@ -217,7 +217,7 @@ public class Recipe implements IRecipe {
 
 	/**
 	 * Renvoie la liste des ingrédients nécessaires pour un item
-	 * 
+	 *
 	 * @param item
 	 * @param quantity
 	 * @param owned
@@ -237,7 +237,7 @@ public class Recipe implements IRecipe {
 	/**
 	 * Renvoie la liste des ingrédients nécessaires pour un item, avec la
 	 * quantité d'étapes nécessaires
-	 * 
+	 *
 	 * @param item
 	 *            l'item à créer
 	 * @param quantity
@@ -263,7 +263,10 @@ public class Recipe implements IRecipe {
 		// du chemin le plus court
 		else {
 			for (Recipe recipe : recipes) {
-				
+				for (ItemWithQuantity ingredient : recipe.getIngredients()) {
+					Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(ingredient);
+				}
+				System.out.println(recipe);
 			}
 		}
 
