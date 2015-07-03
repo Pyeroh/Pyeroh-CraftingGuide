@@ -213,8 +213,8 @@ public class CraftingPanel extends JLayeredPane {
 
 	private void loadRecipe() {
 		Item[] pattern = recipe.getPattern();
-		Item result = recipe.getItem();
-		int quantity = recipe.getQuantity();
+		Item result = recipe.getItem().getItem();
+		int quantity = recipe.getItem().getQuantity();
 		switch (recipe.getType()) {
 		case CRAFT:
 			img_craft1.setItem(pattern[0]);

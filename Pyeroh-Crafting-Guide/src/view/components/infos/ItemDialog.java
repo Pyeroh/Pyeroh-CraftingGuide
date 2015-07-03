@@ -187,7 +187,7 @@ public class ItemDialog extends JDialog {
 		List<Recipe> usedToMake = Recipe.searchBy(item, RecipeData.CONTENT);
 		Set<Item> usedToMakeItemSet = new LinkedHashSet<>();
 		for (Recipe recipe : usedToMake) {
-			usedToMakeItemSet.add(recipe.getItem());
+			usedToMakeItemSet.add(recipe.getItem().getItem());
 		}
 		DefaultListModel<CellListItem> model = new DefaultListModel<>();
 		for (Item item : usedToMakeItemSet) {

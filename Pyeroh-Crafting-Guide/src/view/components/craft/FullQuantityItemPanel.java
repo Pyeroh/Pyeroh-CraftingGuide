@@ -16,9 +16,12 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JSpinner;
 
 import model.impl.Item;
+import model.impl.ItemWithQuantity;
 import view.components.craft.CellEditQuantity.ButtonType;
 
 /**
@@ -67,9 +70,15 @@ public class FullQuantityItemPanel extends JPanel {
 
 					@Override
 					public void mouseReleased(MouseEvent e) {
-						CellEditQuantity ceq = (CellEditQuantity) e.getSource();
-						remove(ceq.getItem());
-						dispatchEvent(e);
+						if (e.getSource() instanceof JButton) {
+							JButton source = (JButton) e.getSource();
+							CellEditQuantity ceq = (CellEditQuantity) source.getParent();
+							remove(ceq.getItem());
+							FullQuantityItemPanel.this.dispatchEvent(e);
+						}
+						else if (e.getSource() instanceof JSpinner) {
+							FullQuantityItemPanel.this.dispatchEvent(e);
+						}
 					}
 				});
 				ceq.setQuantity(itemsQuantity.get(item));
@@ -107,6 +116,16 @@ public class FullQuantityItemPanel extends JPanel {
 		return itemsQuantity;
 	}
 
+	public List<ItemWithQuantity> getItemQuantityList() {
+		List<ItemWithQuantity> resultList = new ArrayList<>();
+
+		for (Item item : itemsQuantity.keySet()) {
+			resultList.add(new ItemWithQuantity(item, itemsQuantity.get(item)));
+		}
+
+		return resultList;
+	}
+
 	public int itemListSize() {
 		return itemList.size();
 	}
@@ -126,6 +145,13 @@ public class FullQuantityItemPanel extends JPanel {
 	public boolean add(Item item) {
 		boolean b = itemList.add(item);
 		itemsQuantity.put(item, 1);
+		reloadCells();
+		return b;
+	}
+
+	public boolean add(ItemWithQuantity item) {
+		boolean b = itemList.add(item.getItem());
+		itemsQuantity.put(item.getItem(), item.getQuantity());
 		reloadCells();
 		return b;
 	}

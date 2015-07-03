@@ -142,7 +142,7 @@ public abstract class Helper {
 								}
 							}
 
-							IRecipe.recipeList.add(new Recipe(finalItem, quantity, recipeExtras, recipePattern, craftingType, EMod.MINECRAFT));
+							IRecipe.recipeList.add(new Recipe(new ItemWithQuantity(finalItem, quantity), recipeExtras, recipePattern, craftingType, EMod.MINECRAFT));
 
 						}
 
@@ -175,8 +175,8 @@ public abstract class Helper {
 					}
 
 					jsonRecipe.put("pattern", buf.toString().substring(0, buf.length() - 1));
-					if (recipe.getQuantity() > 1) {
-						jsonRecipe.put("quantity", recipe.getQuantity());
+					if (recipe.getItem().getQuantity() > 1) {
+						jsonRecipe.put("quantity", recipe.getItem().getQuantity());
 					}
 					if (!recipe.getExtras().isEmpty()) {
 						buf = new StringBuffer();

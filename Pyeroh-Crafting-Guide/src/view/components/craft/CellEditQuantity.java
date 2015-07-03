@@ -1,6 +1,7 @@
 package view.components.craft;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -20,9 +21,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.text.DefaultFormatter;
 
-import view.components.cells.CellListCaracs;
 import model.impl.Item;
 import net.miginfocom.swing.MigLayout;
+import view.components.cells.CellListCaracs;
 
 public class CellEditQuantity extends JPanel {
 
@@ -49,7 +50,7 @@ public class CellEditQuantity extends JPanel {
 
 		setSize(433, 45);
 		setBackground(Color.white);
-		setLayout(new MigLayout("", "[32px:32px:32px][286.00px,grow][90.00px][32px:32px:32px]", "[32px:32px:32px]"));
+		setLayout(new MigLayout("", "[32px:32px:32px][286.00px,grow][70.00px:70.00px][32px:32px:32px]", "[32px:32px:32px]"));
 
 		lib_desc = new JLabel(item.getDisplayName());
 		lib_desc.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -74,6 +75,19 @@ public class CellEditQuantity extends JPanel {
 				}
 			}
 		});
+		for (Component iterable_element : spinner.getComponents()) {
+			if (iterable_element instanceof JButton) {
+				iterable_element.addMouseListener(new MouseAdapter() {
+
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						e.setSource(spinner);
+						CellEditQuantity.this.dispatchEvent(e);
+					}
+
+				});
+			}
+		}
 		spinner.setModel(new SpinnerNumberModel(new Integer(1), new Integer(1), null, new Integer(1)));
 		spinner.setEnabled(buttonType != ButtonType.AJOUTER);
 		add(spinner, "cell 2 0,grow");
@@ -89,7 +103,7 @@ public class CellEditQuantity extends JPanel {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				e.setSource(CellEditQuantity.this);
+//				e.setSource(CellEditQuantity.this);
 				CellEditQuantity.this.dispatchEvent(e);
 			}
 		});

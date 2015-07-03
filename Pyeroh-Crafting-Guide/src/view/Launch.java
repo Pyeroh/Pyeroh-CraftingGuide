@@ -2,14 +2,10 @@ package view;
 
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.UIManager;
 
 import model.impl.Item;
-import model.impl.ItemWithQuantity;
-import model.impl.Item.ItemData;
 import model.impl.Recipe;
 
 // TODO calcul des ingrédients nécessaires pour une recette, avec le moins d'étapes possibles (pour les moyens multiples d'obtention)
@@ -45,13 +41,14 @@ public class Launch {
 		Item.initialize();
 		Recipe.initialize();
 
-		List<ItemWithQuantity> owned = new ArrayList<>();
-		owned.add(new ItemWithQuantity(Item.getBy("minecraft:redstone", ItemData.ID_AND_META), 10));
-		Recipe.getIngredientsNeeded(new ItemWithQuantity(Item.getBy("minecraft:piston", ItemData.ID_AND_META)), owned);
+//		List<ItemWithQuantity> owned = new ArrayList<>();
+//		owned.add(new ItemWithQuantity(Item.getBy("minecraft:redstone", ItemData.ID_AND_META), 1));
+//		List<ItemWithQuantity> ingredientsNeeded = Recipe.getIngredientsNeeded(new ItemWithQuantity(Item.getBy("minecraft:piston", ItemData.ID_AND_META), 10), owned);
+//		System.out.println(ingredientsNeeded);
 
 		// new TestFrame();
 
-//		new MenuPrincipal();
+		new MenuPrincipal();
 
 	}
 

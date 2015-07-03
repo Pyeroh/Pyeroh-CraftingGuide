@@ -2,7 +2,6 @@ package model.interfaces;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import model.enums.ECraftingType;
 import model.impl.Item;
@@ -25,12 +24,7 @@ public interface IRecipe extends IMod {
 	/**
 	 * @return l'item donné par la recette
 	 */
-	Item getItem();
-
-	/**
-	 * @return la quantité d'items donnés par la recette
-	 */
-	int getQuantity();
+	ItemWithQuantity getItem();
 
 	/**
 	 * @return les extras éventuels de la recette (des seaux vides pour un cake de Minecraft par exemple)

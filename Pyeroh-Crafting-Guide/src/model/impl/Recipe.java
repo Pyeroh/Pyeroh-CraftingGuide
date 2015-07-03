@@ -37,9 +37,7 @@ import org.json.JSONObject;
  */
 public class Recipe implements IRecipe {
 
-	private Item item;
-
-	private int quantity;
+	private ItemWithQuantity item;
 
 	private List<ItemWithQuantity> extras;
 
@@ -49,9 +47,8 @@ public class Recipe implements IRecipe {
 
 	private EMod mod;
 
-	public Recipe(Item item, int quantity, List<ItemWithQuantity> extras, Item[] pattern, ECraftingType type, EMod mod) {
+	public Recipe(ItemWithQuantity item, List<ItemWithQuantity> extras, Item[] pattern, ECraftingType type, EMod mod) {
 		this.item = item;
-		this.quantity = quantity;
 		this.extras = extras;
 		this.pattern = pattern;
 		this.type = type;
@@ -60,8 +57,7 @@ public class Recipe implements IRecipe {
 
 	@Override
 	public String toString() {
-		return String.format("%s : %s -> %d %s", getType().name(), getIngredients().toString(), getQuantity(),
-				getItem().toString());
+		return String.format("%s : %s -> %s", getType().name(), getIngredients().toString(), getItem().toString());
 	}
 
 	/**
@@ -130,7 +126,7 @@ public class Recipe implements IRecipe {
 							recipePattern[k] = patElement;
 						}
 
-						IRecipe.recipeList.add(new Recipe(item, quantity, recipeExtras, recipePattern, craftType, mod));
+						IRecipe.recipeList.add(new Recipe(new ItemWithQuantity(item, quantity), recipeExtras, recipePattern, craftType, mod));
 
 					}
 				}
@@ -189,7 +185,7 @@ public class Recipe implements IRecipe {
 			if (recipe.getMod().isActivated()) {
 				switch (compare) {
 				case ITEM:
-					if (recipe.getItem() == item) {
+					if (recipe.getItem().getItem() == item) {
 						recipes.add(recipe);
 					}
 					break;
@@ -227,11 +223,11 @@ public class Recipe implements IRecipe {
 
 		Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(item);
 
-		// TODO retirer de la liste des ingrédients nécessaires la liste des
-		// ingrédients en stock (et bien sûr, prendre la recette avec le plus
-		// court chemin)
-
-		return new ArrayList<>(ingredientsNeeded.keySet()).get(0);
+		List<ItemWithQuantity> ingredientsNeededList = new ArrayList<>(ingredientsNeeded.keySet()).get(0);
+		if (owned != null) {
+			ingredientsNeededList = ItemWithQuantity.removeAll(ingredientsNeededList, owned);
+		}
+		return ingredientsNeededList;
 	}
 
 	/**
@@ -248,7 +244,7 @@ public class Recipe implements IRecipe {
 	private static Map<List<ItemWithQuantity>, Integer> getIngredientsNeededImpl(ItemWithQuantity item) {
 
 		Item loneItem = item.getItem();
-		int quantity = item.getQuantity();
+		int itemQuantity = item.getQuantity();
 
 		List<Recipe> recipes = Recipe.searchBy(loneItem, RecipeData.ITEM);
 		Map<List<ItemWithQuantity>, Integer> res = new LinkedHashMap<>();
@@ -262,15 +258,46 @@ public class Recipe implements IRecipe {
 		// l'objet, incrémentation des valeurs (longueur du chemin), et retour
 		// du chemin le plus court
 		else {
-			for (Recipe recipe : recipes) {
-				for (ItemWithQuantity ingredient : recipe.getIngredients()) {
-					Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(ingredient);
-				}
-				System.out.println(recipe);
-			}
-		}
 
-		System.out.println(recipes);
+			Map<List<ItemWithQuantity>, Integer> recipePaths = new LinkedHashMap<>();
+			for (Recipe recipe : recipes) {
+				Map<List<ItemWithQuantity>, Integer> ingredientsForThatRecipe = new LinkedHashMap<>();
+				for (ItemWithQuantity ingredient : recipe.getIngredients()) {
+					ItemWithQuantity multiplied = ingredient.multiply(itemQuantity);
+					ItemWithQuantity divided = multiplied.divide(recipe.getItem().getQuantity());
+					Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(divided);
+
+					List<ItemWithQuantity> ingredients = null;
+					int length = Integer.MAX_VALUE;
+					for (List<ItemWithQuantity> ingredientsList : ingredientsNeeded.keySet()) {
+						if (ingredientsNeeded.get(ingredientsList) < length) {
+							ingredients = ingredientsList;
+							length = ingredientsNeeded.get(ingredientsList);
+						}
+					}
+					ingredientsForThatRecipe.put(ingredients, length + 1);
+				}
+				// Ajouter toutes les listes de ingredientsForThatRecipe et faire la moyenne de la longueur des chemins
+				List<ItemWithQuantity> finalIngredientList = new ArrayList<>();
+				int lengthTotal = 0;
+				for (List<ItemWithQuantity> oneIngredientList : ingredientsForThatRecipe.keySet()) {
+					finalIngredientList = ItemWithQuantity.addAll(finalIngredientList, oneIngredientList);
+					lengthTotal += ingredientsForThatRecipe.get(oneIngredientList);
+				}
+				int average = (int) Math.ceil(lengthTotal / Integer.valueOf(ingredientsForThatRecipe.size()).doubleValue());
+				recipePaths.put(finalIngredientList, average);
+			}
+			// Récupérer seulement le chemin le plus court parmi la liste des chemins possibles
+			List<ItemWithQuantity> ingredients = null;
+			int length = Integer.MAX_VALUE;
+			for (List<ItemWithQuantity> ingredientsListForThatRecipePath : recipePaths.keySet()) {
+				if (recipePaths.get(ingredientsListForThatRecipePath) < length) {
+					ingredients = ingredientsListForThatRecipePath;
+					length = recipePaths.get(ingredientsListForThatRecipePath);
+				}
+			}
+			res.put(ingredients, length);
+		}
 
 		return res;
 	}
@@ -278,15 +305,8 @@ public class Recipe implements IRecipe {
 	/**
 	 * @return {@link #item}
 	 */
-	public final Item getItem() {
+	public final ItemWithQuantity getItem() {
 		return item;
-	}
-
-	/**
-	 * @return {@link #quantity}
-	 */
-	public final int getQuantity() {
-		return quantity;
 	}
 
 	/**
