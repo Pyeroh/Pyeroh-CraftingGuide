@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
+import model.ItemWQSet;
 import model.UnknownItem;
 import model.enums.ECraftingType;
 import model.enums.EMod;
@@ -219,13 +220,13 @@ public class Recipe implements IRecipe {
 	 * @param owned
 	 * @return
 	 */
-	public static List<ItemWithQuantity> getIngredientsNeeded(ItemWithQuantity item, List<ItemWithQuantity> owned) {
+	public static ItemWQSet getIngredientsNeeded(ItemWithQuantity item, ItemWQSet owned) {
 
-		Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(item);
+		Map<ItemWQSet, Integer> ingredientsNeeded = getIngredientsNeededImpl(item);
 
-		List<ItemWithQuantity> ingredientsNeededList = new ArrayList<>(ingredientsNeeded.keySet()).get(0);
+		ItemWQSet ingredientsNeededList = new ArrayList<>(ingredientsNeeded.keySet()).get(0);
 		if (owned != null) {
-			ingredientsNeededList = ItemWithQuantity.removeAll(ingredientsNeededList, owned);
+			ingredientsNeededList = ingredientsNeededList.removeAll(owned);
 		}
 		return ingredientsNeededList;
 	}
@@ -241,35 +242,35 @@ public class Recipe implements IRecipe {
 	 * @return Un couple entre la liste des ingrédients nécessaires, et la
 	 *         quantité d'étapes
 	 */
-	private static Map<List<ItemWithQuantity>, Integer> getIngredientsNeededImpl(ItemWithQuantity item) {
+	private static Map<ItemWQSet, Integer> getIngredientsNeededImpl(ItemWithQuantity item) {
 
 		Item loneItem = item.getItem();
 		int itemQuantity = item.getQuantity();
 
 		List<Recipe> recipes = Recipe.searchBy(loneItem, RecipeData.ITEM);
-		Map<List<ItemWithQuantity>, Integer> res = new LinkedHashMap<>();
+		Map<ItemWQSet, Integer> res = new LinkedHashMap<>();
 
 		// Si l'objet est primaire (pas de recettes), renvoyer une liste
 		// singleton de l'objet, avec le nombre 1 (une étape)
 		if (loneItem.isPrimary()) {
-			res.put(Collections.singletonList(item), 1);
+			res.put(new ItemWQSet(Collections.singleton(item)), 1);
 		}
 		// Sinon, appel récursif de la méthode sur toutes les recettes de
 		// l'objet, incrémentation des valeurs (longueur du chemin), et retour
 		// du chemin le plus court
 		else {
 
-			Map<List<ItemWithQuantity>, Integer> recipePaths = new LinkedHashMap<>();
+			Map<ItemWQSet, Integer> recipePaths = new LinkedHashMap<>();
 			for (Recipe recipe : recipes) {
-				Map<List<ItemWithQuantity>, Integer> ingredientsForThatRecipe = new LinkedHashMap<>();
+				Map<ItemWQSet, Integer> ingredientsForThatRecipe = new LinkedHashMap<>();
 				for (ItemWithQuantity ingredient : recipe.getIngredients()) {
 					ItemWithQuantity multiplied = ingredient.multiply(itemQuantity);
 					ItemWithQuantity divided = multiplied.divide(recipe.getItem().getQuantity());
-					Map<List<ItemWithQuantity>, Integer> ingredientsNeeded = getIngredientsNeededImpl(divided);
+					Map<ItemWQSet, Integer> ingredientsNeeded = getIngredientsNeededImpl(divided);
 
-					List<ItemWithQuantity> ingredients = null;
+					ItemWQSet ingredients = null;
 					int length = Integer.MAX_VALUE;
-					for (List<ItemWithQuantity> ingredientsList : ingredientsNeeded.keySet()) {
+					for (ItemWQSet ingredientsList : ingredientsNeeded.keySet()) {
 						if (ingredientsNeeded.get(ingredientsList) < length) {
 							ingredients = ingredientsList;
 							length = ingredientsNeeded.get(ingredientsList);
@@ -278,19 +279,19 @@ public class Recipe implements IRecipe {
 					ingredientsForThatRecipe.put(ingredients, length + 1);
 				}
 				// Ajouter toutes les listes de ingredientsForThatRecipe et faire la moyenne de la longueur des chemins
-				List<ItemWithQuantity> finalIngredientList = new ArrayList<>();
+				ItemWQSet finalIngredientList = new ItemWQSet();
 				int lengthTotal = 0;
-				for (List<ItemWithQuantity> oneIngredientList : ingredientsForThatRecipe.keySet()) {
-					finalIngredientList = ItemWithQuantity.addAll(finalIngredientList, oneIngredientList);
+				for (ItemWQSet oneIngredientList : ingredientsForThatRecipe.keySet()) {
+					finalIngredientList = finalIngredientList.addAll(oneIngredientList);
 					lengthTotal += ingredientsForThatRecipe.get(oneIngredientList);
 				}
 				int average = (int) Math.ceil(lengthTotal / Integer.valueOf(ingredientsForThatRecipe.size()).doubleValue());
 				recipePaths.put(finalIngredientList, average);
 			}
 			// Récupérer seulement le chemin le plus court parmi la liste des chemins possibles
-			List<ItemWithQuantity> ingredients = null;
+			ItemWQSet ingredients = null;
 			int length = Integer.MAX_VALUE;
-			for (List<ItemWithQuantity> ingredientsListForThatRecipePath : recipePaths.keySet()) {
+			for (ItemWQSet ingredientsListForThatRecipePath : recipePaths.keySet()) {
 				if (recipePaths.get(ingredientsListForThatRecipePath) < length) {
 					ingredients = ingredientsListForThatRecipePath;
 					length = recipePaths.get(ingredientsListForThatRecipePath);

@@ -10,8 +10,6 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import javax.swing.ImageIcon;
@@ -32,6 +30,7 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 
+import model.ItemWQSet;
 import model.Messages;
 import model.enums.ECategory;
 import model.enums.EMod;
@@ -45,7 +44,6 @@ import org.jdesktop.swingx.JXTree;
 import view.components.cells.CellListCaracs;
 import view.components.core.JComboSearchField;
 import view.components.core.MCImage;
-import view.components.craft.CellEditQuantity;
 import view.components.craft.CellEditQuantity.ButtonType;
 import view.components.craft.FullQuantityItemPanel;
 import view.components.event.SearchedItemChangeListener;
@@ -117,7 +115,8 @@ public class MenuPrincipal extends JFrame {
 	public MenuPrincipal() {
 		super();
 		setResizable(false);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuPrincipal.class.getResource("/gui/items/minecraft/icons/crafting_table.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(
+				MenuPrincipal.class.getResource("/gui/items/minecraft/icons/crafting_table.png")));
 		setTitle("Pyeroh Crafting Guide v1");
 
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -149,13 +148,14 @@ public class MenuPrincipal extends JFrame {
 					}
 					tree_browsed.setModel(new DefaultTreeModel(root));
 
-					lib_modAuthor
-							.setText(String.format(Messages.getString("MenuPrincipal.lib_modAuthor.text"), EMod.MINECRAFT.getCreator()));
+					lib_modAuthor.setText(String.format(Messages.getString("MenuPrincipal.lib_modAuthor.text"),
+							EMod.MINECRAFT.getCreator()));
 					lib_modName.setText(EMod.MINECRAFT.getModName());
 
 				}
 				else {
-					throw new UnsupportedOperationException(String.format("Bouton de navigation non géré : %s", button.getName()));
+					throw new UnsupportedOperationException(String.format("Bouton de navigation non géré : %s",
+							button.getName()));
 				}
 
 			}
@@ -168,11 +168,11 @@ public class MenuPrincipal extends JFrame {
 			public void searchedItemChanged(Item item) {
 				if (item != null) {
 					fqip_itemsToMake.clear();
-					fqip_itemsToMake.add(item);
+					fqip_itemsToMake.add(new ItemWithQuantity(item));
 					tabpan_mainContainer.setSelectedIndex(2);
 
 					search_item.setItem(null);
-					calculateRecipe(fqip_itemsToMake.getItemQuantityList());
+					calculateRecipe(fqip_itemsToMake.getItemSet());
 				}
 			}
 		});
@@ -203,7 +203,8 @@ public class MenuPrincipal extends JFrame {
 
 		btn_brMinecraft = new JButton(Messages.getString("MenuPrincipal.btn_brMinecraft.text")); //$NON-NLS-1$
 		btn_brMinecraft.addMouseListener(browseEvent);
-		btn_brMinecraft.setIcon(new ImageIcon(MenuPrincipal.class.getResource("/gui/items/minecraft/icons/grass_block.png")));
+		btn_brMinecraft.setIcon(new ImageIcon(MenuPrincipal.class
+				.getResource("/gui/items/minecraft/icons/grass_block.png")));
 		btn_brMinecraft.setBounds(6, 6, 169, 100);
 		btn_brMinecraft.setName("btn_brMinecraft");
 		pan_browse.add(btn_brMinecraft);
@@ -250,11 +251,11 @@ public class MenuPrincipal extends JFrame {
 			private static final long serialVersionUID = 1L;
 
 			@Override
-			public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row,
-					boolean hasFocus) {
+			public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded,
+					boolean leaf, int row, boolean hasFocus) {
 
-				DefaultTreeCellRenderer render = (DefaultTreeCellRenderer) super.getTreeCellRendererComponent(tree, value, sel, expanded,
-						leaf, row, hasFocus);
+				DefaultTreeCellRenderer render = (DefaultTreeCellRenderer) super.getTreeCellRendererComponent(tree,
+						value, sel, expanded, leaf, row, hasFocus);
 				Object obj = ((DefaultMutableTreeNode) value).getUserObject();
 
 				if (obj instanceof Item) {
@@ -278,8 +279,10 @@ public class MenuPrincipal extends JFrame {
 		pan_craft.setLayout(null);
 
 		pan_itemsToMake = new JPanel();
-		pan_itemsToMake.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
-				.getString("MenuPrincipal.pan_itemsToMake.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null)); //$NON-NLS-1$
+		pan_itemsToMake
+				.setBorder(new TitledBorder(
+						new LineBorder(new Color(0, 0, 0), 1, true),
+						Messages.getString("MenuPrincipal.pan_itemsToMake.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null)); //$NON-NLS-1$
 		pan_itemsToMake.setBounds(6, 6, 395, 307);
 		pan_craft.add(pan_itemsToMake);
 		pan_itemsToMake.setLayout(null);
@@ -293,11 +296,11 @@ public class MenuPrincipal extends JFrame {
 
 		fqip_itemsToMake = new FullQuantityItemPanel(ButtonType.ANNULER);
 		fqip_itemsToMake.addMouseListener(new MouseAdapter() {
+
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				if (e.getSource() instanceof JSpinner || e.getSource() instanceof JButton) {
-					// TODO lancement du calcul avant l'actualisation de la liste des items ? Pourquoiiii ?
-					calculateRecipe(fqip_itemsToMake.getItemQuantityList());
+					calculateRecipe(fqip_itemsToMake.getItemSet());
 				}
 			}
 		});
@@ -310,15 +313,16 @@ public class MenuPrincipal extends JFrame {
 			@Override
 			public void searchedItemChanged(Item item) {
 				if (item != null) {
-					if (fqip_itemsToMake.contains(item)) {
-						CellEditQuantity ceq = fqip_itemsToMake.getItemsToCellsMap().get(item);
-						ceq.setQuantity(ceq.getQuantity() + 1);
+					if (fqip_itemsToMake.getItemSet().contains(new ItemWithQuantity(item))) {
+
+						ItemWithQuantity itemWQ = fqip_itemsToMake.getItemSet().get(item);
+						fqip_itemsToMake.add(itemWQ.add(1));
 					}
 					else {
-						fqip_itemsToMake.add(item);
+						fqip_itemsToMake.add(new ItemWithQuantity(item));
 					}
 					search_itemsToMake.setItem(null);
-					calculateRecipe(fqip_itemsToMake.getItemQuantityList());
+					calculateRecipe(fqip_itemsToMake.getItemSet());
 				}
 			}
 		});
@@ -329,20 +333,29 @@ public class MenuPrincipal extends JFrame {
 
 		pan_ingredients = new JPanel();
 		pan_ingredients.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
-				.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP, MINECRAFTIA, null));
+				.getString("FullRecipePanel.lib_ingredients.text"), TitledBorder.LEADING, TitledBorder.TOP,
+				MINECRAFTIA, null));
 		pan_ingredients.setBounds(413, 6, 389, 307);
 		pan_craft.add(pan_ingredients);
 		pan_ingredients.setLayout(null);
 
 		scrpan_ingredientsPresent = new JScrollPane();
-		scrpan_ingredientsPresent.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Already in inventory",
-				TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		scrpan_ingredientsPresent.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
+				.getString("MenuPrincipal.scrpan_ingredientsPresent.borderTitle"), TitledBorder.LEADING,
+				TitledBorder.TOP, null, null));
 		scrpan_ingredientsPresent.setBounds(6, 25, 377, 111);
 		pan_ingredients.add(scrpan_ingredientsPresent);
 
 		fqip_ingredientsPresent = new FullQuantityItemPanel(ButtonType.RETIRER);
+		fqip_ingredientsPresent.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Actualiser la liste des ingrédients à obtenir
+			}
+		});
 		scrpan_ingredientsPresent.setViewportView(fqip_ingredientsPresent);
-		fqip_ingredientsPresent.setSize(scrpan_ingredientsPresent.getViewport().getWidth(), fqip_ingredientsPresent.getHeight());
+		fqip_ingredientsPresent.setSize(scrpan_ingredientsPresent.getViewport().getWidth(),
+				fqip_ingredientsPresent.getHeight());
 
 		search_ingredientsPresent = new JComboSearchField();
 		search_ingredientsPresent.setBounds(6, 148, 377, 28);
@@ -351,18 +364,27 @@ public class MenuPrincipal extends JFrame {
 		search_ingredientsPresent.setColumns(10);
 
 		scrpan_ingredientsNeeded = new JScrollPane();
-		scrpan_ingredientsNeeded.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Need to gather",
-				TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		scrpan_ingredientsNeeded.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
+				.getString("MenuPrincipal.scrpan_ingredientsNeeded.borderTitle"), TitledBorder.LEADING,
+				TitledBorder.TOP, null, null));
 		scrpan_ingredientsNeeded.setBounds(6, 188, 377, 113);
 		pan_ingredients.add(scrpan_ingredientsNeeded);
 
 		fqip_ingredientsNeeded = new FullQuantityItemPanel(ButtonType.AJOUTER);
+		fqip_ingredientsNeeded.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO envoyer les éléments "supprimés" dans la liste des ingrédients dans l'inventaire
+			}
+		});
 		scrpan_ingredientsNeeded.setViewportView(fqip_ingredientsNeeded);
-		fqip_ingredientsNeeded.setSize(scrpan_ingredientsNeeded.getViewport().getWidth(), fqip_ingredientsNeeded.getHeight());
+		fqip_ingredientsNeeded.setSize(scrpan_ingredientsNeeded.getViewport().getWidth(),
+				fqip_ingredientsNeeded.getHeight());
 
 		scrpan_steps = new JScrollPane();
-		scrpan_steps.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), "Steps", TitledBorder.LEADING,
-				TitledBorder.TOP, MINECRAFTIA, null));
+		scrpan_steps.setBorder(new TitledBorder(new LineBorder(new Color(0, 0, 0), 1, true), Messages
+				.getString("MenuPrincipal.scrpan_steps.borderTitle"), TitledBorder.LEADING, TitledBorder.TOP,
+				MINECRAFTIA, null));
 		scrpan_steps.setBounds(6, 325, 796, 305);
 		pan_craft.add(scrpan_steps);
 
@@ -376,8 +398,13 @@ public class MenuPrincipal extends JFrame {
 					itemDialog = null;
 					MCImage image = (MCImage) e.getSource();
 					tabpan_mainContainer.setSelectedIndex(2);
+					
+					fqip_itemsToMake.add(new ItemWithQuantity(image.getItem()));
 
-					calculateRecipe(Collections.singletonList(new ItemWithQuantity(image.getItem())));
+					ItemWQSet itemWQSet = new ItemWQSet();
+					itemWQSet.add(new ItemWithQuantity(image.getItem()));
+
+					calculateRecipe(itemWQSet);
 				}
 			}
 
@@ -392,11 +419,11 @@ public class MenuPrincipal extends JFrame {
 	 *
 	 * @param itemToGet
 	 */
-	private void calculateRecipe(List<ItemWithQuantity> itemsToCalc) {
-		List<ItemWithQuantity> ingredientsNeeded = new ArrayList<>();
+	private void calculateRecipe(ItemWQSet itemsToCalc) {
+		ItemWQSet ingredientsNeeded = new ItemWQSet();
 		for (ItemWithQuantity item : itemsToCalc) {
-			List<ItemWithQuantity> primaryIngredients = Recipe.getIngredientsNeeded(item, fqip_ingredientsPresent.getItemQuantityList());
-			ingredientsNeeded = ItemWithQuantity.addAll(ingredientsNeeded, primaryIngredients);
+			ItemWQSet primaryIngredients = Recipe.getIngredientsNeeded(item, fqip_ingredientsPresent.getItemSet());
+			ingredientsNeeded = ingredientsNeeded.addAll(primaryIngredients);
 		}
 		fqip_ingredientsNeeded.clear();
 		for (ItemWithQuantity item : ingredientsNeeded) {

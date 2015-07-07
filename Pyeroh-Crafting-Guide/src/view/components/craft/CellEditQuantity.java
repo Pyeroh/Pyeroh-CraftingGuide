@@ -22,6 +22,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.text.DefaultFormatter;
 
 import model.impl.Item;
+import model.impl.ItemWithQuantity;
 import net.miginfocom.swing.MigLayout;
 import view.components.cells.CellListCaracs;
 
@@ -31,9 +32,7 @@ public class CellEditQuantity extends JPanel {
 
 	private ButtonType buttonType;
 
-	private Item item;
-
-	private int quantity = 1;
+	private ItemWithQuantity item;
 
 	private JLabel lib_desc;
 
@@ -43,27 +42,30 @@ public class CellEditQuantity extends JPanel {
 
 	private JSpinner spinner;
 
-	public CellEditQuantity(Item item, ButtonType buttonType) {
+	public CellEditQuantity(ItemWithQuantity item, ButtonType buttonType) {
 		super();
 		this.item = item;
 		this.buttonType = buttonType;
 
 		setSize(433, 45);
 		setBackground(Color.white);
-		setLayout(new MigLayout("", "[32px:32px:32px][286.00px,grow][70.00px:70.00px][32px:32px:32px]", "[32px:32px:32px]"));
+		setLayout(new MigLayout("", "[32px:32px:32px][286.00px,grow][70.00px:70.00px][32px:32px:32px]",
+				"[32px:32px:32px]"));
 
-		lib_desc = new JLabel(item.getDisplayName());
+		lib_desc = new JLabel(item.getItem().getDisplayName());
 		lib_desc.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		add(lib_desc, "cell 1 0,grow");
 
 		image = new JLabel();
 		if (this.item != null) {
-			image.setIcon(new ImageIcon(CellListCaracs.scaleImage(this.item.getImage(), new Dimension(32, 32))));
+			image.setIcon(new ImageIcon(CellListCaracs
+					.scaleImage(this.item.getItem().getImage(), new Dimension(32, 32))));
 		}
 		add(image, "cell 0 0");
 
 		spinner = new JSpinner();
-		((DefaultFormatter) ((JFormattedTextField) spinner.getEditor().getComponent(0)).getFormatter()).setCommitsOnValidEdit(true);
+		((DefaultFormatter) ((JFormattedTextField) spinner.getEditor().getComponent(0)).getFormatter())
+				.setCommitsOnValidEdit(true);
 		spinner.addChangeListener(new ChangeListener() {
 
 			public void stateChanged(ChangeEvent e) {
@@ -71,7 +73,7 @@ public class CellEditQuantity extends JPanel {
 
 				Container container = CellEditQuantity.this.getParent();
 				if (container != null && container instanceof FullQuantityItemPanel) {
-					((FullQuantityItemPanel) container).getItemsQuantityMap().put(getItem(), getQuantity());
+					((FullQuantityItemPanel) container).getItemSet().add(CellEditQuantity.this.item);
 				}
 			}
 		});
@@ -90,6 +92,7 @@ public class CellEditQuantity extends JPanel {
 		}
 		spinner.setModel(new SpinnerNumberModel(new Integer(1), new Integer(1), null, new Integer(1)));
 		spinner.setEnabled(buttonType != ButtonType.AJOUTER);
+		spinner.setValue(item.getQuantity());
 		add(spinner, "cell 2 0,grow");
 
 		button = new JButton();
@@ -103,7 +106,7 @@ public class CellEditQuantity extends JPanel {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-//				e.setSource(CellEditQuantity.this);
+				// e.setSource(CellEditQuantity.this);
 				CellEditQuantity.this.dispatchEvent(e);
 			}
 		});
@@ -122,14 +125,14 @@ public class CellEditQuantity extends JPanel {
 	 * @return {@link item}
 	 */
 	public Item getItem() {
-		return item;
+		return item.getItem();
 	}
 
 	/**
 	 * @return {@link quantity}
 	 */
 	public int getQuantity() {
-		return quantity;
+		return item.getQuantity();
 	}
 
 	/**
@@ -137,7 +140,7 @@ public class CellEditQuantity extends JPanel {
 	 *            {@link quantity}
 	 */
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+		item.setQuantity(quantity);
 		spinner.setValue(quantity);
 	}
 
@@ -160,8 +163,10 @@ public class CellEditQuantity extends JPanel {
 		private Icon hoverIcon;
 
 		private ButtonType() {
-			baseIcon = new ImageIcon(ButtonType.class.getResource(String.format("/gui/%s.png", this.name().toLowerCase())));
-			hoverIcon = new ImageIcon(ButtonType.class.getResource(String.format("/gui/%s_hover.png", this.name().toLowerCase())));
+			baseIcon = new ImageIcon(ButtonType.class.getResource(String.format("/gui/%s.png", this.name()
+					.toLowerCase())));
+			hoverIcon = new ImageIcon(ButtonType.class.getResource(String.format("/gui/%s_hover.png", this.name()
+					.toLowerCase())));
 		}
 
 		public Icon getBaseIcon() {
